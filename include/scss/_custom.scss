@@ -1,0 +1,239 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+//
+// Layout
+// --------------------------------------------------
+.wrap {
+    width: 100%;
+}
+.container {
+    width: 1512px;
+    margin: 99px auto 0;
+}
+
+//
+// Header
+// --------------------------------------------------
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    min-width: 1512px;
+    margin-top: 66px;
+    padding-bottom: 31px;
+    border: 1px solid #000;
+    border-width: 1px 0;
+    background-color: #efe4d5;
+
+}
+.header-in {
+    position: relative;
+    min-width: 1512px;
+    max-width: 1900px;
+    height: 66px;
+    margin: -67px auto 0;
+    padding: 18px 28px 15px 15px;
+    background-color: #fff;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    @include clearfix;
+}
+.logo {
+    position: absolute;
+    top: 481px;
+    left: 87px;
+    z-index: 1000;
+    width: 161px;
+    height: 27px;
+    background: url(../images/logo.png) no-repeat 0 0;
+}
+.menu {
+    float: left;
+    > li {
+        float: left;
+        > a {
+            display: block;
+            padding: 10px 20px;
+        }
+    }
+}
+.menu-link {
+    float: right;
+    margin-right: -12px;
+    .search, .membership-link, .language {
+        float: left;
+        li {
+            float: left;
+            a {
+                display: block;
+                padding: 10px 12px;
+            }
+        }
+    }
+    .search {
+        padding: 9px 0;
+        .search-input {
+            width: 80px;
+            border: 1px solid #000;
+            border-width: 0 0 1px;
+        }
+    }
+    .membership-link {
+        margin: 0 40px 0 28px;
+    }
+    .language li {
+        a:before {
+            display: inline-block;
+            width: 2px;
+            height: 8px;
+            margin: 0 7px 0 -19px;
+            border-left: 1px solid #e9e9e9;
+            background-color: #000;
+            content: '';
+        }
+        &:first-child a:before {
+            width: 0;
+            border-left: 0;
+            margin-left: -7px;
+        }
+    }
+}
+
+//
+// Main
+// --------------------------------------------------
+.main-arrivals {
+    width: 100%;
+    @include clearfix;
+    span {
+        float: left;
+        width: 50%;
+        padding: 87px 0;
+        text-align: center;
+        a {
+            display: inline-block;
+            width: 290px;
+            line-height: (70-2)/12;
+            border: 1px solid #000;
+            text-transform: uppercase;
+        }
+    }
+}
+.main-category {
+    padding: 0 82px;
+    @include clearfix;
+}
+.main-slide {
+    float: left;
+    margin: 0 189px 0 28px;
+}
+.main-link-category {
+    float: left;
+    margin: 0 29px 78px 0;
+    .link-category {
+        margin-bottom: 47px;
+    }
+    .link-comingsoon {
+        float: left;
+    }
+    .link-introduction {
+        float: right;
+    }
+}
+.link-celebrity {
+    float: left;
+}
+.link-offlineshop {
+    float: right;
+}
+
+//
+// List
+// --------------------------------------------------
+.img-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.product-info {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    width: 100%;
+    padding: 15px 11px 15px 15px;
+    background-color: rgba(255,255,255,.72);
+    font-family: 'Nanum Gothic', sans-serif;
+    @include clearfix;
+    .product-name {
+        float: left;
+        .name {
+            padding: 12px 0 4px;
+            font-size: 12px;
+        }
+    }
+    .product-price {
+        position: inherit;
+        bottom: 15px;
+        right: 11px;
+        float: right;
+        .discount {
+            display: block;
+            margin-bottom: 5px;
+            text-decoration: line-through;
+        }
+        .price {
+            display: block;
+            color: #e30000;
+        }
+    }
+    &.info-center {
+        padding: 28px 0 20px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        letter-spacing: 2px;
+        .name {
+            padding-bottom: 6px;
+            font-size: 11px;
+        }
+        .price {
+            font-size: 11px;
+        }
+    }
+}
+.product-list {
+    max-width: 1346px;
+    margin: 0 auto;
+    @include clearfix;
+    .list-title {
+        padding: 96px 0 62px;
+        font-size: 11px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    ul {
+        margin: 0 -10px;
+    }
+    .item {
+        float: left;
+        width: 319px;
+        height: 390px;
+        margin: 0 11px 24px;
+        a {
+            display: block;
+            position: relative;
+            &:hover {
+                .img-hover, .product-info {
+                    display: block;
+                }
+            }
+        }
+    }
+}
