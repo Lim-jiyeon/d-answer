@@ -17,3 +17,10 @@ config.codekit
 # Ignore Intellij Env
 .idea
 *.iml
+
+# Ignore Fire App Log
+fire_app_log.txt
+config.rb
+
+# Ignore Sublime Text SFTP Log
+sftp-config.json
