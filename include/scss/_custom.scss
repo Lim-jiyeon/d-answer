@@ -53,10 +53,43 @@
 .menu {
     float: left;
     > li {
+        position: relative;
         float: left;
         > a {
             display: block;
             padding: 10px 20px;
+        }
+    }
+}
+.depth2 {
+    display: none;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 587px;
+    border: 1px solid #000;
+    background-color: #fff;
+    @include clearfix;
+    .depth-title {
+        padding: 15px 0 9px 22px;
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+    .depth-menu {
+        float: left;
+        padding-left: 28px;
+        a {
+            display: block;
+            padding: 9px 0;
+        }
+    }
+    .img-link {
+        float: right;
+        padding: 0 40px;
+        text-align: center;
+        span {
+            display: block;
+            padding: 15px 0;
         }
     }
 }
