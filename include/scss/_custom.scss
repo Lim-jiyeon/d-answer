@@ -50,7 +50,7 @@
     height: 27px;
     background: url(../images/logo.png) no-repeat 0 0;
 }
-.menu {
+.nav {
     float: left;
     > li {
         position: relative;
@@ -61,7 +61,7 @@
         }
     }
 }
-.depth2 {
+.nav-child {
     display: none;
     position: absolute;
     top: 48px;
@@ -70,12 +70,12 @@
     border: 1px solid #000;
     background-color: #fff;
     @include clearfix;
-    .depth-title {
+    .nav-child-title {
         padding: 15px 0 9px 22px;
         font-size: 11px;
         letter-spacing: 2px;
     }
-    .depth-menu {
+    .nav-child-menu {
         float: left;
         padding-left: 28px;
         a {
@@ -93,7 +93,7 @@
         }
     }
 }
-.menu-link {
+.nav-member-link {
     float: right;
     margin-right: -12px;
     .search, .membership-link, .language {
@@ -250,8 +250,13 @@
         text-align: center;
         letter-spacing: 2px;
         text-transform: uppercase;
+        &.category-list-title {
+            padding: 32px 0 120px;
+            font-weight: 700;
+            font-size: 12px;
+        }
     }
-    ul {
+    .item-container {
         margin: 0 -10px;
     }
     .item {
@@ -267,6 +272,48 @@
                     display: block;
                 }
             }
+        }
+    }
+}
+.category-aa {
+    text-align: center;
+    margin-top: -95px;
+    @include clearfix;
+}
+.category-nav {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 85px;
+    li {
+        display: inline-block;
+        padding: 0 25px;
+        font-size: 11px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        &:first-child {
+            padding-left: 0
+        }
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+    .category-nav-child {
+        display: none;
+        position: absolute;
+        top: 28px;
+        left: 0;
+        li {
+            float: left;
+            padding: 0 12px;
+            &:first-child {
+                padding-left: 0
+            }
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+        a {
+            color: #474747;
         }
     }
 }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D-answer</title>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <link rel="stylesheet" href="../include/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../include/css/styles.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../include/js/controller.min.js"></script>
+    <style type="text/css">
+        .markup-list {padding: 30px 20px;font-size: 14px;}
+        .markup-list h1 {margin-bottom: 10px;}
+        .markup-list h2 {margin: 40px 0 10px 10px;}
+        .markup-list ul li {padding: 2px 0 2px 15px;}
+        .markup-list ul li:before {margin-right:5px;content: '▪︎';}
+        .markup-list a:hover {color: #3a4cff;text-decoration: underline;}
+        .markup-list ul li p {margin: 3px 0 0 10px;}
+        .markup-list .issue {margin: 5px 0 0 15px;}
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div w3-include-html="header/header.html"></div>
+    <div class="container">
+        <div class="markup-list">
+            <h1>마크업 리스트</h1>
+            <p>
+                header, footer는 include해서 사용함.<br>
+                html include 시 javascript 동작이 안되는 이슈가 있음.<br>
+                그래서 <a href="./main/main-check.html">main (header, footer) 확인</a>으로 header 동작 확인가능<br>
+                이외의 페이지는 header의 스크립트 동작이 안되어 보일 수 있음.
+            </p>
+            <div>
+                <h2>메인</h2>
+                <ul>
+                    <li><a href="./main/main.html">main</a></li>
+                    <li><a href="./main/main-check.html">main (header, footer) 확인</a></li>
+                </ul>
+                <p class="issue">- basic 롤링, 푸터 작업 미완성</p>
+            </div>
+        </div>
+    </div>
+    <div w3-include-html="footer/footer.html"></div>
+    <script>
+        w3IncludeHTML();
+    </script>
+</div>
+</body>
+</html>
