@@ -24,3 +24,6 @@ config.rb
 
 # Ignore Sublime Text SFTP Log
 sftp-config.json
+
+# Ignore Image DS Store File
+.DS_Store
