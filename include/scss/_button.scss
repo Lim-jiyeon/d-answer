@@ -1,0 +1,47 @@
+.button {
+    display: inline-block;
+    padding: 0 12px;
+    border: 1px solid transparent;
+    background: #000;
+    font-size: 11px;
+    line-height: (27-2)/11;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    &:hover {
+        color: #fff;
+    }
+}
+
+.button-lg {
+    padding: 0 19px;
+    line-height: (50-2)/11;
+}
+.button-sm {
+    padding: 0 16px;
+    line-height: (24-2)/11;
+    letter-spacing: 2px;
+}
+
+.button-secondary {
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    &:hover {
+        color: #000;
+    }
+}
+
+.button-file {
+    padding: 0 16px;
+    background-color: #eee;
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: (18-2)/11;
+    letter-spacing: 0;
+    color: #000;
+}
+
+.button-align-right {
+    margin-top: 12px;
+    text-align: right;
+}

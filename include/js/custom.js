@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     // Menu
     // --------------------------------------------------
-    $(".nav a").on({
+    $(".nav > li > a").on({
         'mouseenter focusin': function() {
             $(this).closest("li").siblings().find('.acc').stop().stop().stop().fadeTo(50, 0, function() {
                 $(this).hide().removeClass('selected');
@@ -24,4 +24,10 @@ $(document).ready(function() {
             $(this).delay(1200).fadeTo(500, 0, function(){ $(this).hide().removeClass('selected');});
         });
 
+});
+
+$(function() {
+    $( "#detail-color, #detail-size, #qna-search-filter" )
+        .selectmenu()
+        .addClass( "overflow" );
 });

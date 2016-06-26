@@ -1,0 +1,26 @@
+.icon {
+    display: inline-block;
+    background: url(../images/sprite.png) no-repeat 0 0;
+    vertical-align: middle;
+}
+
+.icon-search {
+    width: 17px;
+    height: 17px;
+    background-position: 0 0;
+}
+.icon-facebook {
+    width: 16px;
+    height: 16px;
+    background-position: -30px 0;
+}
+.icon-instagram {
+    width: 16px;
+    height: 16px;
+    background-position: -60px 0;
+}
+.icon-lock {
+    width: 9px;
+    height: 13px;
+    background-position: -90px -30px;
+}

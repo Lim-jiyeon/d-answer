@@ -8,7 +8,7 @@
 }
 .container {
     width: 1512px;
-    margin: 99px auto 0;
+    margin: 99px auto 80px;
 }
 
 //
@@ -190,6 +190,58 @@
 //
 // List
 // --------------------------------------------------
+.category-nav-container {
+    text-align: center;
+    margin-top: -102px;
+    @include clearfix;
+}
+.category-nav {
+    position: relative;
+    display: inline-block;
+    float: none;
+    margin-bottom: 82px;
+    li {
+        position: static;
+        display: inline-block;
+        float: none;
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        a {
+            padding: 0 25px;
+        }
+        &:first-child a {
+            padding-left: 0
+        }
+        &:last-child a {
+            padding-right: 0;
+        }
+    }
+    .nav-child {
+        display: none;
+        position: absolute;
+        top: 29px;
+        left: 0;
+        width: 100%;
+        border: 0;
+        background-color: transparent;
+        li {
+            float: left;
+            font-size: 11px;
+            a {
+                padding: 0 12px;
+                color: #474747;
+            }
+            &:first-child a {
+                padding-left: 0
+            }
+            &:last-child a {
+                padding-right: 0;
+            }
+        }
+    }
+}
+
 .img-hover {
     display: none;
     position: absolute;
@@ -330,3 +382,206 @@
         }
     }
 }
+
+//
+// Detail
+// --------------------------------------------------
+.product-detail {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+.detail-img {
+    padding-bottom: 100px;
+    img {
+        display: block;
+        width: 1200px;
+    }
+}
+.detail-shop-info {
+    position: absolute;
+    top: 113px;
+    right: -325px;
+    width: 305px;
+    .product-name {
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 12px;
+    }
+    .price {
+        display: block;
+        margin-top: 8px;
+        font-size: 22px;
+        letter-spacing: 3px;
+        em {
+            margin-left: 2px;
+            font-size: 21px;
+            letter-spacing: 4px;
+        }
+    }
+    .sharing-links {
+        margin-top: 5px;
+        a {
+            margin-right: 7px;
+        }
+    }
+    .detail-discription {
+        margin: 12px 0 33px;
+        padding: 10px;
+        border: 1px solid #000;
+        text-transform: capitalize;
+    }
+    .product-options {
+        @include clearfix;
+        .shop-selectbox {
+            float: left;
+            @include clearfix;
+            label {
+                float: left;
+                margin-right: 4px;
+                letter-spacing: 1.5px;
+                vertical-align: middle;
+            }
+            .ui-state-default {
+                float: left;
+                width: 115px !important;
+                height: 18px;
+                .ui-icon {
+                    height: 16px;
+                    background: #e2e2e2 url(../images/sprite.png) no-repeat -60px -32px;
+                }
+            }
+            .ui-selectmenu-button {
+                span.ui-selectmenu-text {
+                    line-height: (18-2)/11;
+                }
+                span.ui-icon {
+                    margin-top: -8px;
+                }
+            }
+            &:last-child {
+                padding-left: 6px;
+            }
+        }
+    }
+    .product-options-button {
+        margin-top: 14px;
+        .button {
+            display: block;
+            margin-top: 4px;
+        }
+    }
+}
+
+.table-list {
+    td.review-subject, td.qna-subject {
+        text-align: left;
+        word-break: break-all;
+        a {
+            width: auto;
+            @include ellipsis;
+        }
+    }
+    td.review-subject {
+        padding: 9px 64px;
+        a {
+            max-width: 950px;
+        }
+    }
+    td.qna-subject {
+        padding: 9px 27px;
+        a {
+            max-width: 775px;
+        }
+    }
+}
+
+//col Width style
+.col-review-name {
+    width: 84px;
+}
+.col-qna-num {
+    width: 92px;
+}
+.col-qna-lock {
+    width: 29px;
+}
+.col-qna-name {
+    width: 69px;
+}
+.col-qna-date {
+    width: 112px;
+}
+.col-qna-hits {
+    width: 69px;
+}
+
+.review {
+    padding-bottom: 163px;
+    .review-title {
+        margin: 0 0 4px 20px;
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+    .paginate {
+        padding: 18px 0 51px;
+    }
+    .review-register {
+        padding: 15px 28px 18px;
+        border: 1px solid #000;
+        li {
+            padding: 12px 0;
+            label {
+                vertical-align: top;
+            }
+        }
+        .form-control {
+            height: 18px;
+            line-height: (18-2)/12;
+        }
+        textarea.form-control {
+            height: 50px;
+        }
+        .button {
+            vertical-align: top;
+        }
+    }
+}
+.qna {
+    .paginate {
+        padding: 18px 0 36px;
+    }
+}
+.qna-search {
+    text-align: center;
+    * {
+        vertical-align: middle;
+    }
+    label {
+        margin-right: 14px;
+        font-size: 13px;
+    }
+    .ui-state-default {
+        height: 24px;
+        .ui-icon {
+            height: 22px;
+            background: #e2e2e2 url(../images/sprite.png) no-repeat -60px -29px;
+        }
+    }
+    .ui-selectmenu-button {
+        span.ui-selectmenu-text {
+            font-size: 12px;
+            line-height: (24-2)/12;
+        }
+        span.ui-icon {
+            margin-top: -11px;
+        }
+    }
+    .form-control {
+        line-height: (24-2)/12;
+    }
+    .button {
+        font-size: 12px;
+        line-height: (24-2)/12;
+    }
+}
+

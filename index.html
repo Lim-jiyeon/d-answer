@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>D-answer</title>
-    <script src="http://www.w3schools.com/lib/w3data.js"></script>
-    <link rel="stylesheet" href="../include/css/font-awesome.min.css">
     <link rel="stylesheet" href="../include/css/styles.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../include/js/controller.min.js"></script>
@@ -22,15 +20,12 @@
 </head>
 <body>
 <div id="wrap">
-    <div w3-include-html="header/header.html"></div>
     <div class="container">
         <div class="markup-list">
             <h1>마크업 리스트</h1>
             <p>
                 header, footer는 include해서 사용함.<br>
-                html include 시 javascript 동작이 안되는 이슈가 있음.<br>
-                그래서 <a href="./main/main-check.html">main (header, footer) 확인</a>으로 header 동작 확인가능<br>
-                이외의 페이지는 header의 스크립트 동작이 안되어 보일 수 있음.
+                폰트 arial 아직 미확인.
             </p>
 
             <hr>
@@ -38,8 +33,7 @@
             <div>
                 <h2>Main</h2>
                 <ul>
-                    <li><a href="./main/main.html">Main</a></li>
-                    <li><a href="./main/main-check.html">Main (header, footer) 확인</a></li>
+                    <li><a href="./main/main.php">Main</a></li>
                 </ul>
                 <p class="issue">- basic 롤링, 푸터 작업 미완성</p>
             </div>
@@ -49,17 +43,28 @@
             <div>
                 <h2>Category</h2>
                 <ul>
-                    <li><a href="./category/original.html">Category > Original</a></li>
-                    <li><a href="./category/women.html">Category > Women</a></li>
+                    <li><a href="./category/original.php">Category > Original</a></li>
+                    <li><a href="./category/women.php">Category > Women</a></li>
                 </ul>
                 <p class="issue">- </p>
             </div>
+
+            <hr>
+
+            <div>
+                <h2>Detail</h2>
+                <ul>
+                    <li>
+                        <a href="./detail/detail.php">Detail</a>
+                        <p>- 상품 옵션 스크롤따라 이동하는 스크립트 미작업</p>
+                    </li>
+                    <li><a href="./detail/order-sheet.php">Detail > 주문서 작성</a></li>
+                </ul>
+                <p class="issue">- </p>
+            </div>
+
         </div>
     </div>
-    <div w3-include-html="footer/footer.html"></div>
-    <script>
-        w3IncludeHTML();
-    </script>
 </div>
 </body>
 </html>

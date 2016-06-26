@@ -1,55 +1,39 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>D-answer</title>
-    <meta name="description" content="d-answer." />
-    <meta name="keywords" content="d-answer, fashion, basic, men, women, kids" />
-    <script src="http://www.w3schools.com/lib/w3data.js"></script><!-- 마크업 include 용 개발시 삭제 -->
-    <link rel="stylesheet" href="../include/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../include/css/styles.css">
-    <script type="text/javascript" src="../include/js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="../include/js/custom.js"></script>
-</head>
-<body>
-<div class="wrap">
-    <div w3-include-html="../header/header.html"></div><!-- 마크업 include 용 개발시 삭제 -->
+<?php
+    include ("../header/header.php");
+?>
+
     <div class="container">
-        <div class="product-list">
-            <h2 class="list-title category-list-title">women</h2>
-            <div class="category-nav-container">
-                <ul class="nav category-nav">
-                    <li>
-                        <a href="#">outer</a>
-                        <ul class="nav-child">
-                            <li><a href="#">coat</a></li>
-                            <li><a href="#">padding</a></li>
-                            <li><a href="#">jacket</a></li>
-                            <li><a href="#">leather</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">top</a>
-                        <ul class="nav-child">
-                            <li><a href="#">t-shirts</a></li>
-                            <li><a href="#">shirts/blouse</a></li>
-                            <li><a href="#">sweatshirt</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">bottom</a></li>
-                    <li><a href="#">dress</a></li>
-                    <li><a href="#">knit</a></li>
-                    <li><a href="#">shoes</a></li>
-                    <li><a href="#">etc</a></li>
-                    <li><a href="#">sale</a></li>
+        <div class="main-banner">
+            <div class="masthead"><a href="#"><img src="../include/images/main-masthead.jpg" alt="ONLY D-ANSWER"></a></div>
+        </div>
+        <div class="main-arrivals">
+            <span><a href="#">men's new arrivals</a></span>
+            <span><a href="#">women's new arrivals</a></span>
+        </div>
+        <div class="main-category">
+            <div class="main-slide">
+                <ul>
+                    <li><a href="#"><img src="../include/images/main-basic.jpg" alt="BASIC"></a></li>
                 </ul>
             </div>
+            <ul class="main-link-category">
+                <li class="link-category"><a href="#"><img src="../include/images/main-women.jpg" alt="WOMEN'S SHOSE"></a></li>
+                <li class="link-comingsoon"><a href="#"><img src="../include/images/main-comingsoon.jpg" alt="COMING SOON"></a></li>
+                <li class="link-introduction"><a href="#"><img src="../include/images/main-introduction.jpg" alt="INTRODUCTION"></a></li>
+            </ul>
+            <div>
+                <a href="#" class="link-celebrity"><img src="../include/images/main-celebrity.jpg"></a>
+                <a href="#" class="link-offlineshop"><img src="../include/images/main-offlineshop.jpg"></a>
+            </div>
+        </div>
+        <div class="product-list">
+            <h3 class="list-title">new arrival</h3>
             <ul class="item-container">
                 <li class="item">
                     <a href="#">
-                        <img src="../include/images/temp-product.jpg" alt="상품이미지">
-                        <img src="../include/images/temp-product2.jpg" alt="상품이미지" class="img-hover">
-                        <div class="product-info">
+                        <img src="../include/images/temp/temp-product.jpg" alt="상품이미지">
+                        <img src="../include/images/temp/temp-product2.jpg" alt="상품이미지" class="img-hover">
+                        <div class="product-info" style="display:block"><!-- style 마크업 확인용 개발시 삭제 -->
                             <div class="product-name">
                                 <span>3차 재입고</span>
                                 <h3 class="name">SLP 자라 스탠원피스</h3>
@@ -64,9 +48,9 @@
                 </li>
                 <li class="item">
                     <a href="#">
-                        <img src="../include/images/temp-product.jpg" alt="상품이미지">
-                        <img src="../include/images/temp-product2.jpg" alt="상품이미지" class="img-hover">
-                        <div class="product-info info-center">
+                        <img src="../include/images/temp/temp-product.jpg" alt="상품이미지">
+                        <img src="../include/images/temp/temp-product2.jpg" alt="상품이미지" class="img-hover">
+                        <div class="product-info info-center" style="display:block"><!-- style 마크업 확인용 개발시 삭제 -->
                             <h3 class="name">SLP STAN SHIRTS</h3>
                             <span class="price">89,000</span>
                         </div>
@@ -74,8 +58,8 @@
                 </li>
                 <li class="item">
                     <a href="#">
-                        <img src="../include/images/temp-product.jpg" alt="상품이미지">
-                        <img src="../include/images/temp-product2.jpg" alt="상품이미지" class="img-hover">
+                        <img src="../include/images/temp/temp-product.jpg" alt="상품이미지">
+                        <img src="../include/images/temp/temp-product2.jpg" alt="상품이미지" class="img-hover">
                         <div class="product-info">
                             <div class="product-name">
                                 <span>3차 재입고</span>
@@ -91,8 +75,8 @@
                 </li>
                 <li class="item">
                     <a href="#">
-                        <img src="../include/images/temp-product.jpg" alt="상품이미지">
-                        <img src="../include/images/temp-product2.jpg" alt="상품이미지" class="img-hover">
+                        <img src="../include/images/temp/temp-product.jpg" alt="상품이미지">
+                        <img src="../include/images/temp/temp-product2.jpg" alt="상품이미지" class="img-hover">
                         <div class="product-info">
                             <div class="product-name">
                                 <span>3차 재입고</span>
@@ -108,8 +92,8 @@
                 </li>
                 <li class="item">
                     <a href="#">
-                        <img src="../include/images/temp-product.jpg" alt="상품이미지">
-                        <img src="../include/images/temp-product2.jpg" alt="상품이미지" class="img-hover">
+                        <img src="../include/images/temp/temp-product.jpg" alt="상품이미지">
+                        <img src="../include/images/temp/temp-product2.jpg" alt="상품이미지" class="img-hover">
                         <div class="product-info">
                             <div class="product-name">
                                 <span>3차 재입고</span>
@@ -125,8 +109,8 @@
                 </li>
                 <li class="item">
                     <a href="#">
-                        <img src="../include/images/temp-product.jpg" alt="상품이미지">
-                        <img src="../include/images/temp-product2.jpg" alt="상품이미지" class="img-hover">
+                        <img src="../include/images/temp/temp-product.jpg" alt="상품이미지">
+                        <img src="../include/images/temp/temp-product2.jpg" alt="상품이미지" class="img-hover">
                         <div class="product-info">
                             <div class="product-name">
                                 <span>3차 재입고</span>
@@ -142,8 +126,8 @@
                 </li>
                 <li class="item">
                     <a href="#">
-                        <img src="../include/images/temp-product.jpg" alt="상품이미지">
-                        <img src="../include/images/temp-product2.jpg" alt="상품이미지" class="img-hover">
+                        <img src="../include/images/temp/temp-product.jpg" alt="상품이미지">
+                        <img src="../include/images/temp/temp-product2.jpg" alt="상품이미지" class="img-hover">
                         <div class="product-info">
                             <div class="product-name">
                                 <span>3차 재입고</span>
@@ -159,8 +143,8 @@
                 </li>
                 <li class="item">
                     <a href="#">
-                        <img src="../include/images/temp-product.jpg" alt="상품이미지">
-                        <img src="../include/images/temp-product2.jpg" alt="상품이미지" class="img-hover">
+                        <img src="../include/images/temp/temp-product.jpg" alt="상품이미지">
+                        <img src="../include/images/temp/temp-product2.jpg" alt="상품이미지" class="img-hover">
                         <div class="product-info">
                             <div class="product-name">
                                 <span>3차 재입고</span>
@@ -176,8 +160,8 @@
                 </li>
                 <li class="item">
                     <a href="#">
-                        <img src="../include/images/temp-product.jpg" alt="상품이미지">
-                        <img src="../include/images/temp-product2.jpg" alt="상품이미지" class="img-hover">
+                        <img src="../include/images/temp/temp-product.jpg" alt="상품이미지">
+                        <img src="../include/images/temp/temp-product2.jpg" alt="상품이미지" class="img-hover">
                         <div class="product-info">
                             <div class="product-name">
                                 <span>3차 재입고</span>
@@ -193,8 +177,8 @@
                 </li>
                 <li class="item">
                     <a href="#">
-                        <img src="../include/images/temp-product.jpg" alt="상품이미지">
-                        <img src="../include/images/temp-product2.jpg" alt="상품이미지" class="img-hover">
+                        <img src="../include/images/temp/temp-product.jpg" alt="상품이미지">
+                        <img src="../include/images/temp/temp-product2.jpg" alt="상품이미지" class="img-hover">
                         <div class="product-info">
                             <div class="product-name">
                                 <span>3차 재입고</span>
@@ -210,8 +194,8 @@
                 </li>
                 <li class="item">
                     <a href="#">
-                        <img src="../include/images/temp-product.jpg" alt="상품이미지">
-                        <img src="../include/images/temp-product2.jpg" alt="상품이미지" class="img-hover">
+                        <img src="../include/images/temp/temp-product.jpg" alt="상품이미지">
+                        <img src="../include/images/temp/temp-product2.jpg" alt="상품이미지" class="img-hover">
                         <div class="product-info">
                             <div class="product-name">
                                 <span>3차 재입고</span>
@@ -227,8 +211,8 @@
                 </li>
                 <li class="item">
                     <a href="#">
-                        <img src="../include/images/temp-product.jpg" alt="상품이미지">
-                        <img src="../include/images/temp-product2.jpg" alt="상품이미지" class="img-hover">
+                        <img src="../include/images/temp/temp-product.jpg" alt="상품이미지">
+                        <img src="../include/images/temp/temp-product2.jpg" alt="상품이미지" class="img-hover">
                         <div class="product-info">
                             <div class="product-name">
                                 <span>3차 재입고</span>
@@ -245,12 +229,7 @@
             </ul>
         </div>
     </div>
-    <div w3-include-html="../footer/footer.html"></div><!-- 마크업 include 용 개발시 삭제 -->
-    <!-- 마크업 include 용 개발시 삭제 -->
-    <script>
-        w3IncludeHTML();
-    </script>
-    <!-- 마크업 include 용 개발시 삭제 //end -->
-</div>
-</body>
-</html>
+
+<?php
+    include ("../footer/footer.php");
+?>

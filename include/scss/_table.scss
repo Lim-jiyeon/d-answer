@@ -1,0 +1,54 @@
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    td {
+        text-align: center;
+    }
+}
+
+.table-list {
+    border-top: 2px solid #000;
+    th, td {
+        padding: 9px 0;
+        border-bottom: 1px solid #959595;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 12px;
+        line-height: (40-(9*2)-1)/12;
+    }
+}
+
+.paginate {
+    text-align: center;
+    .number {
+        display: inline-block;
+        margin: 0 10px;
+        a {
+            padding: 0 9px;
+        }
+        .selected {
+            padding: 2px 7px;
+            border: 1px solid #000;
+            color: #5d5d5d;
+        }
+    }
+}
+.arrow-page {
+    display: inline-block;
+    width: 11px;
+    height: 8px;
+    margin: 0 4px;
+    background: url(../images/sprite.png) no-repeat 0 0;
+    &.prev-first {
+        background-position: 0 -120px;
+    }
+    &.prev {
+        background-position: -30px -120px;
+    }
+    &.next {
+        background-position: -60px -120px;
+    }
+    &.next-last {
+        background-position: -90px -120px;
+    }
+}
+
