@@ -113,7 +113,7 @@
                     <li>
                         <label for="register-content">내용 : </label>
                         <textarea cols="40" rows="3" id="register-content" class="form-control"></textarea>
-                        <a href="#" class="button button-lg">ok</a>
+                        <a href="#" class="button button-xl">ok</a>
                     </li>
                 </ul>
                 <!-- Review 등록하기 //end -->

@@ -10,6 +10,11 @@
     width: 1512px;
     margin: 99px auto 80px;
 }
+.page-container {
+    width: 1348px;
+    margin: 0 auto;
+    padding: 53px 0 80px;
+}
 
 //
 // Header
@@ -135,6 +140,15 @@
             margin-left: -7px;
         }
     }
+}
+
+.page-title {
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.page-title-sub {
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 //
@@ -494,8 +508,7 @@
         }
     }
 }
-
-//col Width style
+// Detail board col Width style
 .col-review-name {
     width: 84px;
 }
@@ -561,7 +574,7 @@
         font-size: 13px;
     }
     .ui-state-default {
-        height: 24px;
+        height: 22px;
         .ui-icon {
             height: 22px;
             background: #e2e2e2 url(../images/sprite.png) no-repeat -60px -29px;
@@ -570,18 +583,189 @@
     .ui-selectmenu-button {
         span.ui-selectmenu-text {
             font-size: 12px;
-            line-height: (24-2)/12;
+            line-height: (22-2)/12;
         }
         span.ui-icon {
             margin-top: -11px;
         }
     }
     .form-control {
-        line-height: (24-2)/12;
+        line-height: (22-2)/12;
     }
     .button {
         font-size: 12px;
-        line-height: (24-2)/12;
+        line-height: (22-2)/12;
     }
 }
 
+//
+// Order Sheet
+// --------------------------------------------------
+.order-sheet {
+    width: 1200px;
+    margin: 0 auto;
+    &:before {
+        display: block;
+        width: 90px;
+        height: 91px;
+        margin: 76px auto 111px;
+        background: url(../images/sprite.png) no-repeat 0 -150px;
+        content: '';
+    }
+}
+.order-sheet-title {
+    margin-bottom: 10px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 12px;
+    &:before {
+        display: inline-block;
+        width: 6px;
+        height: 10px;
+        margin-right: 4px;
+        background: url(../images/sprite.png) no-repeat -120px -30px;
+        content: '';
+    }
+}
+.order-list {
+    table {
+        tfoot {
+            strong {
+                color: #a30000;
+            }
+        }
+        td {
+            span {
+                display: block;
+            }
+        }
+        .order-product {
+            img {
+                width: 54px;
+                height: 73px;
+                border: 2px solid #f6f6f6;
+            }
+        }
+        .order-option {
+            padding-left: 29px;
+            text-align: left;
+        }
+        .order- {
+            text-align: right;
+        }
+    }
+}
+// Order list col width style
+.order-product {
+    width: 90px;
+}
+.order-option {
+    width: 124px;
+}
+.order-quantity {
+    width: 77px;
+}
+.order-price {
+    width: 89px;
+}
+.order-saved-money {
+    width: 80px;
+}
+// Member Level
+.member-level {
+    margin: 55px 0 91px;
+    border: 1px solid #000;
+    @include clearfix;
+    .level-mark {
+        float: left;
+        width: 90px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: (92-2)/40;
+        text-align: center;
+    }
+    .level-explain {
+        float: left;
+        padding: 15px;
+        strong {
+            color: #a30000;
+        }
+    }
+}
+// Orderer Information Input
+.orderer-info {
+    @include clearfix;
+    .check-orderer {
+        float: right;
+        margin: 6px 0 24px;
+    }
+}
+.cell-phone {
+    .form-control {
+        width: 74px;
+    }
+}
+.cell-address {
+    > div {
+        margin-top: 7px;
+    }
+    .select-address {
+        label {
+            margin-right: 15px;
+        }
+    }
+    .zip-code-input {
+        .form-control {
+            width: 60px;
+        }
+    }
+    .address-input {
+        .form-control {
+            width: 364px;
+        }
+    }
+}
+.order-message {
+    .form-control {
+        width: 615px;
+    }
+}
+
+// Orderer list col width style
+.col-recipient-info {
+    width: 117px;
+}
+// 적립금 사용
+.saved-money {
+    .saved-money-title {
+        padding: 9px 0 25px;
+    }
+    .saved-money-box {
+        padding: 11px 25px;
+        border: 1px solid #000;
+        .form-control {
+            width: 60px;
+        }
+        .arrow {
+            display: inline-block;
+            width: 9px;
+            height: 7px;
+            background: url(../images/sprite.png) no-repeat -150px -30px;
+        }
+    }
+}
+// 쿠폰 사용
+.coupon {
+    .coupon-title {
+        padding: 9px 0 25px;
+    }
+    .coupon-box {
+        padding: 11px 25px;
+        border: 1px solid #000;
+        .form-control {
+            width: 118px;
+        }
+        .subscript {
+            margin-left: 14px;
+        }
+    }
+}

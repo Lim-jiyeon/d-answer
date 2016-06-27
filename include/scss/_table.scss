@@ -1,11 +1,8 @@
 .table {
     border-collapse: collapse;
     width: 100%;
-    td {
-        text-align: center;
-    }
 }
-
+// Table List Style
 .table-list {
     border-top: 2px solid #000;
     th, td {
@@ -14,9 +11,32 @@
         font-family: 'Nanum Gothic', sans-serif;
         font-size: 12px;
         line-height: (40-(9*2)-1)/12;
+        text-align: center;
+    }
+    tfoot td {
+        padding-right: 30px;
+        text-align: right;
     }
 }
-
+// Table Row List Style
+.table-row-list {
+    border: 1px solid #000;
+    th, td {
+        border: 1px solid #000;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 12px;
+        line-height: (40-(9*2)-1)/12;
+    }
+    th {
+        padding: 9px 12px 9px 0;
+        text-align: right;
+    }
+    td {
+        padding: 9px 0 9px 15px;
+        text-align: left;
+    }
+}
+ // Paginate
 .paginate {
     text-align: center;
     .number {
@@ -31,24 +51,24 @@
             color: #5d5d5d;
         }
     }
-}
-.arrow-page {
-    display: inline-block;
-    width: 11px;
-    height: 8px;
-    margin: 0 4px;
-    background: url(../images/sprite.png) no-repeat 0 0;
-    &.prev-first {
-        background-position: 0 -120px;
-    }
-    &.prev {
-        background-position: -30px -120px;
-    }
-    &.next {
-        background-position: -60px -120px;
-    }
-    &.next-last {
-        background-position: -90px -120px;
+    .arrow-page {
+        display: inline-block;
+        width: 11px;
+        height: 8px;
+        margin: 0 4px;
+        background: url(../images/sprite.png) no-repeat 0 0;
+        &.prev-first {
+            background-position: 0 -120px;
+        }
+        &.prev {
+            background-position: -30px -120px;
+        }
+        &.next {
+            background-position: -60px -120px;
+        }
+        &.next-last {
+            background-position: -90px -120px;
+        }
     }
 }
 

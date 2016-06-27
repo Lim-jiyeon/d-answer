@@ -562,14 +562,20 @@ hr {
   color: #fff;
 }
 
-.button-lg {
+.button-xl {
   padding: 0 19px;
   line-height: 4.3636363636;
 }
 
+.button-lg {
+  padding: 0 42px;
+  font-size: 12px;
+  line-height: 2.6666666667;
+}
+
 .button-sm {
   padding: 0 16px;
-  line-height: 2;
+  line-height: 1.8181818182;
   letter-spacing: 2px;
 }
 
@@ -592,6 +598,15 @@ hr {
   color: #000;
 }
 
+.button-align-center {
+  margin-top: 64px;
+  text-align: center;
+}
+
+.button-align-center a {
+  margin: 0 13px;
+}
+
 .button-align-right {
   margin-top: 12px;
   text-align: right;
@@ -600,10 +615,6 @@ hr {
 .table {
   border-collapse: collapse;
   width: 100%;
-}
-
-.table td {
-  text-align: center;
 }
 
 .table-list {
@@ -616,6 +627,33 @@ hr {
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 12px;
   line-height: 1.75;
+  text-align: center;
+}
+
+.table-list tfoot td {
+  padding-right: 30px;
+  text-align: right;
+}
+
+.table-row-list {
+  border: 1px solid #000;
+}
+
+.table-row-list th, .table-row-list td {
+  border: 1px solid #000;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+.table-row-list th {
+  padding: 9px 12px 9px 0;
+  text-align: right;
+}
+
+.table-row-list td {
+  padding: 9px 0 9px 15px;
+  text-align: left;
 }
 
 .paginate {
@@ -637,7 +675,7 @@ hr {
   color: #5d5d5d;
 }
 
-.arrow-page {
+.paginate .arrow-page {
   display: inline-block;
   width: 11px;
   height: 8px;
@@ -645,19 +683,19 @@ hr {
   background: url(../images/sprite.png) no-repeat 0 0;
 }
 
-.arrow-page.prev-first {
+.paginate .arrow-page.prev-first {
   background-position: 0 -120px;
 }
 
-.arrow-page.prev {
+.paginate .arrow-page.prev {
   background-position: -30px -120px;
 }
 
-.arrow-page.next {
+.paginate .arrow-page.next {
   background-position: -60px -120px;
 }
 
-.arrow-page.next-last {
+.paginate .arrow-page.next-last {
   background-position: -90px -120px;
 }
 
@@ -675,13 +713,17 @@ hr {
 }
 
 .form-control {
-  height: 24px;
+  height: 22px;
   padding: 0 5px;
   border: 1px solid #000;
   background-color: #fff;
   font-size: 12px;
   line-height: 1.6666666667;
   vertical-align: top;
+}
+
+textarea.form-control {
+  height: auto;
 }
 
 .ui-state-default {
@@ -726,6 +768,11 @@ hr {
   color: #fff;
 }
 
+input[type=radio] {
+  margin-top: 3px;
+  vertical-align: top;
+}
+
 .wrap {
   width: 100%;
 }
@@ -733,6 +780,12 @@ hr {
 .container {
   width: 1512px;
   margin: 99px auto 80px;
+}
+
+.page-container {
+  width: 1348px;
+  margin: 0 auto;
+  padding: 53px 0 80px;
 }
 
 .header {
@@ -888,6 +941,16 @@ hr {
   width: 0;
   border-left: 0;
   margin-left: -7px;
+}
+
+.page-title {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.page-title-sub {
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 .main-arrivals {
@@ -1453,7 +1516,7 @@ hr {
 }
 
 .qna-search .ui-state-default {
-  height: 24px;
+  height: 22px;
 }
 
 .qna-search .ui-state-default .ui-icon {
@@ -1463,7 +1526,7 @@ hr {
 
 .qna-search .ui-selectmenu-button span.ui-selectmenu-text {
   font-size: 12px;
-  line-height: 1.8333333333;
+  line-height: 1.6666666667;
 }
 
 .qna-search .ui-selectmenu-button span.ui-icon {
@@ -1471,10 +1534,193 @@ hr {
 }
 
 .qna-search .form-control {
-  line-height: 1.8333333333;
+  line-height: 1.6666666667;
 }
 
 .qna-search .button {
   font-size: 12px;
-  line-height: 1.8333333333;
+  line-height: 1.6666666667;
+}
+
+.order-sheet {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.order-sheet:before {
+  display: block;
+  width: 90px;
+  height: 91px;
+  margin: 76px auto 111px;
+  background: url(../images/sprite.png) no-repeat 0 -150px;
+  content: '';
+}
+
+.order-sheet-title {
+  margin-bottom: 10px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 12px;
+}
+
+.order-sheet-title:before {
+  display: inline-block;
+  width: 6px;
+  height: 10px;
+  margin-right: 4px;
+  background: url(../images/sprite.png) no-repeat -120px -30px;
+  content: '';
+}
+
+.order-list table tfoot strong {
+  color: #a30000;
+}
+
+.order-list table td span {
+  display: block;
+}
+
+.order-list table .order-product img {
+  width: 54px;
+  height: 73px;
+  border: 2px solid #f6f6f6;
+}
+
+.order-list table .order-option {
+  padding-left: 29px;
+  text-align: left;
+}
+
+.order-list table .order- {
+  text-align: right;
+}
+
+.order-product {
+  width: 90px;
+}
+
+.order-option {
+  width: 124px;
+}
+
+.order-quantity {
+  width: 77px;
+}
+
+.order-price {
+  width: 89px;
+}
+
+.order-saved-money {
+  width: 80px;
+}
+
+.member-level {
+  margin: 55px 0 91px;
+  border: 1px solid #000;
+}
+
+.member-level:before, .member-level:after {
+  content: " ";
+  display: table;
+}
+
+.member-level:after {
+  clear: both;
+}
+
+.member-level .level-mark {
+  float: left;
+  width: 90px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 2.25;
+  text-align: center;
+}
+
+.member-level .level-explain {
+  float: left;
+  padding: 15px;
+}
+
+.member-level .level-explain strong {
+  color: #a30000;
+}
+
+.orderer-info:before, .orderer-info:after {
+  content: " ";
+  display: table;
+}
+
+.orderer-info:after {
+  clear: both;
+}
+
+.orderer-info .check-orderer {
+  float: right;
+  margin: 6px 0 24px;
+}
+
+.cell-phone .form-control {
+  width: 74px;
+}
+
+.cell-address > div {
+  margin-top: 7px;
+}
+
+.cell-address .select-address label {
+  margin-right: 15px;
+}
+
+.cell-address .zip-code-input .form-control {
+  width: 60px;
+}
+
+.cell-address .address-input .form-control {
+  width: 364px;
+}
+
+.order-message .form-control {
+  width: 615px;
+}
+
+.col-recipient-info {
+  width: 117px;
+}
+
+.saved-money .saved-money-title {
+  padding: 9px 0 25px;
+}
+
+.saved-money .saved-money-box {
+  padding: 11px 25px;
+  border: 1px solid #000;
+}
+
+.saved-money .saved-money-box .form-control {
+  width: 60px;
+}
+
+.saved-money .saved-money-box .arrow {
+  display: inline-block;
+  width: 9px;
+  height: 7px;
+  background: url(../images/sprite.png) no-repeat -150px -30px;
+}
+
+.coupon .coupon-title {
+  padding: 9px 0 25px;
+}
+
+.coupon .coupon-box {
+  padding: 11px 25px;
+  border: 1px solid #000;
+}
+
+.coupon .coupon-box .form-control {
+  width: 118px;
+}
+
+.coupon .coupon-box .subscript {
+  margin-left: 14px;
 }
