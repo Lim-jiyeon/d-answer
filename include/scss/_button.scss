@@ -27,6 +27,12 @@
     line-height: (22-2)/11;
     letter-spacing: 2px;
 }
+.button-xs {
+    padding: 0 5px;
+    font-size: 11px;
+    line-height: (19-2)/11;
+    letter-spacing: 0;
+}
 
 .button-secondary {
     border: 1px solid #000;
@@ -35,6 +41,9 @@
     &:hover {
         color: #000;
     }
+}
+.button-board {
+    background-color: #313131;
 }
 
 .button-file {

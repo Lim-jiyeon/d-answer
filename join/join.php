@@ -4,75 +4,14 @@
 
     <div class="container">
         <div class="page-container">
-            <h2 class="page-title">order sheet</h2>
-            <p class="page-title-sub">주문정보를 작성하신 후 주문하기를 눌러주세요</p>
-            <div class="order order-sheet">
-                <h3 class="order-title">주문할 상품</h3>
-                <div class="order-list">
-                    <table class="table table-list">
-                        <caption>주문할 상품 리스트</caption>
-                        <colgroup>
-                            <col class="order-product">
-                            <col class="order-option">
-                            <col class="order-product-name">
-                            <col class="order-quantity">
-                            <col class="order-price">
-                            <col class="order-saved-money">
-                        </colgroup>
-                        <thead>
-                        <tr>
-                            <th></th>
-                            <th>옵션</th>
-                            <th>구입상품명</th>
-                            <th>수량</th>
-                            <th>가격</th>
-                            <th>적립</th>
-                        </tr>
-                        </thead>
-                        <tfoot>
-                        <tr>
-                            <td colspan="6">결제금액 : 75,080원 = <strong>75,050원</strong> (적립금 1,500원)</td>
-                        </tr>
-                        </tfoot>
-                        <tbody>
-                        <tr>
-                            <td class="order-product">
-                                <a href="#"><img src="../include/images/temp/temp-order-sheet-img.jpg" alt="상품 이미지"></a>
-                            </td>
-                            <td class="order-option">
-                                <span>color: black</span>
-                                <span>size: 46</span>
-                            </td>
-                            <td><a href="#">린넨 스탠드카라 포켓셔츠</a></td>
-                            <td>1개</td>
-                            <td class="order-price">59,000원</td>
-                            <td>590</td>
-                        </tr>
-                        <tr>
-                            <td class="order-product">
-                                <a href="#"><img src="../include/images/temp/temp-order-sheet-img.jpg" alt="상품 이미지"></a>
-                            </td>
-                            <td class="order-option">
-                                <span>color: black</span>
-                                <span>size: 46</span>
-                            </td>
-                            <td><a href="#">린넨 스탠드카라 포켓셔츠</a></td>
-                            <td>1개</td>
-                            <td class="order-price">
-                                <span>59,000원</span>
-                                <span>-2,600원</span>
-                                <span>49,400원</span>
-                            </td>
-                            <td>590</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <h2 class="page-title">membership</h2>
+            <p class="page-title-sub">회원가입</p>
+            <div class="join">
                 <div class="member-level">
-                    <span class="level-mark">S</span>
-                    <p class="level-explain">김기훈님은 <strong>Silver</strong> 회원입니다.<br>
-                    (적립금 적립 + 사용 가능 / 출석체크 적립금 사용 불가능)<br>
-                    김기훈 님이 1,000원 이상 구매시 구매금액의 1%를 추가 적립해 드립니다.</p>
+                    <p>휴대폰 또는 아이핀 인증을 통하여 본인인증을 하셔야 합니다.<br>
+                    <strong>인증 버튼을 눌러 본인인증을 진행해 주세요.</strong></p>
+                    <a href="#">휴대폰 인증이란?</a>
+                    <a href="#">아이핀 서비스란?</a>
                 </div>
                 <div class="orderer-input">
                     <div class="orderer-info">
