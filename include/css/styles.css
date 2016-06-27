@@ -435,17 +435,19 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-html {
-  font-size: 12px;
-  -webkit-tap-highlight-color: transparent;
-}
-
-body {
+body,
+h1, h2, h3, h4, h5, h6, table,
+input, select, textarea, a {
   font-family: Arial, sans-serif;
   font-size: 12px;
   line-height: 1.6666666667;
   color: #000;
   background-color: #fff;
+}
+
+html {
+  font-size: 12px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 input,
@@ -876,12 +878,12 @@ input[type=radio] {
 
 .nav-child .nav-child-menu {
   float: left;
-  padding: 3px 0 0 28px;
+  padding: 5px 0 0 32px;
 }
 
 .nav-child .nav-child-menu a {
   display: block;
-  padding: 7px 0;
+  padding: 5px 0;
 }
 
 .nav-child .img-link {
