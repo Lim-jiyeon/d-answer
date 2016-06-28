@@ -24,10 +24,16 @@ $(document).ready(function() {
             $(this).delay(1200).fadeTo(500, 0, function(){ $(this).hide().removeClass('selected');});
         });
 
-});
+    $(function() {
+        $( "#detail-color, #detail-size, #qna-search-filter, .selectbox" )
+            .selectmenu()
+            .addClass( "overflow" );
+    });
 
-$(function() {
-    $( "#detail-color, #detail-size, #qna-search-filter" )
-        .selectmenu()
-        .addClass( "overflow" );
+    $(".tab-box .tab-button").click(function() {
+        $(".tab-button").removeClass("selected").siblings("div").hide();
+        $(this).addClass("selected").siblings("div").show();
+        return false;
+    });
+
 });

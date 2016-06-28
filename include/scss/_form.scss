@@ -33,6 +33,7 @@ textarea.form-control {
     border: 1px solid #000;
     border-radius: 0;
     background-color: #fff;
+    vertical-align: top;
     .ui-icon {
         height: 20px;
         background: #e2e2e2 url(../images/sprite.png) no-repeat -60px -30px;
@@ -66,7 +67,8 @@ textarea.form-control {
 }
 
 // Radio Button
-input[type=radio] {
+input[type=radio],
+input[type=checkbox] {
     margin-top: 3px;
     vertical-align: top;
 }

@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <title>D-answer</title>
     <link rel="stylesheet" href="../include/css/styles.css">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="../include/js/controller.min.js"></script>
     <style type="text/css">
+        * {font-family: 'Nanum Gothic', sans-serif;}
         .logo {top: -30px;left: 0;}
         .markup-list {padding: 30px 20px;font-size: 14px;}
         .markup-list h1 {margin-bottom: 10px;}
@@ -14,8 +13,11 @@
         .markup-list ul li {padding: 2px 0 2px 15px;}
         .markup-list ul li:before {margin-right:5px;content: '▪︎';}
         .markup-list a:hover {color: #3a4cff;text-decoration: underline;}
-        .markup-list ul li p {margin: 3px 0 0 10px;}
-        .markup-list .issue {margin: 5px 0 0 15px;}
+        .markup-list ul li p {margin: 3px 0 0 10px;font-size:11px;}
+        .markup-list .issue {margin: 5px 0 0 15px;font-size:11px;}
+        .markup-list .check {display:inline-block;margin:5px 0;padding: 3px 13px;border-radius:13px;background-color:#8f0000;font-size:12px;color:#fff;}
+        .markup-list .check + p {font-size:12px;}
+        .markup-list .complete {margin-left:5px;padding: 2px 4px;border-radius:10px;background-color:#262b67;font-size:10px;color:#fff;}
     </style>
 </head>
 <body>
@@ -23,9 +25,10 @@
     <div class="container">
         <div class="markup-list">
             <h1>마크업 리스트</h1>
+            <span class="check">확인사항</span>
             <p>
-                header, footer는 include해서 사용함.<br>
-                폰트 arial 아직 미확인.
+                - 폰트 arial 아직 미확인<br>
+                - 2016/06/28 수정사항 미적용<br>
             </p>
 
             <hr>
@@ -68,9 +71,7 @@
             <div>
                 <h2>Cart</h2>
                 <ul>
-                    <li>
-                        <a href="./cart/cart.php">Cart</a>
-                    </li>
+                    <li><a href="./cart/cart.php">Cart</a><span class="complete">20160627 완</span></li>
                 </ul>
                 <p class="issue">- </p>
             </div>
@@ -80,10 +81,22 @@
             <div>
                 <h2>Join</h2>
                 <ul>
-                    <li><a href="./join/login.php">Login</a></li>
-                    <li><a href="./join/join-type.php">회원가입 - 유형선택</a></li>
-                    <li><a href="./join/join-agree.php">회원가입 - 동의</a></li>
-                    <li><a href="./join/join.php">회원가입</a></li>
+                    <li><a href="./join/login.php">Login</a><span class="complete">20160628 완</span></li>
+                    <li><a href="./join/order-search.php">주문조회</a><span class="complete">20160628 완</span></li>
+                    <li><a href="./join/join-type.php">회원가입 - 유형선택</a><span class="complete">20160628 완</span></li>
+                    <li><a href="./join/join-agree.php">회원가입 - 동의</a><span class="complete">20160628 완</span></li>
+                    <li><a href="./join/join.php">회원가입</a><span class="complete">20160628 완</span></li>
+                </ul>
+                <p class="issue">- </p>
+            </div>
+
+            <hr>
+
+            <div>
+                <h2>My Page</h2>
+                <ul>
+                    <li><a href="./mypage/onlyyou.php">개인결제창</a><span class="complete">20160629 완</span></li>
+                    <li><a href="./mypage/password-check.php">비밀번호 재확인</a><span class="complete">20160629 완</span></li>
                 </ul>
                 <p class="issue">- </p>
             </div>

@@ -880,6 +880,18 @@
         margin-top: 5px;
     }
 }
+// Order Search
+.member-order-search {
+    .login {
+        margin-top: -35px;
+    }
+}
+.nonmember-order-search {
+    margin-top: 60px;
+    .login {
+        margin-top: -40px;
+    }
+}
 // Join Type
 .join-type {
     margin-top: 58px;
@@ -928,7 +940,60 @@
 }
 // Join Agree
 .join-agree {
+    width: 1200px;
+    margin: 63px auto 0;
     font-family: 'Nanum Gothic', sans-serif;
+    .agree-title {
+        margin-bottom: 9px;
+    }
+    .agree-check {
+        display: block;
+        margin-top: 12px;
+    }
+    .Personal-policy {
+        margin-top: 28px;
+    }
+    .button {
+        letter-spacing: 0;
+    }
+}
+.agree-box {
+    padding: 15px;
+    border: 1px solid #000;
+    &.scroll {
+        overflow-y: scroll;
+        height: 193px;
+    }
+}
+.tab-box {
+    position: relative;
+    @include clearfix;
+    .tab-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 11px;
+        border: 1px solid #000;
+        font-size: 11px;
+        line-height: (32-2)/11px;
+        &.selected {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+    li:nth-child(2) .tab-button {
+        left: 139px;
+    }
+    li:nth-child(3) .tab-button {
+        left: 289px;
+    }
+    .agree-box {
+        display: none;
+        margin-top: 31px;
+        &.tab-content1 {
+            display: block;
+        }
+    }
 }
 // Join Input
 .join {
@@ -964,10 +1029,88 @@
             margin: 0 13px;
         }
     }
-    // Order Sheet list col width style
-    .cart {
+    // Join Input list col width style
+    .join-input {
         .col-join-info {
             width: 118px;
         }
+        .table-row-list th {
+            position: relative;
+            padding-left: 26px;
+            text-align: left;
+            .essential {
+                position: absolute;
+                top: 10px;
+                left: 12px;
+                color: #ff1e00;
+            }
+        }
+        .cell-birthday-gender .ui-state-default {
+            width: 60px !important;
+        }
+        .cell-email .ui-state-default {
+            width: 125px !important;
+        }
+    }
+}
+
+//
+// My Page
+// --------------------------------------------------
+// 개인결제창
+.onlyyou {
+    width: 1200px;
+    margin: 0 auto;
+    &:before {
+        display: block;
+        width: 84px;
+        height: 86px;
+        margin: 76px auto 55px;
+        background: url(../images/sprite.png) no-repeat -120px -270px;
+        content: '';
+    }
+    .onlyyou-title {
+        margin-bottom: 43px;
+        font-size: 11px;
+        text-align: center;
+    }
+    .onlyyou-list {
+        li {
+            float: left;
+            width: 20%;
+            padding: 25px;
+            a {
+                display: block;
+                padding: 24px 0;
+                border: 1px solid #000;
+                text-align: center;
+                .price {
+                    color: #830000;
+                }
+            }
+        }
+    }
+}
+// 비밀번호 재확인
+.password-check {
+    width: 299px;
+    margin: 0 auto;
+    &:before {
+        display: block;
+        width: 74px;
+        height: 110px;
+        margin: 32px auto 40px;
+        background: url(../images/sprite.png) no-repeat -240px -270px;
+        content: '';
+    }
+    .password-text {
+        display: block;
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    .button {
+        display: block;
+        margin-top: 5px;
     }
 }
