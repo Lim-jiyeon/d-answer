@@ -20,8 +20,8 @@
                     <span><a href="#">Find id</a></span>
                     <span><a href="#">Find password</a></span>
                 </div>
-                <a href="#" class="button button-login">LOGIN</a>
-                <a href="#" class="button button-login">JOIN US</a>
+                <a href="#" class="button button-lg button-third">LOGIN</a>
+                <a href="#" class="button button-lg button-third">JOIN US</a>
             </div>
         </div>
     </div>

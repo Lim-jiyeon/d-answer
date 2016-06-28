@@ -7,122 +7,144 @@
             <h2 class="page-title">membership</h2>
             <p class="page-title-sub">회원가입</p>
             <div class="join">
-                <div class="member-level">
+                <div class="certification">
                     <p>휴대폰 또는 아이핀 인증을 통하여 본인인증을 하셔야 합니다.<br>
                     <strong>인증 버튼을 눌러 본인인증을 진행해 주세요.</strong></p>
-                    <a href="#">휴대폰 인증이란?</a>
-                    <a href="#">아이핀 서비스란?</a>
+                    <div class="help-certification">
+                        <a href="#">휴대폰 인증이란?</a>
+                        <a href="#">아이핀 서비스란?</a>
+                    </div>
                 </div>
-                <div class="orderer-input">
-                    <div class="orderer-info">
-                        <table class="table table-row-list">
-                            <caption></caption>
-                            <colgroup>
-                                <col class="col-recipient-info">
-                                <col>
-                                <col class="col-recipient-info">
-                                <col>
-                            </colgroup>
-                            <tbody>
-                            <tr>
-                                <th scope="row">이름</th>
-                                <td colspan="3">김기훈</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><label for="orderer-email">E-mail</label></th>
-                                <td><input type="text" id="orderer-email" class="form-control"></td>
-                                <th scope="row" for="orderer-phone">연락처2</th>
-                                <td class="cell-phone">
-                                    <input type="text" id="orderer-phone" class="form-control"> -
-                                    <input type="text" class="form-control"> -
+                <div class="button-certification">
+                    <a href="#" class="button button-lg">휴대폰인증</a>
+                    <a href="#" class="button button-lg">아이핀인증</a>
+                </div>
+                <div class="join-input">
+                    <table class="table table-row-list">
+                        <caption></caption>
+                        <colgroup>
+                            <col class="col-join-info">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row"><i class="essential">*</i><label for="join-name">이름</label></th>
+                            <td><input type="text" id="join-name" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><i class="essential">*</i><label for="join-id">아이디</label></th>
+                            <td>
+                                <input type="text" id="join-id" class="form-control">
+                                <a href="#" class="button button-sm">중복확인</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><i class="essential">*</i><label for="join-password">비밀번호</label></th>
+                            <td>
+                                <input type="text" id="join-password" class="form-control">
+                                <span class="help-certification">영문 대소문자/숫자/특수문자를 혼용하여 2종류 10-16자 또는 3종류 8-16자</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><i class="essential">*</i><label for="join-password-check">비밀번호 확인</label></th>
+                            <td><input type="text" id="join-password-check" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><i class="essential">*</i><label for="join-birthday-gender">생일/성별</label></th>
+                            <td>
+                                <select id="join-birthday-gender">
+                                    <option>1990</option>
+                                </select> 년
+                                <select>
+                                    <option>1</option>
+                                </select> 월
+                                <select>
+                                    <option>1</option>
+                                </select> 일
+                                <label><input type="radio" name="gender"> 남</label>
+                                <label><input type="radio" name="gender"> 여</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="join-zipcode">우편번호</label></th>
+                            <td>
+                                <input type="text" id="join-zipcode" class="form-control"> -
+                                <input type="text" class="form-control">
+                                <a href="#" class="button button-sm">우편번호검색</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="join-address">집주소</label></th>
+                            <td>
+                                <input type="text" id="join-address" class="form-control">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="join-address-detail">상세주소</label></th>
+                            <td>
+                                <input type="text" id="join-address-detail" class="form-control">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><i class="essential">*</i><label for="join-phone">연락처</label></th>
+                            <td><input type="text" id="join-phone" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><i class="essential">*</i><label for="join-email">이메일</label></th>
+                            <td>
+                                <input type="text" id="join-email" class="form-control"> @
+                                <select>
+                                    <option></option>
+                                </select>
+                                <a href="#" class="button button-sm">중복확인</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="join-company-phone">회사전화</label></th>
+                            <td><input type="text" id="join-company-phone" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="join-company-address">회사주소</label></th>
+                            <td>
+                                <p>
+                                    <input type="text" id="join-zipcode" class="form-control"> -
                                     <input type="text" class="form-control">
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <label class="check-orderer"><input type="radio"> 주문자 정보 입력</label>
-                    </div>
-                    <div class="recipient-info">
-                        <table class="table table-row-list">
-                            <caption></caption>
-                            <colgroup>
-                                <col class="col-recipient-info">
-                                <col>
-                                <col class="col-recipient-info">
-                                <col>
-                                <col class="col-recipient-info">
-                                <col>
-                            </colgroup>
-                            <tbody>
-                            <tr>
-                                <th scope="row"><label for="recipient-name">이름</label></th>
-                                <td><input type="text" id="recipient-name" class="form-control"></td>
-                                <th scope="row"><label for="recipient-phone">연락처1</label></th>
-                                <td class="cell-phone">
-                                    <input type="text" id="recipient-phone" class="form-control"> -
-                                    <input type="text" class="form-control"> -
-                                    <input type="text" class="form-control">
-                                </td>
-                                <th scope="row"><label for="recipient-phone2">연락처2</label></th>
-                                <td class="cell-phone">
-                                    <input type="text" id="recipient-phone2" class="form-control"> -
-                                    <input type="text" class="form-control"> -
-                                    <input type="text" class="form-control">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><label for="orderer-email">주소</label></th>
-                                <td colspan="5" class="cell-address">
-                                    <div class="select-address">
-                                        <label><input type="radio" name="recipient-address"> 자택</label>
-                                        <label><input type="radio" name="recipient-address"> 회사</label>
-                                        <label><input type="radio" name="recipient-address"> 최근 배송지</label>
-                                        <label><input type="radio" name="recipient-address"> 신규 배송지</label>
-                                    </div>
-                                    <div class="zip-code-input">
-                                        <input type="text" class="form-control"> -
-                                        <input type="text" class="form-control">
-                                        <a href="#" class="button button-sm">우편번호검색</a>
-                                    </div>
-                                    <div class="address-input">
-                                        <input type="text" class="form-control">
-                                        <span>[기본주소]</span>
-                                    </div>
-                                    <div class="address-input">
-                                        <input type="text" class="form-control">
-                                        <span>[나머지주소]</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">주문메세지<br>[100자내외]</th>
-                                <td colspan="5" class="order-message">
-                                    <textarea cols="40" rows="3" id="register-content" class="form-control"></textarea>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="saved-money">
-                        <h4 class="saved-money-title">적립금 사용</h4>
-                        <div class="saved-money-box">
-                            <input type="text" class="form-control"> 원
-                            <span class="arrow"></span>
-                            <input type="text" class="form-control"> 원 [사용가능 적립금]
-                        </div>
-                    </div>
-                    <div class="coupon">
-                        <h4 class="coupon-title">쿠폰사용</h4>
-                        <div class="coupon-box">
-                            <input type="text" class="form-control">
-                            <a href="#" class="button button-sm">쿠폰선택</a>
-                            <span class="subscript">보유하신 쿠폰을 적용하시면 할인 또는 추가적립 혜택을 받으실 수 있습니다.</span>
-                        </div>
-                    </div>
+                                    <a href="#" class="button button-sm">우편번호검색</a>
+                                </p>
+                                <p><input type="text" id="join-address" class="form-control"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="join-cellphone">휴대폰</label></th>
+                            <td><input type="text" id="join-cellphone" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">뉴스메일</th>
+                            <td>
+                                <label><input type="radio" name="newsletter" selected="selected"> 받습니다.</label>
+                                <label><input type="radio" name="newsletter"> 받지 않습니다.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">SMS안내</th>
+                            <td>
+                                <label><input type="radio" name="smsInfo" selected="selected"> 받습니다.</label>
+                                <label><input type="radio" name="smsInfo"> 받지 않습니다.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">엡PUSH알림</th>
+                            <td>
+                                <label><input type="radio" name="appPush" selected="selected"> 받습니다.</label>
+                                <label><input type="radio" name="appPush"> 받지 않습니다.</label>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="button-align-center">
-                    <a href="#" class="button button-lg">주문하기</a>
-                    <a href="#" class="button button-lg button-secondary">주문취소</a>
+                    <a href="#" class="button button-lg">가입완료</a>
+                    <a href="#" class="button button-lg button-secondary">돌아가기</a>
                 </div>
             </div>
         </div>

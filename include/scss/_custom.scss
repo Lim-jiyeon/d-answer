@@ -839,10 +839,12 @@
     border: 1px solid #000;
     h3 {
         position: absolute;
-        top: -9px;
+        top: -13px;
         left: 50%;
-        margin-left: -27px;
-        padding: 0 8px;
+        margin-left: -43px;
+        padding: 0 8px 0 12px;
+        font-size: 16px;
+        letter-spacing: 3px;
     }
     .form-group {
         margin-top: 15px;
@@ -851,6 +853,8 @@
         }
         label {
             display: block;
+            margin-bottom: 3px;
+            letter-spacing: 2px;
             text-align: center;
         }
         .form-control {
@@ -867,37 +871,103 @@
         span {
             float: left;
             width: 50%;
+            letter-spacing: 2px;
             text-align: center;
         }
     }
-    .button-login {
+    .button {
         display: block;
         margin-top: 5px;
-        background-color: #efe4d5;
-        line-height: (32-2)/11;
-        color: #000;
     }
 }
 // Join Type
 .join-type {
+    margin-top: 58px;
     font-family: 'Nanum Gothic', sans-serif;
     h3 {}
     .join-member-type {
         width: 630px;
-        margin: 0 auto;
+        margin: 104px auto 0;
+        @include clearfix;
+        .general-member, .corporate-member {
+            display: block;
+            float: left;
+            width: 50%;
+            &:before {
+                float: left;
+                display: inline-block;
+                margin: -11px 33px 0 0;
+                background-image: url(../images/sprite.png);
+                content: '';
+            }
+            p {
+                margin-bottom: 15px;
+            }
+        }
     }
     .general-member {
-        float: left;
-        width: 50%;
+        &:before {
+            width: 74px;
+            height: 103px;
+            background-position: -120px -150px;
+        }
         strong {
             color: #980000;
         }
     }
     .corporate-member {
-        float: left;
-        width: 50%;
+        &:before {
+            width: 46px;
+            height: 103px;
+            background-position: -240px -150px;
+        }
         strong {
             color: #160075;
+        }
+    }
+}
+// Join Agree
+.join-agree {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+// Join Input
+.join {
+    font-family: 'Nanum Gothic', sans-serif;
+    &:before {
+        display: block;
+        width: 83px;
+        height: 90px;
+        margin: 76px auto 111px;
+        background: url(../images/sprite.png) no-repeat 0 -270px;
+        content: '';
+    }
+    a {
+        font-family: 'Nanum Gothic', sans-serif;
+        letter-spacing: 0;
+    }
+    .certification {
+        padding: 35px 0;
+        border: 1px solid #000;
+        text-align: center;
+        .help-certification {
+            margin-top: 35px;
+            a {
+                margin: 0 20px;
+                color: #8f0000;
+            }
+        }
+    }
+    .button-certification {
+        margin: 30px 0 85px;
+        text-align: center;
+        a {
+            margin: 0 13px;
+        }
+    }
+    // Order Sheet list col width style
+    .cart {
+        .col-join-info {
+            width: 118px;
         }
     }
 }
