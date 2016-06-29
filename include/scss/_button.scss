@@ -45,10 +45,16 @@
 .button-third { // Pink Button
     background-color: #efe4d5;
     color: #000;
+    &:hover {
+        color: #000;
+    }
 }
-.button-fourth { //gray
+.button-fourth { //gray Button
     background-color: #f6f6f6;
     color: #000;
+    &:hover {
+        color: #000;
+    }
 }
 .button-board {
     background-color: #313131;
