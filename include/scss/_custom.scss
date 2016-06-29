@@ -1091,6 +1091,93 @@
         }
     }
 }
+// 게시물 확인
+.board-list {
+    width: 1200px;
+    margin: 0 auto;
+    &:before {
+        display: block;
+        width: 69px;
+        height: 89px;
+        margin: 32px auto 40px;
+        background: url(../images/sprite.png) no-repeat 0 -390px;
+        content: '';
+    }
+    .all-board-text {
+        display: block;
+        margin-bottom: 50px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .paginate {
+        padding: 18px 0 36px;
+    }
+}
+.board-amount {
+    margin-left: 10px;
+}
+// Wishlist
+.wishlist {
+    width: 1200px;
+    margin: 0 auto;
+    &:before {
+        display: block;
+        width: 93px;
+        height: 96px;
+        margin: 76px auto 111px;
+        background: url(../images/sprite.png) no-repeat -120px -390px;
+        content: '';
+    }
+    //Wishlist col width style
+    .order-check {
+        width: 37px;
+    }
+    .order-product {
+        width: 105px;
+    }
+    .order-quantity {
+        width: 55px;
+    }
+    .order-stock {
+        width: 55px;
+    }
+    .order-saved-money {
+        width: 67px;
+    }
+    .order-price {
+        width: 74px;
+    }
+    .order-cart {
+        width: 70px;
+    }
+    .order-quantity {
+        .form-control {
+            width: 28px;
+            height: 19px;
+            font-size: 9px;
+            line-height: (19-2)/9;
+            text-align: right;
+        }
+    }
+    .order-cart {
+        text-align: center;
+        a {
+            display: inline-block;
+            width: 34px;
+            line-height: (17-2)/11;
+            margin-top: 4px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+    .button {
+        letter-spacing: 0;
+    }
+    .paginate {
+        margin: 20px 0;
+    }
+}
 // 비밀번호 재확인
 .password-check {
     width: 299px;
