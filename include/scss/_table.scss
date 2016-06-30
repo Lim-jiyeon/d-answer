@@ -10,7 +10,7 @@
         border-bottom: 1px solid #959595;
         font-family: 'Nanum Gothic', sans-serif;
         font-size: 12px;
-        line-height: (40-(9*2)-1)/12;
+        line-height: (21)/12;
         text-align: center;
     }
     tfoot td {
@@ -25,7 +25,7 @@
         border: 1px solid #000;
         font-family: 'Nanum Gothic', sans-serif;
         font-size: 12px;
-        line-height: (40-(9*2)-1)/12;
+        line-height: (21)/12;
     }
     th {
         padding: 9px 12px 9px 0;
@@ -38,6 +38,7 @@
 }
  // Paginate
 .paginate {
+    padding-top: 40px;
     text-align: center;
     .number {
         display: inline-block;
@@ -72,3 +73,16 @@
     }
 }
 
+.table-title {
+    margin-bottom: 10px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.all-board-text {
+    display: block;
+    margin-bottom: 50px;
+    font-weight: 400;
+    text-align: center;
+}

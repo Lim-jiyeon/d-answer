@@ -152,6 +152,12 @@
 .page-title-sub {
     font-family: 'Nanum Gothic', sans-serif;
 }
+.page-explain {
+    margin-top: 20px;
+    span {
+        color: #0a0087;
+    }
+}
 
 //
 // Main
@@ -168,7 +174,7 @@
             display: inline-block;
             width: 292px;
             font-size: 11px;
-            line-height: (73-2)/11;
+            line-height: (71)/11;
             letter-spacing: 2px;
             border: 1px solid #000;
             text-transform: uppercase;
@@ -468,7 +474,7 @@
             }
             .ui-selectmenu-button {
                 span.ui-selectmenu-text {
-                    line-height: (18-2)/11;
+                    line-height: (16)/11;
                 }
                 span.ui-icon {
                     margin-top: -8px;
@@ -551,7 +557,7 @@
         }
         .form-control {
             height: 18px;
-            line-height: (18-2)/12;
+            line-height: (16)/12;
         }
         textarea.form-control {
             height: 50px;
@@ -585,18 +591,18 @@
     .ui-selectmenu-button {
         span.ui-selectmenu-text {
             font-size: 12px;
-            line-height: (22-2)/12;
+            line-height: (20)/12;
         }
         span.ui-icon {
             margin-top: -11px;
         }
     }
     .form-control {
-        line-height: (22-2)/12;
+        line-height: (20)/12;
     }
     .button {
         font-size: 12px;
-        line-height: (22-2)/12;
+        line-height: (20)/12;
     }
 }
 
@@ -685,7 +691,7 @@
         width: 90px;
         font-weight: 700;
         font-size: 40px;
-        line-height: (92-2)/40;
+        line-height: (90)/40;
         text-align: center;
     }
     .level-explain {
@@ -812,7 +818,7 @@
             width: 28px;
             height: 19px;
             font-size: 9px;
-            line-height: (19-2)/9;
+            line-height: (17)/9;
             text-align: right;
         }
     }
@@ -862,7 +868,7 @@
             height: 32px;
             border-color: transparent;
             background-color: #f6f6f6;
-            line-height: (32-2)/12;
+            line-height: (30)/12;
         }
     }
     .login-find {
@@ -970,12 +976,12 @@
     @include clearfix;
     .tab-button {
         position: absolute;
-        top: 0;
+        top: 1px;
         left: 0;
         padding: 0 11px;
         border: 1px solid #000;
         font-size: 11px;
-        line-height: (32-2)/11;
+        line-height: (30)/11;
         &.selected {
             background-color: #000;
             color: #fff;
@@ -1103,12 +1109,6 @@
         background: url(../images/sprite.png) no-repeat 0 -390px;
         content: '';
     }
-    .all-board-text {
-        display: block;
-        margin-bottom: 50px;
-        font-weight: 400;
-        text-align: center;
-    }
     .paginate {
         padding: 18px 0 36px;
     }
@@ -1155,7 +1155,7 @@
             width: 28px;
             height: 19px;
             font-size: 9px;
-            line-height: (19-2)/9;
+            line-height: (17)/9;
             text-align: right;
         }
     }
@@ -1164,7 +1164,7 @@
         a {
             display: inline-block;
             width: 34px;
-            line-height: (17-2)/11;
+            line-height: (15)/11;
             margin-top: 4px;
             &:first-child {
                 margin-top: 0;
@@ -1175,7 +1175,7 @@
         letter-spacing: 0;
     }
     .paginate {
-        margin: 20px 0;
+        padding: 20px 0;
     }
 }
 // 비밀번호 재확인
@@ -1199,5 +1199,151 @@
     .button {
         display: block;
         margin-top: 5px;
+    }
+}
+// 예치금 내역
+.deposit-explain {
+    margin-top: 20px;
+    span {
+        color: #0a0087;
+    }
+}
+.deposit {
+    width: 1200px;
+    margin: 0 auto;
+    &:before {
+        display: block;
+        width: 90px;
+        height: 90px;
+        margin: 32px auto 40px;
+        background: url(../images/sprite.png) no-repeat -240px -390px;
+        content: '';
+    }
+    .my-deposit {
+        width: 403px;
+        margin: 0 auto 37px;
+        padding: 12px;
+        border: 1px solid #000;
+        text-align: center;
+        @include clearfix;
+        span {
+            float: left;
+        }
+        strong {
+            float: right;
+            em {
+                color: #830000;
+            }
+        }
+    }
+    .col-date {
+        width: 108px;
+    }
+    .col-money {
+        width: 113px;
+    }
+    .deposit-subject {
+        padding-left: 36px;
+        text-align: left;
+    }
+    .deposit-money em {
+        color: #830000;
+    }
+}
+// 적립금 내역
+.mileage {
+    width: 1200px;
+    margin: 0 auto;
+    &:before {
+        display: block;
+        width: 74px;
+        height: 90px;
+        margin: 32px auto 40px;
+        background: url(../images/sprite.png) no-repeat 0 -510px;
+        content: '';
+    }
+    .my-mileage {
+        margin-bottom: 50px;
+        padding: 12px 25px;
+        border: 1px solid #000;
+        li {
+            padding: 9px 0;
+            @include clearfix;
+            span {
+                position: relative;
+                float: left;
+                width: 195px;
+                &:before {
+                    display: inline-block;
+                    width: 6px;
+                    height: 10px;
+                    margin-right: 4px;
+                    background: url(../images/sprite.png) no-repeat -120px -30px;
+                    content: '';
+                }
+                &:after {
+                    position: absolute;
+                    top: -8px;
+                    right: 0;
+                    display: inline-block;
+                    width: 1px;
+                    height: 38px;
+                    background-color: #363636;
+                    content: '';
+                }
+            }
+            strong {
+                float: right;
+                em {
+                    color: #830000;
+                }
+            }
+        }
+    }
+    .col-date {
+        width: 108px;
+    }
+    .col-money {
+        width: 113px;
+    }
+    .deposit-subject {
+        padding-left: 36px;
+        text-align: left;
+    }
+    .deposit-money em {
+        color: #830000;
+    }
+}
+// 주문 상세 내역
+.order-view {
+    width: 1200px;
+    margin: 0 auto;
+    &:before {
+        display: block;
+        width: 75px;
+        height: 84px;
+        margin: 32px auto 40px;
+        background: url(../images/sprite.png) no-repeat -320px -150px;
+        content: '';
+    }
+    .col-order-num {
+        width: 60px;
+    }
+    .col-order-date {
+        width: 143px;
+    }
+    .col-order-price,
+    .col-order-view,
+    .col-order-state {
+        width: 90px;
+    }
+    .order-subject {
+        text-align: left;
+        padding-left: 30px;
+        a {
+            width: auto;
+            max-width: 697px;
+            @include ellipsis;
+        }
     }
 }
