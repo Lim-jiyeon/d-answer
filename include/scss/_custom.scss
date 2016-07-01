@@ -1258,21 +1258,22 @@
         display: block;
         width: 74px;
         height: 90px;
-        margin: 32px auto 40px;
+        margin: 32px auto 80px;
         background: url(../images/sprite.png) no-repeat 0 -510px;
         content: '';
     }
     .my-mileage {
         margin-bottom: 50px;
-        padding: 12px 25px;
+        padding: 25px 25px 23px;
         border: 1px solid #000;
         li {
-            padding: 9px 0;
             @include clearfix;
             span {
                 position: relative;
                 float: left;
                 width: 195px;
+                padding: 7px 0;
+                border-right: 1px solid #363636;
                 &:before {
                     display: inline-block;
                     width: 6px;
@@ -1281,21 +1282,25 @@
                     background: url(../images/sprite.png) no-repeat -120px -30px;
                     content: '';
                 }
-                &:after {
-                    position: absolute;
-                    top: -8px;
-                    right: 0;
-                    display: inline-block;
-                    width: 1px;
-                    height: 38px;
-                    background-color: #363636;
-                    content: '';
-                }
             }
             strong {
                 float: right;
+                padding: 7px 0;
                 em {
                     color: #830000;
+                }
+            }
+            &:first-child {
+                span,
+                strong {
+                    padding-top: 0;
+
+                }
+            }
+            &:last-child {
+                span,
+                strong {
+                    padding-bottom: 0;
                 }
             }
         }
