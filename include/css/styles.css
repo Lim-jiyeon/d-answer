@@ -523,6 +523,19 @@ hr {
   vertical-align: middle;
 }
 
+.icon-new {
+  display: inline-block;
+  margin-left: 35px;
+  padding: 0 4px;
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  line-height: 1.4;
+  color: #fff;
+  vertical-align: 1px;
+  text-transform: lowercase;
+}
+
 .icon-search {
   width: 17px;
   height: 17px;
@@ -547,16 +560,30 @@ hr {
   background-position: -90px -30px;
 }
 
+.icon-mic {
+  width: 13px;
+  height: 13px;
+  background-position: -60px -60px;
+}
+
+.icon-doc {
+  width: 13px;
+  height: 11px;
+  background-position: -90px -60px;
+}
+
 .button {
   display: inline-block;
   padding: 0 12px;
   border: 1px solid transparent;
   background: #000;
+  font-family: 'Nanum Gothic', sans-serif;
   font-size: 11px;
   line-height: 2.2727272727;
   color: #fff;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-align: center;
+  text-transform: lowercase;
 }
 
 .button:hover {
@@ -621,11 +648,11 @@ hr {
 
 .button-file {
   padding: 0 16px;
-  background-color: #eee;
+  background-color: #000;
   font-family: 'Nanum Gothic', sans-serif;
   line-height: 1.4545454545;
   letter-spacing: 0;
-  color: #000;
+  color: #fff;
 }
 
 .button-align-left {
@@ -647,6 +674,27 @@ hr {
   text-align: right;
 }
 
+.button-align-right.table-top {
+  margin: 0 0 14px;
+}
+
+.button-align-right.table-top a {
+  letter-spacing: 0;
+}
+
+.button-align:before, .button-align:after {
+  content: " ";
+  display: table;
+}
+
+.button-align:after {
+  clear: both;
+}
+
+.button-align .button-align-right {
+  margin-top: -22px;
+}
+
 .table {
   border-collapse: collapse;
   width: 100%;
@@ -663,6 +711,17 @@ hr {
   font-size: 12px;
   line-height: 1.75;
   text-align: center;
+  vertical-align: middle;
+}
+
+.table-list td.align-left {
+  padding-left: 15px;
+  text-align: left;
+}
+
+.table-list td.align-right {
+  padding-right: 15px;
+  text-align: right;
 }
 
 .table-list tfoot td {
@@ -683,6 +742,7 @@ hr {
 
 .table-row-list th {
   padding: 9px 12px 9px 0;
+  font-weight: 400;
   text-align: right;
 }
 
@@ -1498,7 +1558,7 @@ input[type=checkbox] {
 }
 
 .table-list td.qna-subject a {
-  max-width: 775px;
+  max-width: 710px;
 }
 
 .col-review-name {
@@ -1607,6 +1667,11 @@ input[type=checkbox] {
 .qna-search .button {
   font-size: 12px;
   line-height: 1.6666666667;
+}
+
+.reply .qna-subject a {
+  padding-left: 26px;
+  background: url(../images/sprite.png) no-repeat -120px -60px;
 }
 
 .order {
@@ -1776,20 +1841,20 @@ input[type=checkbox] {
   background: url(../images/sprite.png) no-repeat -150px -30px;
 }
 
-.coupon .coupon-title {
+.coupon-use .coupon-title {
   padding: 9px 0 25px;
 }
 
-.coupon .coupon-box {
+.coupon-use .coupon-box {
   padding: 11px 25px;
   border: 1px solid #000;
 }
 
-.coupon .coupon-box .form-control {
+.coupon-use .coupon-box .form-control {
   width: 118px;
 }
 
-.coupon .coupon-box .subscript {
+.coupon-use .coupon-box .subscript {
   margin-left: 14px;
 }
 
@@ -2029,6 +2094,7 @@ input[type=checkbox] {
   left: 0;
   padding: 0 11px;
   border: 1px solid #000;
+  font-family: 'Nanum Gothic', sans-serif;
   font-size: 11px;
   line-height: 2.7272727273;
 }
@@ -2039,16 +2105,16 @@ input[type=checkbox] {
 }
 
 .tab-box li:nth-child(2) .tab-button {
-  left: 139px;
+  left: 133px;
 }
 
 .tab-box li:nth-child(3) .tab-button {
-  left: 289px;
+  left: 276px;
 }
 
 .tab-box .agree-box {
   display: none;
-  margin-top: 31px;
+  margin-top: 32px;
 }
 
 .tab-box .agree-box.tab-content1 {
@@ -2120,6 +2186,121 @@ input[type=checkbox] {
 
 .join .join-input .cell-email .ui-state-default {
   width: 125px !important;
+}
+
+.mypage {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.mypage .member-level {
+  display: block;
+  width: 65px;
+  margin: 70px auto 0;
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 1.5365853659;
+  text-align: center;
+}
+
+.mypage .member-level + p {
+  padding: 55px 0;
+  text-align: center;
+}
+
+.mypage .member-level + p strong {
+  color: #a00000;
+}
+
+.mypage .mypage-info {
+  margin-bottom: 50px;
+}
+
+.mypage .mypage-info:before, .mypage .mypage-info:after {
+  content: " ";
+  display: table;
+}
+
+.mypage .mypage-info:after {
+  clear: both;
+}
+
+.mypage .mypage-info li {
+  float: left;
+  width: 50%;
+  padding: 35px 37px 0;
+}
+
+.mypage .mypage-info li span {
+  float: left;
+}
+
+.mypage .mypage-info li span:before {
+  display: inline-block;
+  width: 5px;
+  height: 8px;
+  margin-right: 4px;
+  background: url(../images/sprite.png) no-repeat -63px -120px;
+  content: '';
+}
+
+.mypage .mypage-info li strong {
+  float: right;
+  padding-right: 43px;
+  font-weight: 400;
+}
+
+.mypage .mypage-info li strong .button {
+  margin: 0 -43px 0 9px;
+}
+
+.mypage .mypage-info li:nth-child(-2n+3) {
+  border-right: 1px solid #000;
+}
+
+.mypage .mypage-info li:nth-child(-n+2) {
+  padding-top: 0;
+}
+
+.mypage .mypage-list {
+  padding: 0 37px 45px;
+  border: 1px solid #000;
+}
+
+.mypage .mypage-list li {
+  padding-top: 36px;
+  border-bottom: 1px solid #000;
+}
+
+.mypage .mypage-list li:before, .mypage .mypage-list li:after {
+  content: " ";
+  display: table;
+}
+
+.mypage .mypage-list li:after {
+  clear: both;
+}
+
+.mypage .mypage-list dl {
+  margin-bottom: -20px;
+}
+
+.mypage .mypage-list dl dt {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.mypage .mypage-list dl dt span {
+  margin-left: 9px;
+  letter-spacing: 0;
+}
+
+.mypage .mypage-list dl dd {
+  color: #5e5e5e;
+}
+
+.mypage .mypage-list .button {
+  float: right;
 }
 
 .onlyyou {
@@ -2473,4 +2654,221 @@ input[type=checkbox] {
   -o-text-overflow: ellipsis;
   -ms-text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.coupon {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.coupon:before {
+  display: block;
+  width: 90px;
+  height: 62px;
+  margin: 32px auto 40px;
+  background: url(../images/sprite.png) no-repeat -120px -510px;
+  content: '';
+}
+
+.coupon .col-coupon-num {
+  width: 109px;
+}
+
+.coupon .col-coupon-item {
+  width: 140px;
+}
+
+.coupon .col-use-money {
+  width: 122px;
+}
+
+.coupon .col-discount {
+  width: 155px;
+}
+
+.coupon .col-coupon-date {
+  width: 100px;
+}
+
+.coupon .caption {
+  margin-top: 70px;
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #1e1e1e;
+}
+
+.coupon .caption dt {
+  font-weight: 700;
+}
+
+.coupon .caption dd {
+  padding: 20px 0;
+}
+
+.cs-center {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.cs-center .paginate {
+  padding: 18px 0 36px;
+}
+
+.cs-menu {
+  width: 853px;
+  margin: 90px auto 0;
+}
+
+.cs-menu:before, .cs-menu:after {
+  content: " ";
+  display: table;
+}
+
+.cs-menu:after {
+  clear: both;
+}
+
+.cs-menu li {
+  float: left;
+  margin-left: -1px;
+  width: 16.66666666666667%;
+  border: 1px solid #000;
+  text-transform: uppercase;
+}
+
+.cs-menu li:first-child {
+  margin-left: 0;
+}
+
+.cs-menu li a {
+  display: block;
+  line-height: 7.5;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.cs-menu li.current a, .cs-menu li:hover a {
+  background-color: #000;
+  color: #fff;
+}
+
+.cs-title {
+  margin-top: 80px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cs-title + .cs-title-sub {
+  margin: 10px 0 75px;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+}
+
+.table.notice th {
+  text-align: center;
+}
+
+.col-notice-info {
+  width: 117px;
+}
+
+.col-notice-content {
+  width: 212px;
+}
+
+.text-auto-lock {
+  margin-left: 10px;
+  color: #8f0000;
+}
+
+.notice-subject {
+  word-break: break-all;
+}
+
+.notice-subject .form-control {
+  width: 490px;
+  margin-bottom: 5px;
+}
+
+.notice-view-list {
+  margin-top: 40px;
+}
+
+.notice-view-list table {
+  border: 1px solid #000;
+}
+
+.qna-tab {
+  margin-bottom: 50px;
+  font-size: 0;
+  text-align: center;
+}
+
+.qna-tab a {
+  height: 56px;
+  padding: 8px 23px;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.cs-info {
+  width: 853px;
+  margin: 0 auto;
+  padding: 0 75px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.cs-info .cs-info-title {
+  margin-bottom: 20px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.cs-info dt {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.cs-info dd {
+  margin-bottom: 20px;
+}
+
+.cs-info dd ul {
+  margin-top: 20px;
+  padding-left: 5px;
+}
+
+.cs-info dd ul li {
+  text-indent: -2px;
+}
+
+.cs-info dd ul li:before {
+  display: inline-block;
+  margin-right: 5px;
+  content: '-';
+}
+
+.cs-info dd dl {
+  margin-top: 20px;
+}
+
+.cs-info dd dl dt {
+  margin-bottom: 5px;
+}
+
+.cs-info dd dl dd ul {
+  margin-top: 5px;
+}
+
+.cs-info dd strong {
+  font-weight: 400;
+  color: #9e0000;
+}
+
+.cs-info dd .depositor {
+  margin-left: 15px;
 }

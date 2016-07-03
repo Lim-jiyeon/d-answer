@@ -4,6 +4,18 @@
     vertical-align: middle;
 }
 
+.icon-new {
+    display: inline-block;
+    margin-left: 35px;
+    padding: 0 4px;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    line-height: (14/10);
+    color: #fff;
+    vertical-align: 1px;
+    text-transform: lowercase;
+}
 .icon-search {
     width: 17px;
     height: 17px;
@@ -23,4 +35,14 @@
     width: 9px;
     height: 13px;
     background-position: -90px -30px;
+}
+.icon-mic {
+    width: 13px;
+    height: 13px;
+    background-position: -60px -60px;
+}
+.icon-doc {
+    width: 13px;
+    height: 11px;
+    background-position: -90px -60px;
 }

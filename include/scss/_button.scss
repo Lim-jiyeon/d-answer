@@ -3,11 +3,13 @@
     padding: 0 12px;
     border: 1px solid transparent;
     background: #000;
+    font-family: 'Nanum Gothic', sans-serif;
     font-size: 11px;
     line-height: (25)/11;
     color: #fff;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-align: center;
+    text-transform: lowercase;
     &:hover {
         color: #fff;
     }
@@ -62,11 +64,11 @@
 
 .button-file {
     padding: 0 16px;
-    background-color: #eee;
+    background-color: #000;
     font-family: 'Nanum Gothic', sans-serif;
     line-height: (16)/11;
     letter-spacing: 0;
-    color: #000;
+    color: #fff;
 }
 
 .button-align-left {
@@ -83,4 +85,16 @@
 .button-align-right {
     margin-top: 12px;
     text-align: right;
+    &.table-top {
+        margin: 0 0 14px;
+        a {
+            letter-spacing: 0;
+        }
+    }
+}
+.button-align {
+    @include clearfix;
+    .button-align-right {
+        margin-top: -22px;
+    }
 }

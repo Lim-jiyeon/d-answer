@@ -12,6 +12,17 @@
         font-size: 12px;
         line-height: (21)/12;
         text-align: center;
+        vertical-align: middle;
+    }
+    td {
+        &.align-left {
+            padding-left: 15px;
+            text-align: left;
+        }
+        &.align-right {
+            padding-right: 15px;
+            text-align: right;
+        }
     }
     tfoot td {
         padding-right: 30px;
@@ -29,6 +40,7 @@
     }
     th {
         padding: 9px 12px 9px 0;
+        font-weight: 400;
         text-align: right;
     }
     td {
