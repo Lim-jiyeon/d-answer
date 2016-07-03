@@ -523,7 +523,7 @@ hr {
   vertical-align: middle;
 }
 
-.icon-new {
+.icon-badge {
   display: inline-block;
   margin-left: 35px;
   padding: 0 4px;
@@ -570,6 +570,20 @@ hr {
   width: 13px;
   height: 11px;
   background-position: -90px -60px;
+}
+
+.icon-camera {
+  width: 14px;
+  height: 12px;
+  background-position: -150px -60px;
+  vertical-align: text-top;
+}
+
+.icon-reply {
+  width: 17px;
+  height: 15px;
+  background-position: -120px -60px;
+  vertical-align: top;
 }
 
 .button {
@@ -698,6 +712,10 @@ hr {
 .table {
   border-collapse: collapse;
   width: 100%;
+}
+
+.table th {
+  font-weight: 400;
 }
 
 .table-list {
@@ -1561,6 +1579,13 @@ input[type=checkbox] {
   max-width: 710px;
 }
 
+.reply .qna-subject a,
+.reply .review-subject a,
+.reply .reply-subject a {
+  padding-left: 26px;
+  background: url(../images/sprite.png) no-repeat -120px -60px;
+}
+
 .col-review-name {
   width: 84px;
 }
@@ -1667,11 +1692,6 @@ input[type=checkbox] {
 .qna-search .button {
   font-size: 12px;
   line-height: 1.6666666667;
-}
-
-.reply .qna-subject a {
-  padding-left: 26px;
-  background: url(../images/sprite.png) no-repeat -120px -60px;
 }
 
 .order {
@@ -2813,6 +2833,136 @@ input[type=checkbox] {
   text-align: left;
 }
 
+.qna-product-info {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #000;
+}
+
+.qna-product-info:before, .qna-product-info:after {
+  content: " ";
+  display: table;
+}
+
+.qna-product-info:after {
+  clear: both;
+}
+
+.qna-product-info .product-image {
+  float: left;
+}
+
+.qna-product-info .product-image img {
+  width: 79px;
+  height: 106px;
+}
+
+.qna-product-info .product-view {
+  float: left;
+  width: 870px;
+  margin: 0 187px 0 25px;
+  padding-top: 10px;
+}
+
+.qna-product-info .product-view strong {
+  display: block;
+  font-weight: 400;
+}
+
+.qna-product-info .product-view .button-align-left {
+  padding-top: 9px;
+  border-top: 1px solid #a0a0a0;
+}
+
+.qna-reply-write {
+  margin-top: 55px;
+  padding: 8px 28px;
+  border: 1px solid #000;
+}
+
+.qna-reply-write li {
+  padding: 7px 0;
+}
+
+.qna-reply-write li span {
+  margin-right: 50px;
+}
+
+.qna-reply-write .form-control {
+  height: 18px;
+  line-height: 1.3333333333;
+}
+
+.qna-reply-write textarea.form-control {
+  height: 50px;
+}
+
+.qna-reply-write .button {
+  vertical-align: top;
+}
+
+.qna-view-list {
+  margin-top: 5px;
+}
+
+.qna-view-list th {
+  background-color: #000;
+  color: #fff;
+}
+
+.review-list * {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.review-list .col-review-image {
+  width: 96px;
+}
+
+.review-list .col-review-member {
+  width: 111px;
+}
+
+.review-list .col-review-date {
+  width: 133px;
+}
+
+.review-list .review-image img {
+  width: 55px;
+  height: 73px;
+  border: 2px solid #f4f5f1;
+}
+
+.review-list .review-product {
+  padding-left: 34px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.review-list .review-product strong {
+  display: block;
+}
+
+.review-list .review-product .icon {
+  margin-left: 4px;
+}
+
+.review-view {
+  display: none;
+}
+
+.review-view .review-content img {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.review-view .review-reply {
+  margin: 10px 0 8px;
+}
+
+.review-view .review-reply .icon-badge {
+  margin: 0 5px;
+}
+
 .cs-info {
   width: 853px;
   margin: 0 auto;
@@ -2871,4 +3021,72 @@ input[type=checkbox] {
 
 .cs-info dd .depositor {
   margin-left: 15px;
+}
+
+.membership {
+  width: 623px;
+  margin: 103px auto 0;
+  border: 1px solid #000;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.membership .membership-image {
+  border: 3px solid #000;
+}
+
+.membership .membership-title {
+  padding: 5px 0;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.membership .membership-info-head {
+  margin-top: 14px;
+  padding: 0 18px;
+  border-bottom: 1px solid #000;
+}
+
+.membership .membership-info-head:before, .membership .membership-info-head:after {
+  content: " ";
+  display: table;
+}
+
+.membership .membership-info-head:after {
+  clear: both;
+}
+
+.membership .membership-info-head li {
+  float: left;
+  width: 25%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.membership .membership-info-content {
+  margin-bottom: -1px;
+  padding: 0 18px;
+}
+
+.membership .membership-info-content li {
+  display: table;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
+}
+
+.membership .membership-info-content li span {
+  display: table-cell;
+  width: 25%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.membership .membership-info-content li span:nth-child(-3n+4) {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.membership .membership-caption {
+  padding: 20px 0 30px 90px;
 }
