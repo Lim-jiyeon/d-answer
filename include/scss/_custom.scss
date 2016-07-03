@@ -516,6 +516,16 @@
         }
     }
 }
+.reply {
+    .qna-subject,
+    .review-subject,
+    .reply-subject {
+        a {
+            padding-left: 26px;
+            background: url(../images/sprite.png) no-repeat -120px -60px;
+        }
+    }
+}
 // Detail board col Width style
 .col-review-name {
     width: 84px;
@@ -603,14 +613,6 @@
     .button {
         font-size: 12px;
         line-height: (20)/12;
-    }
-}
-.reply {
-    .qna-subject {
-        a {
-            padding-left: 26px;
-            background: url(../images/sprite.png) no-repeat -120px -60px;
-        }
     }
 }
 
@@ -1573,6 +1575,109 @@
         text-align: left;
     }
 }
+.qna-product-info {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #000;
+    @include clearfix;
+    .product-image {
+        float: left;
+        img {
+            width: 79px;
+            height: 106px;
+        }
+    }
+    .product-view {
+        float: left;
+        width: 870px;
+        margin: 0 187px 0 25px;
+        padding-top: 10px;
+        strong {
+            display: block;
+            font-weight: 400;
+        }
+        .button-align-left {
+            padding-top: 9px;
+            border-top: 1px solid #a0a0a0;
+        }
+    }
+}
+.qna-reply-write {
+    margin-top: 55px;
+    padding: 8px 28px;
+    border: 1px solid #000;
+    li {
+        padding: 7px 0;
+        span {
+            margin-right: 50px;
+        }
+    }
+    .form-control {
+        height: 18px;
+        line-height: (16)/12;
+    }
+    textarea.form-control {
+        height: 50px;
+    }
+    .button {
+        vertical-align: top;
+    }
+}
+.qna-view-list {
+    margin-top: 5px;
+    th {
+        background-color: #000;
+        color: #fff;
+    }
+}
+// Review
+.review-list {
+    * {
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    .col-review-image {
+        width: 96px;
+    }
+    .col-review-member {
+        width: 111px;
+    }
+    .col-review-date {
+        width: 133px;
+    }
+    .review-image {
+        img {
+            width: 55px;
+            height: 73px;
+            border: 2px solid #f4f5f1;
+        }
+    }
+    .review-product {
+        padding-left: 34px;
+        text-align: left;
+        cursor: pointer;
+        strong {
+            display: block;
+        }
+        .icon {
+            margin-left: 4px;
+        }
+    }
+}
+.review-view {
+    display: none;
+    .review-content {
+        img {
+            display: block;
+            margin-bottom: 8px;
+        }
+    }
+    .review-reply {
+        margin: 10px 0 8px;
+        .icon-badge {
+            margin: 0 5px;
+        }
+    }
+}
 // Information, Delivery
 .cs-info {
     width: 853px;
@@ -1622,5 +1727,56 @@
         .depositor {
             margin-left: 15px;
         }
+    }
+}
+// Membership
+.membership {
+    width: 623px;
+    margin: 103px auto 0;
+    border: 1px solid #000;
+    font-family: 'Nanum Gothic', sans-serif;
+    .membership-image {
+        border: 3px solid #000;
+    }
+    .membership-title {
+        padding: 5px 0;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+    }
+    .membership-info-head {
+        margin-top: 14px;
+        padding: 0 18px;
+        border-bottom: 1px solid #000;
+        @include clearfix;
+        li {
+            float: left;
+            width: 25%;
+            padding: 10px 0;
+            text-align: center;
+        }
+    }
+    .membership-info-content {
+        margin-bottom: -1px;
+        padding: 0 18px;
+        li {
+            display: table;
+            width: 100%;
+            padding: 20px 0;
+            border-bottom: 1px solid #000;
+            span {
+                display: table-cell;
+                width: 25%;
+                text-align: center;
+                vertical-align: middle;
+                &:nth-child(-3n+4) {
+                    padding-left: 20px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .membership-caption {
+        padding: 20px 0 30px 90px;
     }
 }

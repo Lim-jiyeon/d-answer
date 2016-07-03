@@ -36,4 +36,12 @@ $(document).ready(function() {
         return false;
     });
 
+    // Review
+    // --------------------------------------------------
+    $(".review-preview").on('click', function() {
+        $(".review-view").hide();
+        $(this).next(".review-view").show();
+        return false;
+    });
+
 });

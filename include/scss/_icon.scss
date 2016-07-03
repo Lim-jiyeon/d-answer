@@ -4,7 +4,7 @@
     vertical-align: middle;
 }
 
-.icon-new {
+.icon-badge {
     display: inline-block;
     margin-left: 35px;
     padding: 0 4px;
@@ -45,4 +45,16 @@
     width: 13px;
     height: 11px;
     background-position: -90px -60px;
+}
+.icon-camera {
+    width: 14px;
+    height: 12px;
+    background-position: -150px -60px;
+    vertical-align: text-top;
+}
+.icon-reply {
+    width: 17px;
+    height: 15px;
+    background-position: -120px -60px;
+    vertical-align: top;
 }

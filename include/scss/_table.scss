@@ -1,6 +1,9 @@
 .table {
     border-collapse: collapse;
     width: 100%;
+    th {
+        font-weight: 400;
+    }
 }
 // Table List Style
 .table-list {

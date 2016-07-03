@@ -63,7 +63,7 @@
                         <tr>
                             <td>8</td>
                             <td><i class="icon icon-lock"></i></td>
-                            <td class="qna-subject"><a href="#">문의드립니다.</a><span class="icon-new">NEW</span></td>
+                            <td class="qna-subject"><a href="#">문의드립니다.</a><i class="icon-badge">NEW</i></td>
                             <td>d.answer</td>
                             <td>2016-06-06</td>
                             <td>2</td>
@@ -71,7 +71,7 @@
                         <tr class="reply">
                             <td>8</td>
                             <td><i class="icon icon-lock"></i></td>
-                            <td class="qna-subject"><a href="#">문의드립니다.</a><span class="icon-new">NEW</span></td>
+                            <td class="qna-subject"><a href="#">문의드립니다.</a><i class="icon-badge">NEW</i></td>
                             <td>d.answer</td>
                             <td>2016-06-06</td>
                             <td>2</td>

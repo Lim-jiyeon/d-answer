@@ -172,7 +172,7 @@
                             <input type="text" class="form-control"> 원 [사용가능 적립금]
                         </div>
                     </div>
-                    <div class="coupon">
+                    <div class="coupon-use">
                         <h4 class="coupon-title">쿠폰사용</h4>
                         <div class="coupon-box">
                             <input type="text" class="form-control">
