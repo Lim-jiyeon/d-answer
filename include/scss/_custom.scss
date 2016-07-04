@@ -345,6 +345,10 @@
         a {
             display: block;
             position: relative;
+            img {
+                width: 319px;
+                height: 390px;
+            }
             &:hover {
                 .img-hover, .product-info {
                     display: block;
@@ -1778,5 +1782,51 @@
     }
     .membership-caption {
         padding: 20px 0 30px 90px;
+    }
+}
+
+//
+// ETC
+// --------------------------------------------------
+// Offline
+.offline {
+    width: 1120px;
+    margin: 130px auto 0;
+}
+// Search
+.search {
+    .search-input {
+        width: 310px;
+        margin: 0 auto;
+        li {
+            padding: 7px 0;
+        }
+        label {
+            display: inline-block;
+            width: 120px;
+        }
+        .salePrice {
+            .form-control {
+                width: 80px;
+            }
+        }
+        .button-align {
+            margin-top: 20px;
+            text-align: center;
+            .button {
+                text-transform: uppercase;
+            }
+        }
+    }
+    .search-content {
+        .qna-search {
+            margin-top: 35px;
+        }
+    }
+    &.empty {
+        .search-content {
+            padding: 100px 0;
+            text-align: center;
+        }
     }
 }
