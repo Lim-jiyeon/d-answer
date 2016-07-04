@@ -11,12 +11,14 @@
         .markup-list h1 {margin-bottom: 10px;}
         .markup-list h2 {margin: 40px 0 10px 10px;}
         .markup-list ul li {padding: 2px 0 2px 15px;}
-        .markup-list ul li:before {margin-right:5px;content: '▪︎';}
-        .markup-list a:hover {color: #3a4cff;text-decoration: underline;}
+        .markup-list ul li:before {margin-right:5px;content:'▪︎';}
+        .markup-list a:hover {color: #3a4cff;text-decoration:underline;}
         .markup-list ul li p {margin: 3px 0 0 10px;font-size:11px;}
         .markup-list .issue {margin: 5px 0 0 15px;font-size:11px;}
         .markup-list .check {display:inline-block;margin:5px 0;padding: 3px 13px;border-radius:13px;background-color:#8f0000;font-size:12px;color:#fff;}
         .markup-list .check + p {font-size:12px;}
+        .markup-list .diff {margin-left:5px;padding: 2px 4px;border-radius:10px;background-color:#55a532;font-size:10px;color:#fff;}
+        .markup-list .diff:hover {background-color:#a6f3a6;color:#55a532;text-decoration:none;}
         .markup-list .complete {margin-left:5px;padding: 2px 4px;border-radius:10px;background-color:#262b67;font-size:10px;color:#fff;}
     </style>
 </head>
@@ -27,7 +29,7 @@
             <h1>마크업 리스트</h1>
             <span class="check">확인사항</span>
             <p>
-                - <br>
+                - 푸터 작업중<br>
             </p>
 
             <hr>
@@ -59,7 +61,10 @@
                         <a href="./detail/detail.php">Detail</a>
                         <p>- 상품 옵션 스크롤따라 이동하는 스크립트 미작업</p>
                     </li>
-                    <li><a href="./detail/order-sheet.php">Detail > 주문서 작성</a></li>
+                    <li>
+                        <a href="./detail/order-sheet.php">Detail > 주문서 작성</a>
+                        <a href="https://github.com/Lim-jiyeon/d-answer/commit/6edf87553638cce85467907721214488c021b229#diff-4df9fea16117046fa9afbbb4eb236a29" class="diff">20160703 diff</a>
+                    </li>
                 </ul>
             </div>
 
