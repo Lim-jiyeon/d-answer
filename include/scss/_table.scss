@@ -32,6 +32,24 @@
         text-align: right;
     }
 }
+// Table List Border Style
+.table-list-border {
+    border: 1px solid #000;
+    th, td {
+        border: 1px solid #000;
+    }
+}
+// Table List Head Background Style
+.table-list-bg {
+    border: 1px solid #000;
+    th, td {
+        border: 1px solid #000;
+    }
+    th {
+        background-color: #313131;
+        color: #fff;
+    }
+}
 // Table Row List Style
 .table-row-list {
     border: 1px solid #000;

@@ -68,14 +68,9 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="member-level">
-                    <span class="level-mark">S</span>
-                    <p class="level-explain">김기훈님은 <strong>Silver</strong> 회원입니다.<br>
-                    (적립금 적립 + 사용 가능 / 출석체크 적립금 사용 불가능)<br>
-                    김기훈 님이 1,000원 이상 구매시 구매금액의 1%를 추가 적립해 드립니다.</p>
-                </div>
-                <div class="orderer-input">
+                <div class="orderer-input orderer-guest">
                     <div class="orderer-info">
+                        <h4 class="orderer-info-title">주문자 정보</h4>
                         <table class="table table-row-list">
                             <caption></caption>
                             <colgroup>
@@ -104,6 +99,7 @@
                         <label class="check-orderer"><input type="radio"> 주문자 정보 입력</label>
                     </div>
                     <div class="recipient-info">
+                        <h4 class="recipient-info-title">주문자 정보 입력</h4>
                         <table class="table table-row-list">
                             <caption></caption>
                             <colgroup>
@@ -164,22 +160,47 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="saved-money">
-                        <h4 class="saved-money-title">적립금 사용</h4>
-                        <div class="saved-money-box">
-                            <input type="text" class="form-control"> 원
-                            <span class="arrow"></span>
-                            <input type="text" class="form-control"> 원 [사용가능 적립금]
-                        </div>
+                    <div class="Personal-policy">
+                        <h3 class="agree-title">개인정보 수집에 대한 동의</h3>
+                        <ul class="tab-box">
+                            <li>
+                                <a href="#" class="tab-button selected">수집하는 개인정보 항목</a>
+                                <div class="agree-box tab-content1 scroll">
+                                    1111111111
+                                    <h3>인터넷 쇼핑몰 『(주)디에이앤코 사이버 몰』회원 약관</h3>
+                                    <h4>제1조(목적)</h4>
+                                    <p>이 약관은 (주)디에이앤코 회사(전자상거래 사업자)가 운영하는 (주)디에이앤코 사이버 몰(이하 “몰”이라 한다)에서 제공하는 인터넷 관련 서비스(이하 “서비스”라 한다)를<br>
+                                        이용함에 있어 사이버 몰과 이용자의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.</p>
+                                    <p>※「PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다.」</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="tab-button">개인정보의 수집 이용목적</a>
+                                <div class="agree-box tab-content2 scroll">
+                                    22222222
+                                    <h3>인터넷 쇼핑몰 『(주)디에이앤코 사이버 몰』회원 약관</h3>
+                                    <h4>제1조(목적)</h4>
+                                    <p>이 약관은 (주)디에이앤코 회사(전자상거래 사업자)가 운영하는 (주)디에이앤코 사이버 몰(이하 “몰”이라 한다)에서 제공하는 인터넷 관련 서비스(이하 “서비스”라 한다)를<br>
+                                        이용함에 있어 사이버 몰과 이용자의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.</p>
+                                    <p>※「PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다.」</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="tab-button">개인정보의 보유 및 이용기간</a>
+                                <div class="agree-box tab-content3 scroll">
+                                    3333333
+                                    <h3>인터넷 쇼핑몰 『(주)디에이앤코 사이버 몰』회원 약관</h3>
+                                    <h4>제1조(목적)</h4>
+                                    <p>이 약관은 (주)디에이앤코 회사(전자상거래 사업자)가 운영하는 (주)디에이앤코 사이버 몰(이하 “몰”이라 한다)에서 제공하는 인터넷 관련 서비스(이하 “서비스”라 한다)를<br>
+                                        이용함에 있어 사이버 몰과 이용자의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.</p>
+                                    <p>※「PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다.」</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <label class="agree-check"><input type="checkbox"> 정보수집에 동의합니다.</label>
+                        <label class="agree-check"><input type="checkbox"> 동의하지 않습니다.</label>
                     </div>
-                    <div class="coupon-use">
-                        <h4 class="coupon-title">쿠폰사용</h4>
-                        <div class="coupon-box">
-                            <input type="text" class="form-control">
-                            <a href="#" class="button button-sm">쿠폰선택</a>
-                            <span class="subscript">보유하신 쿠폰을 적용하시면 할인 또는 추가적립 혜택을 받으실 수 있습니다.</span>
-                        </div>
-                    </div>
+                </div>
                 </div>
                 <div class="button-align-center">
                     <a href="#" class="button button-lg">주문하기</a>

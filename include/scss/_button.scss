@@ -2,7 +2,7 @@
     display: inline-block;
     padding: 0 12px;
     border: 1px solid transparent;
-    background: #000;
+    background-color: #000;
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 11px;
     line-height: (25)/11;
@@ -27,7 +27,6 @@
 .button-sm {
     padding: 0 16px;
     line-height: (20)/11;
-    letter-spacing: 2px;
 }
 .button-xs {
     padding: 0 5px;

@@ -44,4 +44,17 @@ $(document).ready(function() {
         return false;
     });
 
+    // Forgot id, password Select Tab
+    // --------------------------------------------------
+    $(".findId-select input[type=radio]").change(function () {
+        var findIdCheck = $(".findId-select input[type=radio]").attr("name");
+        $('.'+findIdCheck+'-box').hide();
+        $('.'+$(this).val()).show();
+    });
+    $(".findPassword-select input[type=radio]").change(function () {
+        var findPasswordCheck = $(".findPassword-select input[type=radio]").attr("name");
+        $('.'+findPasswordCheck+'-box').hide();
+        $('.'+$(this).val()).show();
+    });
+
 });

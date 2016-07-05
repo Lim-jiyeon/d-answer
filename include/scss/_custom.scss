@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-
 //
 // Layout
 // --------------------------------------------------
@@ -147,13 +145,118 @@
     }
 }
 
+//
+// Footer
+// --------------------------------------------------
+.footer {
+    border-top: 1px solid #646464;
+    font-family: 'nanumgothic', sans-serif;
+    .footer-inner {
+        width: 720px;
+        margin: 0 auto 40px;
+    }
+    .sharing-link {
+        margin-top: -35px;
+        text-align: center;
+        a {
+            margin: 0 5px;
+        }
+    }
+    .footer-menu {
+        margin-top: 49px;
+        text-align: center;
+        li {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            &:after {
+                display: inline-block;
+                margin: 0 0 0 2px;
+                content: '／';
+            }
+            &:last-child:after {
+                content: '';
+            }
+        }
+    }
+    .footer-info {
+        margin: 40px 0 50px;
+        @include clearfix;
+        h3 {
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        .customer-info {
+            float: left;
+            .business-hours {
+                font-weight: 700;
+                font-size: 12px;
+            }
+        }
+        .bank-info {
+            float: left;
+            padding-left: 130px;
+        }
+    }
+    .business-info {
+        @include clearfix;
+        li {
+            float: left;
+            &:after {
+                display: inline-block;
+                width: 2px;
+                height: 10px;
+                margin: 0 4px;
+                border-right: 1px solid #a5a5a5;
+                background-color: #787878;
+                content: '';
+            }
+            &:nth-child(4):after,
+            &:last-child:after {
+                display: inherit;
+                width: 0;
+                height: 0;
+                margin: 0;
+                border-right: 0;
+            }
+        }
+    }
+    .copyright {
+        padding: 4px 0;
+        border-top: 1px solid #000;
+        background-color: #efe4d5;
+        font-family: arial, sans-serif;
+        font-size: 11px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+}
+
+.top-link {
+    position: fixed;
+    right: 60px;
+    bottom: 398px;
+    font-family: 'nanumgothic', sans-serif;
+    font-weight: 700;
+    &:before {
+        display: block;
+        width: 20px;
+        height: 13px;
+        margin: 0 0 3px -2px;
+        background: url(../images/sprite.png) no-repeat -90px 0;
+        content: '';
+    }
+}
 .page-title {
     font-size: 13px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 .page-title-sub {
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'nanumgothic', sans-serif;
 }
 .page-explain {
     margin-top: 20px;
@@ -283,7 +386,7 @@
     width: 100%;
     padding: 15px 11px 15px 15px;
     background-color: rgba(255,255,255,.72);
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'nanumgothic', sans-serif;
     @include clearfix;
     .product-name {
         float: left;
@@ -310,7 +413,7 @@
     &.info-center {
         padding: 28px 0 20px;
         text-align: center;
-        font-family: Arial, sans-serif;
+        font-family: arial, sans-serif;
         letter-spacing: 2px;
         .name {
             padding-bottom: 6px;
@@ -437,7 +540,7 @@
     right: -325px;
     width: 305px;
     .product-name {
-        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'nanumgothic', sans-serif;
         font-size: 12px;
     }
     .price {
@@ -644,7 +747,7 @@
 }
 .order-title {
     margin-bottom: 10px;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'nanumgothic', sans-serif;
     font-size: 12px;
     &:before {
         display: inline-block;
@@ -724,11 +827,36 @@
     }
 }
 // Orderer Information Input
+.orderer-guest {
+    margin-top: 100px;
+    .check-orderer {
+        margin-bottom: -5px !important;
+    }
+    .Personal-policy {
+        margin-top: 60px;
+        .agree-title {
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        .agree-check {
+            display: inline-block;
+            margin: 10px 20px 0 0;
+        }
+    }
+}
 .orderer-info {
     @include clearfix;
+    .orderer-info-title {
+        padding-bottom: 9px;
+    }
     .check-orderer {
         float: right;
         margin: 6px 0 24px;
+    }
+}
+.recipient-info {
+    .recipient-info-title {
+        padding-bottom: 9px;
     }
 }
 .cell-phone {
@@ -769,7 +897,7 @@
 // 적립금 사용
 .saved-money {
     .saved-money-title {
-        padding: 9px 0 25px;
+        padding: 25px 0 9px;
     }
     .saved-money-box {
         padding: 11px 25px;
@@ -788,7 +916,7 @@
 // 쿠폰 사용
 .coupon-use {
     .coupon-title {
-        padding: 9px 0 25px;
+        padding: 25px 0 9px;
     }
     .coupon-box {
         padding: 11px 25px;
@@ -870,6 +998,7 @@
         left: 50%;
         margin-left: -43px;
         padding: 0 8px 0 12px;
+        background-color: #fff;
         font-size: 16px;
         letter-spacing: 3px;
     }
@@ -905,6 +1034,55 @@
     .button {
         display: block;
         margin-top: 5px;
+        text-transform: uppercase;
+    }
+    & + .nonmember-button {
+        width: 377px;
+        margin: 22px auto 0;
+        .button {
+            display: block;
+            text-transform: uppercase;
+        }
+    }
+}
+// Find Id / Password
+.find {
+    margin: 40px 0 100px;
+    text-align: center;
+    h3 {
+        font-weight: 700;
+        font-size: 13px;
+    }
+    .find-info {
+        display: inline-block;
+        padding: 25px 9px 5px;
+        border-bottom: 2px solid #000;
+    }
+    .findId-box,
+    .findPassword-box {
+        width: 220px;
+        margin: 43px auto 0;
+        .form-group {
+            margin-bottom: 14px;
+            label {
+                display: inline-block;
+                width: 50px;
+                text-align: left;
+            }
+        }
+        &.findId-phone,
+        &.findPassword-phone {
+            display: none;
+        }
+    }
+    .find-select {
+        width: 220px;
+        margin: 10px auto 20px;
+        padding-left: 5px;
+        text-align: left;
+        label {
+            margin-right: 25px;
+        }
     }
 }
 // Order Search
@@ -922,7 +1100,7 @@
 // Join Type
 .join-type {
     margin-top: 58px;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'nanumgothic', sans-serif;
     h3 {}
     .join-member-type {
         width: 630px;
@@ -969,7 +1147,7 @@
 .join-agree {
     width: 1200px;
     margin: 63px auto 0;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'nanumgothic', sans-serif;
     .agree-title {
         margin-bottom: 9px;
     }
@@ -999,11 +1177,12 @@
         position: absolute;
         top: 1px;
         left: 0;
+        height: 32px;
         padding: 0 11px;
         border: 1px solid #000;
-        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'nanumgothic', sans-serif;
         font-size: 11px;
-        line-height: (30)/11;
+        line-height: (32)/11;
         &.selected {
             background-color: #000;
             color: #fff;
@@ -1025,7 +1204,7 @@
 }
 // Join Input
 .join {
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'nanumgothic', sans-serif;
     &:before {
         display: block;
         width: 83px;
@@ -1035,7 +1214,7 @@
         content: '';
     }
     a {
-        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'nanumgothic', sans-serif;
         letter-spacing: 0;
     }
     .certification {
@@ -1422,7 +1601,7 @@
         color: #830000;
     }
 }
-// 주문 상세 내역
+// 주문 내역
 .order-view {
     width: 1200px;
     margin: 0 auto;
@@ -1455,6 +1634,80 @@
         }
     }
 }
+// 주문 상세 내역
+.order-information {
+    .order-info-text {
+        display: block;
+        padding: 40px 0;
+        font-weight: 700;
+        text-align: center;
+    }
+    .orderer-info,
+    .shipping-info,
+    .order-product-info,
+    .order-payment-info {
+        margin-top: 40px;
+        h3 {
+            margin-bottom: 9px;
+        }
+    }
+}
+.shipping-info {
+    .button {
+        margin-left: 10px;
+    }
+}
+.order-product-info {
+    .order-info-img {
+        border-right: 1px solid #fff !important;
+        img {
+            width: 71px;
+            height: 86px;
+        }
+    }
+    .order-info {
+        padding-left: 10px;
+        text-align: left;
+        vertical-align: middle;
+
+    }
+    .order-amount {
+        .selectbox {
+            width: 40px;
+        }
+    }
+    .order-product-price {
+        color: #af0000;
+    }
+}
+.col-info {
+    width: 117px;
+}
+.col-info-content {
+    width: 483px;
+}
+.col-order-number {
+    width: 200px;
+}
+.col-order-info-img,
+.col-amount {
+    width: 120px;
+}
+.col-price,
+.col-mileage,
+.col-state {
+    width: 136px;
+}
+.col-shipping-number {
+    width: 150px;
+}
+.col-payment-option,
+.col-payment-total {
+    width: 320px;
+}
+.col-payment-info {
+    width: 240px;
+}
 // 쿠폰 내역
 .coupon {
     width: 1200px;
@@ -1484,7 +1737,7 @@
     }
     .caption {
         margin-top: 70px;
-        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'nanumgothic', sans-serif;
         color: #1e1e1e;
         dt {
             font-weight: 700;
@@ -1540,7 +1793,7 @@
     text-transform: uppercase;
     + .cs-title-sub {
         margin: 10px 0 75px;
-        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'nanumgothic', sans-serif;
         text-align: center;
     }
 }
@@ -1644,7 +1897,7 @@
 // Review
 .review-list {
     * {
-        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'nanumgothic', sans-serif;
     }
     .col-review-image {
         width: 96px;
@@ -1694,10 +1947,10 @@
     width: 853px;
     margin: 0 auto;
     padding: 0 75px;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'nanumgothic', sans-serif;
     .cs-info-title {
         margin-bottom: 20px;
-        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'nanumgothic', sans-serif;
         font-weight: 700;
         font-size: 14px;
     }
@@ -1745,7 +1998,7 @@
     width: 623px;
     margin: 103px auto 0;
     border: 1px solid #000;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'nanumgothic', sans-serif;
     .membership-image {
         border: 3px solid #000;
     }
