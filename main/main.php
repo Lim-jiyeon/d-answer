@@ -2,7 +2,7 @@
     include ("../header/header.php");
 ?>
 
-    <div class="container">
+    <div class="container main-container">
         <div class="main-banner">
             <div class="masthead"><a href="#"><img src="../include/images/main-masthead.jpg" alt="ONLY D-ANSWER"></a></div>
         </div>

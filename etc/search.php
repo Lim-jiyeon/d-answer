@@ -3,11 +3,11 @@
 ?>
 
     <div class="container">
-        <div class="page-container">
+        <div class="page-container search-container">
             <h2 class="page-title">search</h2>
             <p class="page-title-sub">상품검색<br>
             상품명으로 검색해 주세요.</p>
-            <div class="search empty">
+            <div class="search">
                 <!-- 검색 영역 -->
                 <div class="search-input">
                     <ul>
