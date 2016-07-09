@@ -106,6 +106,22 @@
                         </a>
                     </li>
                 </ul>
+                <!-- Paginate -->
+                <div class="paginate">
+                    <a href="#" class="arrow-page prev-first"></a>
+                    <a href="#" class="arrow-page prev"></a>
+                    <div class="number">
+                        <strong class="selected">1</strong>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                    </div>
+                    <a href="#" class="arrow-page next"></a>
+                    <a href="#" class="arrow-page next-last"></a>
+                </div>
+                <!-- Paginate //end -->
             </div>
         </div>
     </div>
