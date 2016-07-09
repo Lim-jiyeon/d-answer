@@ -73,6 +73,27 @@
                     </div>
                 </div>
                 <!-- 문의 글 보기 화면 //end -->
+                <!-- 리플 상세 내용 -->
+                <div class="reply-view">
+                    <table class="table table-row-list notice">
+                        <caption>리플 상세내용</caption>
+                        <colgroup>
+                            <col class="col-notice-info">
+                            <col>
+                            <col class="col-notice-info">
+                            <col class="col-notice-info">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row">id7129</th>
+                            <td>test</td>
+                            <th scope="row">2016-07-05</th>
+                            <td>삭제</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 리플 상세 내용 //end -->
                 <!-- 문의 글에 대한 덧글 -->
                 <ul class="qna-reply-write">
                     <li>
@@ -119,7 +140,11 @@
                         </tr>
                         <tr class="reply">
                             <td><i class="icon icon-lock"></i></td>
-                            <td class="align-left reply-subject"><a href="#">문의드립니다.</a></td>
+                            <td class="align-left reply-subject">
+                                <a href="#">
+                                    <i class="icon icon-reply"></i> 문의드립니다.
+                                </a>
+                            </td>
                             <td>D-answer</td>
                             <td>2015-12-30</td>
                             <td>1</td>

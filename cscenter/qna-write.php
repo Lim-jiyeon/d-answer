@@ -55,7 +55,7 @@
                     </tr>
                     <tr>
                         <th scope="row"><label for="qna-content">내용</label></th>
-                        <td colspan="3">
+                        <td colspan="3" class="qna-content">
                             <textarea cols="80" rows="9" id="qna-content" class="form-control"></textarea>
                         </td>
                     </tr>

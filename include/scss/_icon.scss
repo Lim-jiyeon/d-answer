@@ -1,12 +1,18 @@
 .icon {
     display: inline-block;
     background: url(../images/sprite.png) no-repeat 0 0;
+    line-height: 0;
+    color: transparent;
     vertical-align: middle;
+    &:hover {
+        color: transparent;
+    }
 }
 
 .icon-badge {
     display: inline-block;
-    margin-left: 35px;
+    //margin-left: 35px;
+    margin: 0 5px;
     padding: 0 4px;
     background-color: #000;
     font-family: Arial, sans-serif;
@@ -15,6 +21,9 @@
     color: #fff;
     vertical-align: 1px;
     text-transform: lowercase;
+    &:hover {
+        color: #fff;
+    }
 }
 .icon-search {
     width: 17px;
@@ -57,4 +66,10 @@
     height: 15px;
     background-position: -120px -60px;
     vertical-align: top;
+}
+.icon-delete {
+    width: 14px;
+    height: 14px;
+    background-position: -120px 0;
+    vertical-align: text-top;
 }

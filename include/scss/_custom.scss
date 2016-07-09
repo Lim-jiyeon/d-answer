@@ -173,7 +173,7 @@
             &:after {
                 display: inline-block;
                 margin: 0 0 0 2px;
-                content: '／';
+                content: '/';
             }
             &:last-child:after {
                 content: '';
@@ -251,6 +251,7 @@
     }
 }
 .page-title {
+    font-weight: 700;
     font-size: 13px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -540,28 +541,61 @@
     right: -325px;
     width: 305px;
     .product-name {
+        margin-bottom: 12px;
         font-family: 'nanumgothic', sans-serif;
-        font-size: 12px;
+        font-size: 15px;
     }
     .price {
         display: block;
-        margin-top: 8px;
-        font-size: 22px;
-        letter-spacing: 3px;
-        em {
-            margin-left: 2px;
-            font-size: 21px;
-            letter-spacing: 4px;
+        margin-top: -3px;
+        font-family: arial, sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: #000;
+        letter-spacing: 2px;
+        &.discount {
+            display: inline-block;
+            position: relative;
+            &:after {
+                position: absolute;
+                top: 50%;
+                left: -5px;
+                width: 105%;
+                height: 1px;
+                background-color: #000;
+                content: '';
+            }
+            + .price {
+                color: #aa0000;
+            }
         }
     }
+    .shop-deposit {
+        margin-top: 2px;
+        font-family: 'nanumgothic', sans-serif;
+        font-size: 14px;
+    }
     .sharing-links {
-        margin-top: 5px;
+        margin: 11px 0;
         a {
             margin-right: 7px;
         }
     }
+    .size-guide {
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        &:before {
+            display: inline-block;
+            width: 40px;
+            height: 12px;
+            margin-right: 8px;
+            background: url(../images/sprite.png) no-repeat -60px -90px;
+            vertical-align: -2px;
+            content: '';
+        }
+    }
     .detail-discription {
-        margin: 12px 0 33px;
+        margin: 12px 0 22px;
         padding: 10px;
         border: 1px solid #000;
         text-transform: capitalize;
@@ -570,12 +604,16 @@
         @include clearfix;
         .shop-selectbox {
             float: left;
+            width: 50%;
             @include clearfix;
             label {
                 float: left;
                 margin-right: 4px;
                 letter-spacing: 1.5px;
                 vertical-align: middle;
+            }
+            .selectbox {
+                width: 115px !important;
             }
             .ui-state-default {
                 float: left;
@@ -600,11 +638,16 @@
         }
     }
     .product-options-button {
-        margin-top: 14px;
+        margin-top: 22px;
         .button {
             display: block;
-            margin-top: 4px;
+            margin-top: 7px;
+            font-weight: 700;
+            text-transform: uppercase;
         }
+    }
+    .naverPay {
+        margin-top: 20px;
     }
 }
 
@@ -622,21 +665,19 @@
         a {
             max-width: 950px;
         }
+        .icon-badge,
+        .icon-delete {
+            margin-top: 2px;
+        }
     }
     td.qna-subject {
         padding: 9px 27px;
         a {
             max-width: 710px;
         }
-    }
-}
-.reply {
-    .qna-subject,
-    .review-subject,
-    .reply-subject {
-        a {
-            padding-left: 26px;
-            background: url(../images/sprite.png) no-repeat -120px -60px;
+        .icon-badge,
+        .icon-delete {
+            margin-top: 2px;
         }
     }
 }
@@ -664,7 +705,8 @@
     padding-bottom: 163px;
     .review-title {
         margin: 0 0 4px 20px;
-        font-size: 11px;
+        font-weight: bold;
+        font-size: 13px;
         letter-spacing: 2px;
     }
     .paginate {
@@ -684,6 +726,7 @@
             line-height: (16)/12;
         }
         textarea.form-control {
+            width: 267px;
             height: 50px;
         }
         .button {
@@ -692,6 +735,23 @@
     }
 }
 .qna {
+    .qna-view-password {
+        td {
+            padding: 30px 0 30px 148px;
+            span {
+                color: #8f0000;
+            }
+            p {
+                margin-bottom: 15px;
+            }
+            .form-control,
+            .button {
+                float: left;
+                height: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
     .paginate {
         padding: 18px 0 36px;
     }
@@ -888,6 +948,10 @@
     .form-control {
         width: 615px;
     }
+    textarea.form-control {
+        width: 615px;
+        height: 62px;
+    }
 }
 
 // Orderer list col width style
@@ -989,7 +1053,7 @@
 .login {
     position: relative;
     width: 377px;
-    margin: 0 auto;
+    margin: 110px auto 0;
     padding: 38px;
     border: 1px solid #000;
     h3 {
@@ -999,6 +1063,7 @@
         margin-left: -43px;
         padding: 0 8px 0 12px;
         background-color: #fff;
+        font-weight: 700;
         font-size: 16px;
         letter-spacing: 3px;
     }
@@ -1258,6 +1323,47 @@
         .cell-email .ui-state-default {
             width: 125px !important;
         }
+    }
+}
+.simple-join {
+    width: 400px;
+    margin: 0 auto;
+    li {
+        margin-top: -1px;
+        padding: 15px;
+        border: 1px solid #000;
+        @include clearfix;
+        label {
+            float: left;
+            width: 22%;
+        }
+        .form-control {
+            float: left;
+            width: 78%;
+            border: 1px solid transparent;
+            outline: none;
+        }
+    }
+    .simple-join-agree {
+        display: block;
+        margin: 30px 0 20px;
+        color: #1e008f;
+    }
+}
+.simple-join-complete {
+    text-align: center;
+    strong {
+        display: inline-block;
+        padding: 0 3px;
+        border-bottom: 1px solid #000;
+        font-size: 32px;
+    }
+    span {
+        display: block;
+        margin: 8px 0 20px;
+    }
+    em {
+        color: #980000;
     }
 }
 
@@ -1800,6 +1906,7 @@
 // Notice
 .table.notice {
     th {
+        padding: 9px 0;
         text-align: center;
     }
 }
@@ -1866,6 +1973,15 @@
         }
     }
 }
+.qna-content {
+    textarea.form-control {
+        width: 507px;
+        height: 182px;
+    }
+}
+.reply-view {
+    margin-top: 20px;
+}
 .qna-reply-write {
     margin-top: 55px;
     padding: 8px 28px;
@@ -1890,6 +2006,7 @@
 .qna-view-list {
     margin-top: 5px;
     th {
+        padding: 5px 0;
         background-color: #000;
         color: #fff;
     }
@@ -1928,7 +2045,7 @@
     }
 }
 .review-view {
-    display: none;
+    //display: none;
     .review-content {
         img {
             display: block;
