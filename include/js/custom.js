@@ -32,11 +32,48 @@ $(document).ready(function() {
     //        .addClass( "overflow" );
     //});
 
-    $(".detail-shop-inner").sticky({
-        topSpacing: 150,
-        bottomSpacing: 450
+    // Main Banner
+    // --------------------------------------------------
+    $(".main-slide").slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 1
     });
 
+    // Top Button
+    // --------------------------------------------------
+    if ($(".top-link").length) {
+        var scrollTrigger = 100, // px
+            theTop = function () {
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop > scrollTrigger) {
+                    $(".top-link").removeClass('top');
+                } else {
+                    $(".top-link").addClass('top');
+                }
+            };
+        theTop();
+        $(window).on('scroll', function () {
+            theTop();
+        });
+        $(".top-link").on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 0
+            }, 700);
+        });
+    }
+
+    // 상품상세 스크롤 따라다니는 상품 옵션
+    // --------------------------------------------------
+    $(".detail-shop-inner").sticky({
+        topSpacing: 150,
+        bottomSpacing: 800
+    });
+
+    // Tab
+    // --------------------------------------------------
     $(".tab-box .tab-button").click(function() {
         $(".tab-button").removeClass("selected").siblings("div").hide();
         $(this).addClass("selected").siblings("div").show();

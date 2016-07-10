@@ -11,10 +11,12 @@
             <span><a href="#">women's new arrivals</a></span>
         </div>
         <div class="main-category">
-            <div class="main-slide">
-                <ul>
-                    <li><a href="#"><img src="../include/images/main-basic.jpg" alt="BASIC"></a></li>
-                </ul>
+            <div class="main-slide-banner">
+                <div class="main-slide">
+                    <div><a href="#"><img src="../include/images/main-basic.jpg" alt="BASIC"></a></div>
+                    <div><a href="#"><img src="../include/images/main-basic.jpg" alt="BASIC"></a></div>
+                    <div><a href="#"><img src="../include/images/main-basic.jpg" alt="BASIC"></a></div>
+                </div>
             </div>
             <ul class="main-link-category">
                 <li class="link-category"><a href="#"><img src="../include/images/main-women.jpg" alt="WOMEN'S SHOSE"></a></li>
@@ -60,11 +62,9 @@
                     <a href="#">
                         <img src="../include/images/temp/temp-product.jpg" alt="상품이미지">
                         <img src="../include/images/temp/temp-product2.jpg" alt="상품이미지" class="img-hover">
-                        <div class="product-info">
+                        <div class="product-info" style="display:block"><!-- style 마크업 확인용 개발시 삭제 -->
                             <div class="product-name">
-                                <span>3차 재입고</span>
                                 <h3 class="name">SLP 자라 스탠원피스</h3>
-                                <span>3 Color</span>
                             </div>
                             <div class="product-price">
                                 <em class="discount">89,000</em>

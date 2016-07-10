@@ -6,7 +6,8 @@
 }
 .container {
     width: 1688px;
-    margin: 99px auto 80px;
+    margin: 99px auto 0;
+    padding-bottom: 200px;
     &.main-container {
         width: 1512px;
     }
@@ -152,8 +153,13 @@
     border-top: 1px solid #646464;
     font-family: 'nanumgothic', sans-serif;
     .footer-inner {
-        width: 720px;
-        margin: 0 auto 40px;
+        min-width: 1512px;
+        max-width: 1900px;
+        margin: 0 auto;
+        .footer-box {
+            width: 720px;
+            margin: 0 auto 40px;
+        }
     }
     .sharing-link {
         margin-top: -35px;
@@ -234,13 +240,30 @@
         text-align: center;
     }
 }
-
+.mobile-version {
+    min-width: 1512px;
+    max-width: 1900px;
+    margin: 0 auto 125px;
+    text-align: center;
+    a {
+        display: inline-block;
+        padding: 17px 30px;
+        border: 1px solid #000;
+        i {
+            margin: 0 8px;
+        }
+    }
+}
 .top-link {
     position: fixed;
-    right: 60px;
-    bottom: 398px;
+    right: 20px;
+    bottom: 50px;
     font-family: 'nanumgothic', sans-serif;
     font-weight: 700;
+    &.top {
+        top: 875px;
+        bottom: 0;
+    }
     &:before {
         display: block;
         width: 20px;
@@ -280,10 +303,11 @@
         a {
             display: inline-block;
             width: 292px;
+            border: 1px solid #000;
+            font-weight: 700;
             font-size: 11px;
             line-height: (71)/11;
             letter-spacing: 2px;
-            border: 1px solid #000;
             text-transform: uppercase;
         }
     }
@@ -292,8 +316,11 @@
     padding: 0 82px;
     @include clearfix;
 }
-.main-slide {
+.main-slide-banner {
+    overflow: hidden;
     float: left;
+    width: 551px;
+    height: 636px;
     margin: 0 189px 0 28px;
 }
 .main-link-category {
@@ -345,6 +372,9 @@
         &:last-child a {
             padding-right: 0;
         }
+    }
+    > li > a {
+        font-weight: 700;
     }
     .nav-child {
         display: none;
@@ -563,7 +593,7 @@
         font-weight: 700;
         font-size: 24px;
         color: #000;
-        letter-spacing: 2px;
+        letter-spacing: 1.5px;
         &.discount {
             display: inline-block;
             position: relative;
@@ -1120,6 +1150,14 @@
 // --------------------------------------------------
 // Order Sheet list col width style
 .cart {
+    &:before {
+        display: block;
+        width: 90px;
+        height: 83px;
+        margin: 76px auto 111px;
+        background: url(../images/sprite.png) no-repeat -240px -510px;
+        content: '';
+    }
     .order-number {
         width: 56px;
     }
@@ -1165,6 +1203,27 @@
             }
         }
     }
+}
+.interest-list {
+    margin-top: 150px;
+    .order-photo {
+        width: 113px;
+        img {
+            width: 79px;
+            height: 97px;
+        }
+    }
+    .order-product {
+        width: 577px;
+    }
+    .order-quantity,
+    .order-stock,
+    .order-saved-money,
+    .order-price,
+    .order-cart {
+        width: 50px;
+    }
+
 }
 
 //
@@ -1254,6 +1313,10 @@
                 display: inline-block;
                 width: 50px;
                 text-align: left;
+            }
+            .form-control {
+                width: 137px;
+                height: 22px;
             }
         }
         &.findId-phone,
@@ -1599,6 +1662,8 @@
                 display: block;
                 padding: 24px 0;
                 border: 1px solid #000;
+                font-weight: 700;
+                font-size: 13px;
                 text-align: center;
                 .price {
                     color: #830000;
@@ -1714,11 +1779,14 @@
         background-color: #f6f6f6;
         font-size: 12px;
         color: #000;
+        text-align: center;
+        @include placeholder(#000);
     }
     .button {
         display: block;
         margin-top: 5px;
         font-weight: 700;
+        text-transform: uppercase;
     }
 }
 // 예치금 내역

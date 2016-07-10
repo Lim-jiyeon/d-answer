@@ -602,6 +602,13 @@ hr {
   vertical-align: text-top;
 }
 
+.icon-mobile {
+  width: 34px;
+  height: 64px;
+  background-position: 0 -30px;
+  vertical-align: middle;
+}
+
 .button {
   display: inline-block;
   padding: 0 12px;
@@ -943,13 +950,152 @@ input[type=checkbox] {
   vertical-align: top;
 }
 
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.slick-dots {
+  display: block;
+  position: absolute;
+  right: 7px;
+  bottom: 9px;
+  width: 100%;
+  text-align: right;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  display: block;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background-color: #bababa;
+  font-size: 0px;
+  line-height: 0px;
+  color: transparent;
+  cursor: pointer;
+}
+
+.slick-dots li button:hover, .slick-dots li button:focus {
+  outline: none;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #2c2c2c;
+}
+
 .wrap {
   width: 100%;
 }
 
 .container {
   width: 1688px;
-  margin: 99px auto 80px;
+  margin: 99px auto 0;
+  padding-bottom: 200px;
 }
 
 .container.main-container {
@@ -1126,6 +1272,12 @@ input[type=checkbox] {
 }
 
 .footer .footer-inner {
+  min-width: 1512px;
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
+.footer .footer-inner .footer-box {
   width: 720px;
   margin: 0 auto 40px;
 }
@@ -1236,12 +1388,34 @@ input[type=checkbox] {
   text-align: center;
 }
 
+.mobile-version {
+  min-width: 1512px;
+  max-width: 1900px;
+  margin: 0 auto 125px;
+  text-align: center;
+}
+
+.mobile-version a {
+  display: inline-block;
+  padding: 17px 30px;
+  border: 1px solid #000;
+}
+
+.mobile-version a i {
+  margin: 0 8px;
+}
+
 .top-link {
   position: fixed;
-  right: 60px;
-  bottom: 398px;
+  right: 20px;
+  bottom: 50px;
   font-family: 'nanumgothic', sans-serif;
   font-weight: 700;
+}
+
+.top-link.top {
+  top: 875px;
+  bottom: 0;
 }
 
 .top-link:before {
@@ -1295,10 +1469,11 @@ input[type=checkbox] {
 .main-arrivals span a {
   display: inline-block;
   width: 292px;
+  border: 1px solid #000;
+  font-weight: 700;
   font-size: 11px;
   line-height: 6.4545454545;
   letter-spacing: 2px;
-  border: 1px solid #000;
   text-transform: uppercase;
 }
 
@@ -1315,8 +1490,11 @@ input[type=checkbox] {
   clear: both;
 }
 
-.main-slide {
+.main-slide-banner {
+  overflow: hidden;
   float: left;
+  width: 551px;
+  height: 636px;
   margin: 0 189px 0 28px;
 }
 
@@ -1385,6 +1563,10 @@ input[type=checkbox] {
 
 .category-nav li:last-child a {
   padding-right: 0;
+}
+
+.category-nav > li > a {
+  font-weight: 700;
 }
 
 .category-nav .nav-child {
@@ -1680,7 +1862,7 @@ input[type=checkbox] {
   font-weight: 700;
   font-size: 24px;
   color: #000;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 
 .detail-shop-info .price.discount {
@@ -2245,6 +2427,15 @@ input[type=checkbox] {
   margin-left: 14px;
 }
 
+.cart:before {
+  display: block;
+  width: 90px;
+  height: 83px;
+  margin: 76px auto 111px;
+  background: url(../images/sprite.png) no-repeat -240px -510px;
+  content: '';
+}
+
 .cart .order-number {
   width: 56px;
 }
@@ -2292,6 +2483,31 @@ input[type=checkbox] {
 
 .cart .order-cancel a:first-child {
   margin-top: 0;
+}
+
+.interest-list {
+  margin-top: 150px;
+}
+
+.interest-list .order-photo {
+  width: 113px;
+}
+
+.interest-list .order-photo img {
+  width: 79px;
+  height: 97px;
+}
+
+.interest-list .order-product {
+  width: 577px;
+}
+
+.interest-list .order-quantity,
+.interest-list .order-stock,
+.interest-list .order-saved-money,
+.interest-list .order-price,
+.interest-list .order-cart {
+  width: 50px;
 }
 
 .login {
@@ -2405,6 +2621,12 @@ input[type=checkbox] {
   display: inline-block;
   width: 50px;
   text-align: left;
+}
+
+.find .findId-box .form-group .form-control,
+.find .findPassword-box .form-group .form-control {
+  width: 137px;
+  height: 22px;
 }
 
 .find .findId-box.findId-phone, .find .findId-box.findPassword-phone,
@@ -2852,6 +3074,8 @@ input[type=checkbox] {
   display: block;
   padding: 24px 0;
   border: 1px solid #000;
+  font-weight: 700;
+  font-size: 13px;
   text-align: center;
 }
 
@@ -2983,12 +3207,27 @@ input[type=checkbox] {
   background-color: #f6f6f6;
   font-size: 12px;
   color: #000;
+  text-align: center;
+}
+
+.password-check .form-control::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+.password-check .form-control:-ms-input-placeholder {
+  color: #000;
+}
+
+.password-check .form-control::-webkit-input-placeholder {
+  color: #000;
 }
 
 .password-check .button {
   display: block;
   margin-top: 5px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .deposit-explain {

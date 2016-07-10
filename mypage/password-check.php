@@ -10,7 +10,7 @@
             비밀번호는 타인에게 노출되지 않도록 주의해 주세요.</p>
             <div class="password-check">
                 <strong class="password-text">SPEED87KH</strong>
-                <input type="password" class="form-control">
+                <input type="password" class="form-control" placeholder="PASSWORD">
                 <a href="#" class="button button-lg button-third">OK</a>
                 <a href="#" class="button button-lg button-third">CANCEL</a>
             </div>

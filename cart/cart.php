@@ -78,6 +78,49 @@
                     <a href="#" class="button button-lg button-secondary">장바구니 비우기</a>
                     <a href="#" class="button button-lg button-secondary">견적서 출력</a>
                 </div>
+                <div class="order-list interest-list">
+                    <table class="table table-list">
+                        <caption>관심 상품 리스트</caption>
+                        <colgroup>
+                            <col class="order-photo">
+                            <col class="order-product">
+                            <col class="order-quantity">
+                            <col class="order-stock">
+                            <col class="order-saved-money">
+                            <col class="order-price">
+                            <col class="order-cart">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th>사진</th>
+                            <th>상품명</th>
+                            <th>수량</th>
+                            <th>재고</th>
+                            <th>적립금</th>
+                            <th>가격</th>
+                            <th>장바구니</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="order-photo">
+                                <a href="#"><img src="../include/images/temp/temp-order-sheet-img.jpg" alt="상품 이미지"></a>
+                            </td>
+                            <td class="align-left"><a href="#">차이나카라 포켓 반팔셔츠</a></td>
+                            <td class="order-quantity">
+                                <input type="text" class="form-control"> 개
+                            </td>
+                            <td>없음</td>
+                            <td>190원</td>
+                            <td>옵션변동<br>19,000원</td>
+                            <td>
+                                <a href="#" class="button button-xs button-secondary">담기</a>
+                                <a href="#" class="button button-xs button-secondary">삭제</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

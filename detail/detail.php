@@ -40,7 +40,7 @@
                                 </td>
                             </tr>
                             <tr class="review-view">
-                                <td colspan="4" class="align-left">
+                                <td colspan="2" class="align-left">
                                     <div class="review-content">
                                         <img src="../include/images/temp/temp-product.jpg">
                                         <p>187에 45키로 인데 옷이 너무 이쁘고 자수퀄 굉장합니다</p>
@@ -54,7 +54,7 @@
                             </tr>
                             <tr>
                                 <td>김민정</td>
-                                <td class="review-subject"><a href="#">abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz<</a></td>
+                                <td class="review-subject"><a href="#">abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz</a></td>
                             </tr>
                             <tr>
                                 <td>김민정</td>
@@ -141,7 +141,7 @@
                                 <td class="qna-subject">
                                     <a href="#">
                                         문의드립니다.문의드립니다.문의드립니다.문의드립니다.문의드립니다.문의드립니다.문의드립니다.문의드립니다.문의드립니다.문의드립니다.문의드립니다.문의드립니다.
-                                        <a href="#" class="icon-badge">new</a>
+                                        <span class="icon-badge">new</span>
                                     </a>
                                 </td>
                                 <td>김기훈</td>
