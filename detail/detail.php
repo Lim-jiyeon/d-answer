@@ -2,7 +2,7 @@
     include ("../header/header.php");
 ?>
 
-    <div class="container">
+    <div class="container detail-container">
         <div class="product-detail">
             <div class="detail-shop">
                 <div class="detail-img">
@@ -16,7 +16,7 @@
                             <caption>상품에 대한 review</caption>
                             <colgroup>
                                 <col class="col-review-name">
-                                <col>
+                                <col class="col-review-content">
                             </colgroup>
                             <tbody>
                             <tr>
@@ -243,43 +243,45 @@
             </div>
             <!-- 상품 Option 정보 -->
             <div class="detail-shop-info">
-                <h2 class="product-name">SLP 테일러드 블레이저</h2>
-                <span class="price discount">87,000 won</span>
-                <span class="price">87,000 won (5% new)</span>
-                <p class="shop-deposit">적립금 : 310원(1%)</p>
-                <div class="sharing-links">
-                    <a href="#"><i class="icon icon-facebook"></i></a>
-                    <a href="#"><i class="icon icon-instagram"></i></a>
-                </div>
-                <a href="#" class="size-guide">size guide</a>
-                <div class="detail-discription">
-                    fabrics - cotton 100%<br>
-                    model size - 182cm 68kg 48 fit<br>
-                    care instructions - dry clean
-                </div>
-                <div class="product-options">
-                    <div class="shop-selectbox">
-                        <label for="detail-color">color</label>
-                        <select class="selectbox" id="detail-color">
-                            <option>- Select Option -</option>
-                            <option>white</option>
-                            <option>black</option>
-                        </select>
+                <div class="detail-shop-inner">
+                    <h2 class="product-name">SLP 테일러드 블레이저</h2>
+                    <span class="price discount">87,000 won</span>
+                    <span class="price">87,000 won (5% new)</span>
+                    <p class="shop-deposit">적립금 : 310원(1%)</p>
+                    <div class="sharing-links">
+                        <a href="#"><i class="icon icon-facebook"></i></a>
+                        <a href="#"><i class="icon icon-instagram"></i></a>
                     </div>
-                    <div class="shop-selectbox">
-                        <label for="detail-size">size</label>
-                        <select class="selectbox" id="detail-size">
-                            <option>- Select Option -</option>
-                        </select>
+                    <a href="#" class="size-guide">size guide</a>
+                    <div class="detail-discription">
+                        fabrics - cotton 100%<br>
+                        model size - 182cm 68kg 48 fit<br>
+                        care instructions - dry clean
                     </div>
-                </div>
-                <div class="product-options-button">
-                    <a href="#" class="button button-lg">BUY IT NOW</a>
-                    <a href="#" class="button button-lg button-secondary">ADD TO CART</a>
-                    <a href="#" class="button button-lg button-secondary">WISH LIST</a>
-                </div>
-                <div class="naverPay">
-                    <a href="#"><img src="../include/images/naverPay.jpg" alt="네이버 ID 간편결제"></a>
+                    <div class="product-options">
+                        <div class="shop-selectbox">
+                            <label for="detail-color">color</label>
+                            <select class="selectbox" id="detail-color">
+                                <option>- Select Option -</option>
+                                <option>white</option>
+                                <option>black</option>
+                            </select>
+                        </div>
+                        <div class="shop-selectbox">
+                            <label for="detail-size">size</label>
+                            <select class="selectbox" id="detail-size">
+                                <option>- Select Option -</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-options-button">
+                        <a href="#" class="button button-lg">BUY IT NOW</a>
+                        <a href="#" class="button button-lg button-secondary">ADD TO CART</a>
+                        <a href="#" class="button button-lg button-secondary">WISH LIST</a>
+                    </div>
+                    <div class="naverPay">
+                        <a href="#"><img src="../include/images/naverPay.jpg" alt="네이버 ID 간편결제"></a>
+                    </div>
                 </div>
             </div>
             <!-- 상품 Option 정보 //end -->

@@ -32,6 +32,11 @@ $(document).ready(function() {
     //        .addClass( "overflow" );
     //});
 
+    $(".detail-shop-inner").sticky({
+        topSpacing: 150,
+        bottomSpacing: 450
+    });
+
     $(".tab-box .tab-button").click(function() {
         $(".tab-button").removeClass("selected").siblings("div").hide();
         $(this).addClass("selected").siblings("div").show();

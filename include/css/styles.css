@@ -1623,26 +1623,48 @@ input[type=checkbox] {
   padding-right: 0;
 }
 
+.detail-container {
+  width: 100%;
+}
+
 .product-detail {
   position: relative;
   width: 1200px;
   margin: 0 auto;
+  padding-top: 96px;
 }
 
-.detail-img {
+.product-detail:before, .product-detail:after {
+  content: " ";
+  display: table;
+}
+
+.product-detail:after {
+  clear: both;
+}
+
+.detail-shop {
+  width: 100%;
+}
+
+.detail-shop .detail-img {
   padding-bottom: 100px;
 }
 
-.detail-img img {
+.detail-shop .detail-img img {
   display: block;
-  width: 1200px;
+  width: 100%;
 }
 
 .detail-shop-info {
   position: absolute;
-  top: 113px;
+  top: 88px;
   right: -325px;
   width: 305px;
+}
+
+.detail-shop-info .detail-shop-inner {
+  right: 0;
 }
 
 .detail-shop-info .product-name {
@@ -1786,6 +1808,51 @@ input[type=checkbox] {
 
 .detail-shop-info .naverPay {
   margin-top: 20px;
+}
+
+@media (max-width: 1670px) {
+  .detail-container .product-detail {
+    width: 100%;
+    min-width: 1425px;
+  }
+  .detail-container .product-detail:before, .detail-container .product-detail:after {
+    content: " ";
+    display: table;
+  }
+  .detail-container .product-detail:after {
+    clear: both;
+  }
+  .detail-container .detail-shop {
+    width: 100%;
+    max-width: 1625px;
+    min-width: 1425px;
+    padding: 0 325px 0 100px;
+  }
+  .detail-container .detail-shop .detail-img img {
+    display: block;
+    width: 100%;
+  }
+  .detail-container .detail-shop-info {
+    position: absolute;
+    top: 88px;
+    right: 0;
+    width: 305px;
+  }
+  .detail-container .detail-shop-info .detail-shop-inner {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .detail-container .table-list .col-review-name {
+    width: 10%;
+  }
+  .detail-container .table-list .col-review-content {
+    width: 90%;
+  }
+  .detail-container .table-list td.review-subject a {
+    max-width: 700px;
+  }
+  .detail-container .table-list td.qna-subject a {
+    max-width: 530px;
+  }
 }
 
 .table-list td.review-subject, .table-list td.qna-subject {
