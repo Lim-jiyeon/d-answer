@@ -736,71 +736,6 @@
         }
     }
 }
-//    .detail-container {
-//        width: 100%;
-//        background-color: red;
-//    }
-//    .product-detail {
-//        position: relative;
-//        width: 100%;
-//        @include clearfix;
-//    }
-//    .detail-shop {
-//        width: 100%;
-//        padding: 96px 360px 0 35px;
-//        .detail-img {
-//            padding-bottom: 100px;
-//            img {
-//                display: block;
-//                width: 100%;
-//            }
-//        }
-//    }
-//    .detail-shop-info {
-//        position: absolute;
-//        top: 88px;
-//        right: 35px;
-//        width: 305px;
-//        .product-name {
-//            margin-bottom: 12px;
-//            font-family: 'nanumgothic', sans-serif;
-//            font-size: 15px;
-//        }
-//    }
-//}
-//@media (max-width: 1600px) {
-//    .detail-container {
-//        width: 100%;
-//        background-color: red;
-//    }
-//    .product-detail {
-//        position: relative;
-//        width: 100%;
-//        @include clearfix;
-//    }
-//    .detail-shop {
-//        width: 100%;
-//        padding: 96px 360px 0 35px;
-//        .detail-img {
-//            padding-bottom: 100px;
-//            img {
-//                display: block;
-//                width: 100%;
-//            }
-//        }
-//    }
-//    .detail-shop-info {
-//        position: absolute;
-//        top: 88px;
-//        right: 35px;
-//        width: 305px;
-//        .product-name {
-//            margin-bottom: 12px;
-//            font-family: 'nanumgothic', sans-serif;
-//            font-size: 15px;
-//        }
-//    }
-//}
 
 .table-list {
     td.review-subject, td.qna-subject {
@@ -1145,6 +1080,28 @@
     }
 }
 
+// Order Complete
+.order-complete {
+    margin-top: 130px;
+    &:before {
+        height: 0;
+        margin: 0;
+        background: none;
+    }
+    .orderer-info {
+        margin-top: 50px;
+    }
+    .order-complete-payment {
+        padding: 15px 10px;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        strong {
+            font-weight: 400;
+            color: #11008f;
+        }
+    }
+}
+
 //
 // Cart
 // --------------------------------------------------
@@ -1224,6 +1181,10 @@
         width: 50px;
     }
 
+}
+.cart-message {
+    margin: -62px 0 -36px;
+    text-align: center;
 }
 
 //
@@ -1333,6 +1294,12 @@
             margin-right: 25px;
         }
     }
+}
+.find-confirm {
+    padding-top: 60px;
+}
+.find-confirm-text {
+    margin: 8px 0 40px;
 }
 // Order Search
 .member-order-search {

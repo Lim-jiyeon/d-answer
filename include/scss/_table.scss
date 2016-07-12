@@ -4,6 +4,16 @@
     th {
         font-weight: 700;
     }
+    td {
+        &.align-left {
+            padding-left: 15px;
+            text-align: left;
+        }
+        &.align-right {
+            padding-right: 15px;
+            text-align: right;
+        }
+    }
 }
 // Table List Style
 .table-list {
@@ -16,16 +26,6 @@
         line-height: (21)/12;
         text-align: center;
         vertical-align: middle;
-    }
-    td {
-        &.align-left {
-            padding-left: 15px;
-            text-align: left;
-        }
-        &.align-right {
-            padding-right: 15px;
-            text-align: right;
-        }
     }
     tfoot td {
         padding-right: 30px;

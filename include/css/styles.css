@@ -740,6 +740,16 @@ hr {
   font-weight: 700;
 }
 
+.table td.align-left {
+  padding-left: 15px;
+  text-align: left;
+}
+
+.table td.align-right {
+  padding-right: 15px;
+  text-align: right;
+}
+
 .table-list {
   border-top: 2px solid #000;
 }
@@ -752,16 +762,6 @@ hr {
   line-height: 1.75;
   text-align: center;
   vertical-align: middle;
-}
-
-.table-list td.align-left {
-  padding-left: 15px;
-  text-align: left;
-}
-
-.table-list td.align-right {
-  padding-right: 15px;
-  text-align: right;
 }
 
 .table-list tfoot td {
@@ -2427,6 +2427,31 @@ input[type=checkbox] {
   margin-left: 14px;
 }
 
+.order-complete {
+  margin-top: 130px;
+}
+
+.order-complete:before {
+  height: 0;
+  margin: 0;
+  background: none;
+}
+
+.order-complete .orderer-info {
+  margin-top: 50px;
+}
+
+.order-complete .order-complete-payment {
+  padding: 15px 10px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.order-complete .order-complete-payment strong {
+  font-weight: 400;
+  color: #11008f;
+}
+
 .cart:before {
   display: block;
   width: 90px;
@@ -2508,6 +2533,11 @@ input[type=checkbox] {
 .interest-list .order-price,
 .interest-list .order-cart {
   width: 50px;
+}
+
+.cart-message {
+  margin: -62px 0 -36px;
+  text-align: center;
 }
 
 .login {
@@ -2644,6 +2674,14 @@ input[type=checkbox] {
 
 .find .find-select label {
   margin-right: 25px;
+}
+
+.find-confirm {
+  padding-top: 60px;
+}
+
+.find-confirm-text {
+  margin: 8px 0 40px;
 }
 
 .member-order-search .login {

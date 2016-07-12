@@ -72,6 +72,7 @@
                     (적립금 적립 + 사용 가능 / 출석체크 적립금 사용 불가능)<br>
                     김기훈 님이 1,000원 이상 구매시 구매금액의 1%를 추가 적립해 드립니다.</p>
                 </div>
+                <p class="cart-message">50,000원 미만의 주문은 배송료를 청구합니다.</p>
                 <div class="button-align-center">
                     <a href="#" class="button button-lg">주문하기</a>
                     <a href="#" class="button button-lg button-secondary">계속 쇼핑하기</a>
