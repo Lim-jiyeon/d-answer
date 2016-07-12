@@ -494,6 +494,17 @@
             }
         }
     }
+    .best-seller-list {
+        .item-container {
+            margin-bottom: 100px;
+            padding-bottom: 76px;
+            border-bottom: 1px solid #000;
+            &:last-child {
+                padding-bottom: 0;
+                border-bottom: 0;
+            }
+        }
+    }
 }
 .main-container .product-list {
     max-width: 1346px;
