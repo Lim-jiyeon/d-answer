@@ -258,6 +258,7 @@
     position: fixed;
     right: 20px;
     bottom: 50px;
+    z-index: 100;
     font-family: 'nanumgothic', sans-serif;
     font-weight: 700;
     &.top {
