@@ -73,11 +73,11 @@ $(document).ready(function() {
 
     // Tab
     // --------------------------------------------------
-    $(".tab-box .tab-button").click(function() {
-        $(".tab-button").removeClass("selected").siblings("div").hide();
-        $(this).addClass("selected").siblings("div").show();
-        return false;
-    });
+    // $(".tab-box .tab-button").click(function() {
+    //     $(".tab-button").removeClass("selected").siblings("div").hide();
+    //     $(this).addClass("selected").siblings("div").show();
+    //     return false;
+    // });
 
     // Review
     // --------------------------------------------------
