@@ -1,0 +1,99 @@
+.button {
+    display: inline-block;
+    padding: 0 12px;
+    border: 1px solid transparent;
+    background-color: #000;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 11px;
+    line-height: (25)/11;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: lowercase;
+    &:hover {
+        color: #fff;
+    }
+}
+
+.button-xl {
+    padding: 0 19px;
+    line-height: (48)/11;
+}
+.button-lg {
+    padding: 0 42px;
+    font-size: 12px;
+    line-height: (32)/12;
+}
+.button-sm {
+    padding: 0 16px;
+    line-height: (20)/11;
+}
+.button-xs {
+    padding: 0 5px;
+    font-size: 11px;
+    line-height: (17)/11;
+    letter-spacing: 0;
+}
+
+.button-secondary {
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    &:hover {
+        color: #000;
+    }
+}
+.button-third { // Pink Button
+    background-color: #efe4d5;
+    color: #000;
+    &:hover {
+        color: #000;
+    }
+}
+.button-fourth { //gray Button
+    background-color: #f6f6f6;
+    color: #000;
+    &:hover {
+        color: #000;
+    }
+}
+.button-board {
+    background-color: #313131;
+}
+
+.button-file {
+    padding: 0 16px;
+    background-color: #000;
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: (16)/11;
+    letter-spacing: 0;
+    color: #fff;
+}
+
+.button-align-left {
+    margin-top: 12px;
+    text-align: left;
+}
+.button-align-center {
+    margin-top: 64px;
+    text-align: center;
+    a {
+        margin: 0 13px;
+    }
+}
+.button-align-right {
+    margin-top: 12px;
+    text-align: right;
+    &.table-top {
+        margin: 0 0 14px;
+        a {
+            letter-spacing: 0;
+        }
+    }
+}
+.button-align {
+    @include clearfix;
+    .button-align-right {
+        margin-top: -22px;
+    }
+}

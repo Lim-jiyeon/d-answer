@@ -1,0 +1,74 @@
+.form-file {
+    position: relative;
+    display: inline-block;
+    input[type=file] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        height: 18px;
+    }
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+.form-control {
+    height: 22px;
+    padding: 0 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+    font-size: 12px;
+    line-height: (22-2)/12;
+    vertical-align: top;
+}
+textarea.form-control {
+    height: auto;
+}
+
+// Select Box
+.ui-state-default {
+    height: 22px;
+    padding-right: 16px;
+    border: 1px solid #000;
+    border-radius: 0;
+    background-color: #fff;
+    vertical-align: top;
+    .ui-icon {
+        height: 20px;
+        background: #e2e2e2 url(../images/sprite.png) no-repeat -60px -30px;
+    }
+}
+.ui-selectmenu-button {
+    span.ui-selectmenu-text {
+        padding: 0 0 0 .4em;
+        font-size: 11px;
+        line-height: (22-2)/11;
+        color: #000;
+    }
+    span.ui-icon {
+        right: 0;
+        margin-top: -10px;
+    }
+}
+.ui-menu {
+    border: 1px solid #000;
+    border-radius: 0;
+    .ui-menu-item {
+        padding: 3px 0 3px .4em;
+        font-size: 11px;
+        line-height: (13)/11;
+    }
+    .ui-state-focus {
+        border: 0;
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+// Radio Button
+input[type=radio],
+input[type=checkbox] {
+    margin-top: 3px;
+    vertical-align: top;
+}

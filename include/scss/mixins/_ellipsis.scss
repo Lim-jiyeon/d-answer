@@ -1,0 +1,9 @@
+@mixin ellipsis() {
+    position:relative;
+    overflow:hidden;
+    float:left;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    -ms-text-overflow:ellipsis;
+    white-space:nowrap;
+}

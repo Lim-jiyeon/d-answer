@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D-answer</title>
+    <script type="text/javascript" src="include/js/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="../include/css/styles.css">
+    <style type="text/css">
+        * {font-family: 'Nanum Gothic', sans-serif;}
+        .markup-list {padding: 30px 20px;font-size: 14px;}
+        .markup-list h1 {margin-bottom: 10px;}
+        .markup-list h2 {margin: 40px 0 10px 10px;}
+        .markup-list ul li {padding: 2px 0 2px 15px;}
+        .markup-list ul li:before {margin-right:5px;content:'▪︎';}
+        .markup-list a:hover {color: #3a4cff;text-decoration:underline;}
+        .markup-list ul li p {margin: 3px 0 0 10px;font-size:11px;}
+        .markup-list .issue {margin: 5px 0 0 15px;font-size:11px;}
+        .markup-list .check {display:inline-block;margin:5px 0;padding: 3px 13px;border-radius:13px;background-color:#8f0000;font-size:12px;color:#fff;}
+        .markup-list .check + p {font-size:12px;}
+        .markup-list .diff {margin-left:5px;padding: 2px 4px;border-radius:10px;background-color:#55a532;font-size:10px;color:#fff;}
+        .markup-list .diff:hover {background-color:#a6f3a6;color:#55a532;text-decoration:none;}
+        .markup-list .complete {margin-left:5px;padding: 2px 4px;border-radius:10px;background-color:#262b67;font-size:10px;color:#fff;}
+        .markup-list .modify {text-decoration:line-through;}
+        .markup-list .inquiry {color:#8f0000;}
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div class="container">
+        <div class="markup-list">
+            <h1>마크업 리스트<strong class="inquiry"> - 수정완료</strong></h1>
+            <p>개발확인 URL : <a href="http://www.d-answer.com/preview/?dgnset_id=13273"><span class="check">미리보기</span></a></p>
+            <span class="check">확인사항</span>
+            <p>
+                - (개발) 표시는 (기영)해야됨 까먹을까봐 적음.<br>
+                - <a href="./join/join-agree.php">[회원가입 동의] 탭영역 스타일 깨지는 원인을 몰라 수정함</a>
+                <a href="https://github.com/Lim-jiyeon/d-answer/commit/27ad1c9e60430580861f2b532f512486399e9f5b#diff-173cf71d325c315228c4a17d234d9921" class="diff">20160716 diff</a><br>
+
+                <br>
+            </p>
+
+            <hr>
+
+            <div>
+                <h2>Include</h2>
+                <ul>
+                    <li>
+                        <a href="header/header.php">Header</a>
+                        <p>- 20160710 - 제이쿼리 플러그인 추가됨</p>
+                    </li>
+                    <li>
+                        <a href="footer/footer.php">Footer</a>
+                        <a href="https://github.com/Lim-jiyeon/d-answer/commit/06843c892df94ae12f9a8baf5fb2913da5a8837c#diff-626b4ee7a66e15596d1030d334e7a6ea" class="diff">20160710 diff</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <hr>
+
+            <div>
+                <h2>Main</h2>
+                <ul>
+                    <li>
+                        <a href="./main/main.php">Main</a>
+                        <a href="https://github.com/Lim-jiyeon/d-answer/commit/78fed032446685b0d18647115a240b8eb41d0bad#diff-6d5c8bed0d4bdac7e6ea089521408ef3" class="diff">20160705 diff</a>
+                    </li>
+                </ul>
+                <p class="issue modify">- basic 롤링, 푸터 작업 미작업</p>
+                <p class="issue modify">- 상품목록 > 할인상품 > 상품명 한줄일때 > 상품가격이 반투명 영역을 침범.</p>
+                <p class="issue inquiry">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- main 페이지에 샘플로 보이게 해놨는데.. 상품리스트 3번 확인해보고 이게 맞는지 알려주시오</p>
+                <p class="issue modify">- 메뉴 2뎁스 드롭 메뉴 겹쳐서 보일때가 있음.</p>
+                <p class="issue modify">- 푸터 > ABOUT US / GUIDE / AGREEMENTS > CSS파일 인코딩 때문에 '/' 깨짐 > CSS 글자빼야할듯.</p>
+                <p class="issue modify">- 푸터 > 화면 줄였을때 헤더 와 푸터 width 크기가 다름</p>
+                <p class="issue modify">- UP 버튼 페이지 하단쪽에 붙어야함. (메인화면 스크롤 최상단일때 수정 Img 위치로 수정.)</p>
+                <p class="issue modify">- 하단 모바일버젼 배너 추가 (새디자인 확인) </p>
+                <p class="issue modify">- 맨즈, 우먼 폰트 두껍게(bold)</p>
+            </div>
+
+            <hr>
+
+            <div>
+                <h2>Category</h2>
+                <ul>
+                    <li><a href="./category/original.php">Original</a></li>
+                    <li><a href="./category/women.php">Women</a></li>
+                    <li><a href="./category/best-seller.php">Best Seller</a><span class="complete">20160712 완</span></li>
+                </ul>
+                <p class="issue modify">- 상품목록 > 할인상품 > 상품명 한줄일때 > 상품가격이 반투명 영역을 침범.</p>
+                <p class="issue modify">- Best Seller 영역 추가 (PSD 확인) </p>
+                <p class="issue modify">- 2뎁스 메뉴와 3뎁스 메뉴의 좌측정렬 맞춰야함.</p>
+                <p class="issue modify">- 2뎁스 폰트 두껍게(볼드)</p>
+            </div>
+
+            <hr>
+
+            <div>
+                <h2>Detail</h2>
+                <ul>
+                    <li>
+                        <a href="./detail/detail.php">Detail</a>
+                        <span class="complete">20160709 완</span>
+                        <a href="https://github.com/Lim-jiyeon/d-answer/commit/06843c892df94ae12f9a8baf5fb2913da5a8837c#diff-1d78ef4b7c8828f2c5f266814b34f3fe" class="diff">20160710 diff</a>
+                    </li>
+                    <li>
+                        <a href="./detail/order-sheet.php">주문서 작성</a>
+                        <a href="https://github.com/Lim-jiyeon/d-answer/commit/6edf87553638cce85467907721214488c021b229#diff-4df9fea16117046fa9afbbb4eb236a29" class="diff">20160703 diff</a>
+                    </li>
+                    <li>
+                        <a href="./detail/order-sheet-guest.php">비회원 주문서 작성</a><span class="complete">20160705 완</span>
+                    </li>
+                    <li>
+                        <a href="./detail/order-complete.php">주문 완료</a><span class="complete">20160711 완</span>
+                    </li>
+                </ul>
+                <p class="issue modify">- 상품 옵션 스크롤따라 이동하는 스크립트 미작업</p>
+                <p class="issue modify">- 새디자인보고 작업해야함 (수정많음. 주말에 같이 해봐요) </p>
+                <p class="issue">- 가격 최종금액에서 솔루션이 자동으로 span 태그를 만듬. (span 빼고 br로 먼저 개발해봐야함)</p>
+                <p class="issue">- 비회원 주문서 작성 > 개인정보 수집에 대한 동의 > 솔루션에서 textarea를 만들어버림.</p>
+                <p class="issue modify">- 주문완료 페이지 추가되어야함. </p>
+                <p class="issue">- 주문 상세 페이지 DIV별 간격 확인 (개발) </p>
+            </div>
+
+            <hr>
+
+            <div>
+                <h2>Cart</h2>
+                <ul>
+                    <li><a href="./cart/cart.php">Cart</a><span class="complete">20160627 완</span></li>
+                </ul>
+                <p class="issue modify">- Cart 이미지 변경 > 요이미지루</p>
+                <p class="issue modify">- 하단에 관심상품 목록 영역 추가 </p>
+                <p class="issue modify">- 50,000원 미만의 주문은 배송료를 청구 문구 추가 </p>
+            </div>
+
+            <hr>
+
+            <div>
+                <h2>Join</h2>
+                <ul>
+                    <li><a href="./join/login.php">로그인</a><span class="complete">20160628 완</span></li>
+                    <li><a href="./join/login-guest.php">비회원 로그인</a><span class="complete">20160705 완</span></li>
+                    <li><a href="./join/find.php">아이디/비밀번호 찾기</a><span class="complete">20160705 완</span></li>
+                    <li><a href="./join/find-id-confirm.php">아이디 찾기 완료</a><span class="complete">20160711 완</span></li>
+                    <li><a href="./join/find-password-confirm.php">비밀번호 찾기 완료</a><span class="complete">20160711 완</span></li>
+                    <li><a href="./join/order-search.php">주문조회</a><span class="complete">20160628 완</span></li>
+                    <li><a href="./join/join-type.php">회원가입 - 유형선택</a><span class="complete">20160628 완</span></li>
+                    <li>
+                        <a href="./join/join-agree.php">회원가입 - 동의</a><span class="complete">20160628 완</span>
+                        <a href="https://github.com/Lim-jiyeon/d-answer/commit/27ad1c9e60430580861f2b532f512486399e9f5b#diff-173cf71d325c315228c4a17d234d9921" class="diff">20160716 diff</a>
+                    </li>
+                    <li><a href="./join/join.php">회원가입</a><span class="complete">20160628 완</span></li>
+                    <li><a href="./join/simple-join.php">간편회원가입</a><span class="complete">20160709 완</span></li>
+                    <li><a href="./join/simple-join-complete.php">간편회원가입 완료</a><span class="complete">20160709 완</span></li>
+                </ul>
+                <p class="issue modify">- 아이디/비번 찾기 > 다른 input은 크기가 지정되는데 임시 비밀번호 발급 영역의 아이디만 width 조정안됨.</p>
+                <p class="issue">- 회원가입-동의 > 회원약관 Html로 관리 안되고있어서 Textarea에 넣어줘야함.</p>
+                <p class="issue modify">- 회원유형선택 > 선택화면 센터정렬이 안되있음 왼쪽으로 좀 치우침</p>
+                <p class="issue modify">- 간편회원가입 페이지 추가되야함.</p>
+                <p class="issue modify">- 간편회원가입완료 페이지 추가되야함. </p>
+                <p class="issue modify">- 회원 비밀번호&amp;아이디찾기 완료 화면 추가되야함 </p>
+            </div>
+
+            <hr>
+
+            <div>
+                <h2>My Page</h2>
+                <ul>
+                    <li><a href="./mypage/mypage.php">My Page</a><span class="complete">20160701 완</span></li>
+                    <li><a href="./mypage/order.php">주문 내역</a><span class="complete">20160630 완</span></li>
+                    <li><a href="./mypage/order-information.php">주문 상세</a><span class="complete">20160705 완</span></li>
+                    <li><a href="./mypage/wishlist.php">Wishlist</a><span class="complete">20160629 완</span></li>
+                    <li><a href="./mypage/mileage.php">적립금 상세 페이지</a><span class="complete">20160630 완</span></li>
+                    <li><a href="./mypage/deposit.php">예치금 상세 페이지</a><span class="complete">20160630 완</span></li>
+                    <li><a href="./mypage/coupon.php">쿠폰</a><span class="complete">20160701 완</span></li>
+                    <li><a href="./mypage/board-list.php">게시물 관리</a><span class="complete">20160629 완</span></li>
+                    <li><a href="./mypage/onlyyou.php">개인결제창</a><span class="complete">20160629 완</span></li>
+                    <li>
+                        <a href="./mypage/password-check.php">비밀번호 재확인</a>
+                        <span class="complete">20160629 완</span>
+                        <a href="https://github.com/Lim-jiyeon/d-answer/commit/219d8de8463731a216a0da517bab174f31041492#diff-50b56455c595f0ae4cd63d78477a077c" class="diff">20160709 diff</a>
+                    </li>
+                </ul>
+                <p class="issue modify">- 비밀번호 재확인 > Password input 태그로 변경되야함.</p>
+                <p class="issue modify">- 비밀번호 재확인 > OK, CANCEL 폰트 굵게 해주세요.</p>
+                <p class="issue modify">- 온리유 > 페이징 영역 추가 (그냥 넣어봣는데 깨짐)</p>
+                <p class="issue modify">- 온리유 > 상품 박스안 폰트 크기 조금 키우고 볼드해주세요 </p>
+                <p class="issue">- 회원 등급 개발해야됨. (개발) </p>
+                <p class="issue modify">- 마이페이지 타이틀 볼드</p>
+                <p class="issue modify">- 쿠폰 영문글자 빠짐(이미지 교체)</p>
+                <p class="issue modify">- 온리유 타이틀 두껍게 (타이틀성은 다 볼드 처리해야할듯..)</a></p>
+            </div>
+
+            <hr>
+
+            <div>
+                <h2>CS Center</h2>
+                <ul>
+                    <li><a href="./cscenter/notice-list.php">Notice - List</a><span class="complete">20160702 완</span></li>
+                    <li><a href="./cscenter/notice-write.php">Notice - Write</a><span class="complete">20160703 완</span></li>
+                    <li><a href="./cscenter/notice-view.php">Notice - View</a><span class="complete">20160703 완</span></li>
+                    <li><a href="./cscenter/qna-list.php">Q&amp;A - List</a><span class="complete">20160703 완</span></li>
+                    <li><a href="./cscenter/qna-write.php">Q&amp;A - Write</a><span class="complete">20160703 완</span></li>
+                    <li><a href="./cscenter/qna-view.php">Q&amp;A - View</a><span class="complete">20160703 완</span></li>
+                    <li><a href="./cscenter/review.php">Review</a><span class="complete">20160703 완</span></li>
+                    <li><a href="./cscenter/information.php">Information</a><span class="complete">20160702 완</span></li>
+                    <li><a href="./cscenter/delivery.php">Delivery</a><span class="complete">20160702 완</span></li>
+                    <li><a href="./cscenter/membership.php">Membership</a><span class="complete">20160703 완</span></li>
+                    <li><a href="./cscenter/check-password.php">비밀번호 확인</a><span class="complete">20160709 완</span></li>
+                </ul>
+                <p class="issue modify">- (공통)타이틀 두껍게 (타이틀성은 다 볼드 처리해야할듯..)</p>
+                <p class="issue">- select 태그안에 class 넣을수 있을지 !--/basket@input_quantity(form-control)/-->' 이런식으로 input select 옆에 class 스타일을 줘야됨</p>
+                <p class="issue modify">- th영역 width 좀더 넓혀달람 ㅡㅡ</p>
+                <p class="issue inquiry">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt; 117px → 127px 로 넓힘</p>
+                <p class="issue modify">- 센터정렬 안맞음</p>
+                <p class="issue modify">- textarea 크기 class로 지정해줘야됨 솔루션이라 textarea 옵션 못줌 ㅠㅠ</p>
+                <p class="issue modify">- 이미지 확인해보시면됨.</p>
+                <p class="issue inquiry">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt; 리플이 있는 글 제목 앞에 &lt;i class="icon icon-reply"&gt;&lt;/i&gt; 이 아이콘을 넣어주면 좋겠음</p>
+                <p class="issue modify">- 리플목록 디자인에 없는데 누나가 그냥 만들어줄수있겟쥬? 내가 만들었더니 바싹 붙음 ㅋㅋ</p>
+                <p class="issue modify">- 검정색 메뉴바 height가 넘 크다는거같음.</p>
+                <p class="issue modify">- 비밀번호 확인창 디자인 없는데 input 하나 페이지 누나가 그냥 만들어줄수있겟쥬? 아이디찾기 페이지유형쓰면될듯한데</p>
+            </div>
+
+            <hr>
+
+            <div>
+                <h2>ETC</h2>
+                <ul>
+                    <li><a href="./etc/offline.php">Offline</a><span class="complete">20160704 완</span></li>
+                    <li><a href="./etc/search.php">검색 결과</a><span class="complete">20160704 완</span></li>
+                    <li><a href="./etc/search-empty.php">검색 결과 없을 때</a><span class="complete">20160704 완</span></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

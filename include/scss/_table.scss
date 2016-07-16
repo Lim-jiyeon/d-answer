@@ -1,0 +1,121 @@
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    th {
+        font-weight: 700;
+    }
+    td {
+        &.align-left {
+            padding-left: 15px;
+            text-align: left;
+        }
+        &.align-right {
+            padding-right: 15px;
+            text-align: right;
+        }
+    }
+}
+// Table List Style
+.table-list {
+    border-top: 2px solid #000;
+    th, td {
+        padding: 9px 0;
+        border-bottom: 1px solid #959595;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 12px;
+        line-height: (21)/12;
+        text-align: center;
+        vertical-align: middle;
+    }
+    tfoot td {
+        padding-right: 30px;
+        text-align: right;
+    }
+}
+// Table List Border Style
+.table-list-border {
+    border: 1px solid #000;
+    th, td {
+        border: 1px solid #000;
+    }
+}
+// Table List Head Background Style
+.table-list-bg {
+    border: 1px solid #000;
+    th, td {
+        border: 1px solid #000;
+    }
+    th {
+        background-color: #313131;
+        color: #fff;
+    }
+}
+// Table Row List Style
+.table-row-list {
+    border: 1px solid #000;
+    th, td {
+        border: 1px solid #000;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 12px;
+        line-height: (21)/12;
+    }
+    th {
+        padding: 9px 12px 9px 0;
+        font-weight: 400;
+        text-align: right;
+    }
+    td {
+        padding: 9px 0 9px 15px;
+        text-align: left;
+    }
+}
+ // Paginate
+.paginate {
+    padding-top: 40px;
+    text-align: center;
+    .number {
+        display: inline-block;
+        margin: 0 10px;
+        a {
+            padding: 0 9px;
+        }
+        .selected {
+            padding: 2px 7px;
+            border: 1px solid #000;
+            color: #5d5d5d;
+        }
+    }
+    .arrow-page {
+        display: inline-block;
+        width: 11px;
+        height: 8px;
+        margin: 0 4px;
+        background: url(../images/sprite.png) no-repeat 0 0;
+        &.prev-first {
+            background-position: 0 -120px;
+        }
+        &.prev {
+            background-position: -30px -120px;
+        }
+        &.next {
+            background-position: -60px -120px;
+        }
+        &.next-last {
+            background-position: -90px -120px;
+        }
+    }
+}
+
+.table-title {
+    margin-bottom: 10px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.all-board-text {
+    display: block;
+    margin-bottom: 50px;
+    font-weight: 400;
+    text-align: center;
+}
