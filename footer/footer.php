@@ -1,7 +1,4 @@
     <a href="#" class="top-link">UP</a>
-    <div class="mobile-version">
-        <a href="#">MOBILE<i class="icon icon-mobile"></i>VERSION</a>
-    </div>
     <div class="footer">
         <div class="footer-inner">
             <div class="footer-box">

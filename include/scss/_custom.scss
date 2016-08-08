@@ -6,10 +6,10 @@
 }
 .container {
     width: 1688px;
-    margin: 99px auto 0;
+    margin: 67px auto 0;
     padding-bottom: 200px;
     &.main-container {
-        width: 1512px;
+        width: 1900px;
     }
 }
 .page-container {
@@ -29,10 +29,7 @@
     width: 100%;
     min-width: 1512px;
     margin-top: 66px;
-    padding-bottom: 31px;
-    border: 1px solid #000;
-    border-width: 1px 0;
-    background-color: #efe4d5;
+    border-bottom: 1px solid #000;
 
 }
 .header-in {
@@ -40,7 +37,7 @@
     min-width: 1512px;
     max-width: 1900px;
     height: 66px;
-    margin: -67px auto 0;
+    margin: -66px auto 0;
     padding: 16px 28px 0 15px;
     background-color: #fff;
     letter-spacing: 2px;
@@ -107,7 +104,7 @@
 .nav-member-link {
     float: right;
     margin-right: -12px;
-    .search, .membership-link, .language {
+    .search, .membership-link {
         float: left;
         li {
             float: left;
@@ -128,20 +125,24 @@
     .membership-link {
         margin: 0 40px 0 28px;
     }
-    .language li {
-        a:before {
+    .language{
+        float: left;
+        margin-top: 8px;
+        li {
             display: inline-block;
-            width: 2px;
-            height: 8px;
-            margin: 0 7px 0 -19px;
-            border-left: 1px solid #e9e9e9;
-            background-color: #000;
-            content: '';
-        }
-        &:first-child a:before {
-            width: 0;
-            border-left: 0;
-            margin-left: -7px;
+            a:before {
+                display: inline-block;
+                width: 2px;
+                height: 8px;
+                margin: 0 8px 0 2px;
+                border-left: 1px solid #e9e9e9;
+                background-color: #000;
+                content: '';
+            }
+            &:first-child a:before {
+                width: 0;
+                border-left: 0;
+            }
         }
     }
 }
@@ -150,11 +151,11 @@
 // Footer
 // --------------------------------------------------
 .footer {
+    min-width: 1900px;
     border-top: 1px solid #646464;
     font-family: 'nanumgothic', sans-serif;
     .footer-inner {
-        min-width: 1512px;
-        max-width: 1900px;
+        width: 1900px;
         margin: 0 auto;
         .footer-box {
             width: 720px;
@@ -233,7 +234,7 @@
     .copyright {
         padding: 4px 0;
         border-top: 1px solid #000;
-        background-color: #efe4d5;
+        background-color: #e5e5e5;
         font-family: arial, sans-serif;
         font-size: 11px;
         letter-spacing: 2px;
@@ -294,7 +295,8 @@
 // Main
 // --------------------------------------------------
 .main-arrivals {
-    width: 100%;
+    width: 1512px;
+    margin: 0 auto;
     @include clearfix;
     span {
         float: left;
@@ -306,14 +308,16 @@
             width: 292px;
             border: 1px solid #000;
             font-weight: 700;
-            font-size: 11px;
-            line-height: (71)/11;
+            font-size: 12px;
+            line-height: (71)/12;
             letter-spacing: 2px;
             text-transform: uppercase;
         }
     }
 }
 .main-category {
+    width: 1512px;
+    margin: 0 auto;
     padding: 0 82px;
     @include clearfix;
 }
@@ -555,6 +559,7 @@
     .product-name {
         margin-bottom: 12px;
         font-family: 'nanumgothic', sans-serif;
+        font-weight: 600;
         font-size: 15px;
     }
     .price {
@@ -927,20 +932,23 @@
 }
 // Member Level
 .member-level {
+    display: table;
+    width: 100%;
     margin: 55px 0 91px;
     border: 1px solid #000;
-    @include clearfix;
     .level-mark {
-        float: left;
-        width: 90px;
+        display: table-cell;
+        width: 100px;
+        height: 90px;
         font-weight: 700;
         font-size: 40px;
-        line-height: (90)/40;
         text-align: center;
+        vertical-align: middle;
     }
     .level-explain {
-        float: left;
-        padding: 15px;
+        display: table-cell;
+        padding: 15px 15px 15px 0;
+        vertical-align: middle;
         strong {
             color: #a30000;
         }
@@ -2412,5 +2420,54 @@
         .qna-search {
             margin-top: 35px;
         }
+    }
+}
+
+//
+// Modal Layer Popup
+// --------------------------------------------------
+.modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    .modal-content {
+        position: relative;
+        z-index: 1010;
+        .closeModal {
+            position: absolute;
+            top: -7px;
+            right: 10px;
+            font-size: 30px;
+            color: #fff;
+        }
+    }
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1001;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.3;
+    }
+}
+
+//
+// MakeShop Custom
+// --------------------------------------------------
+#reviewBoard .review-wrap {
+    .star-icon .icon {
+        background-image: none;
+    }
+    > li {
+        padding-bottom: 35px;
+    }
+    .reply {
+        padding-top: 20px;
     }
 }

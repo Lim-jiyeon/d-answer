@@ -310,14 +310,14 @@ input[type=radio], input[type=checkbox] { margin-top: 3px; vertical-align: top; 
 
 .wrap { width: 100%; }
 
-.container { width: 1688px; margin: 99px auto 0; padding-bottom: 200px; }
-.container.main-container { width: 1512px; }
+.container { width: 1688px; margin: 67px auto 0; padding-bottom: 200px; }
+.container.main-container { width: 1900px; }
 
 .page-container { width: 1348px; margin: 0 auto; padding: 53px 0 80px; }
 
-.header { position: fixed; top: 0; left: 0; z-index: 1000; width: 100%; min-width: 1512px; margin-top: 66px; padding-bottom: 31px; border: 1px solid #000; border-width: 1px 0; background-color: #efe4d5; }
+.header { position: fixed; top: 0; left: 0; z-index: 1000; width: 100%; min-width: 1512px; margin-top: 66px; border-bottom: 1px solid #000; }
 
-.header-in { position: relative; min-width: 1512px; max-width: 1900px; height: 66px; margin: -67px auto 0; padding: 16px 28px 0 15px; background-color: #fff; letter-spacing: 2px; text-transform: uppercase; }
+.header-in { position: relative; min-width: 1512px; max-width: 1900px; height: 66px; margin: -66px auto 0; padding: 16px 28px 0 15px; background-color: #fff; letter-spacing: 2px; text-transform: uppercase; }
 .header-in:before, .header-in:after { content: " "; display: table; }
 .header-in:after { clear: both; }
 .header-in a { font-size: 11px; }
@@ -338,17 +338,19 @@ input[type=radio], input[type=checkbox] { margin-top: 3px; vertical-align: top; 
 .nav-child .img-link span { display: block; padding: 11px 0 13px; }
 
 .nav-member-link { float: right; margin-right: -12px; }
-.nav-member-link .search, .nav-member-link .membership-link, .nav-member-link .language { float: left; }
-.nav-member-link .search li, .nav-member-link .membership-link li, .nav-member-link .language li { float: left; }
-.nav-member-link .search li a, .nav-member-link .membership-link li a, .nav-member-link .language li a { display: block; padding: 10px 12px; }
+.nav-member-link .search, .nav-member-link .membership-link { float: left; }
+.nav-member-link .search li, .nav-member-link .membership-link li { float: left; }
+.nav-member-link .search li a, .nav-member-link .membership-link li a { display: block; padding: 10px 12px; }
 .nav-member-link .search { padding: 9px 0; }
 .nav-member-link .search .search-input { width: 80px; border: 1px solid #000; border-width: 0 0 1px; }
 .nav-member-link .membership-link { margin: 0 40px 0 28px; }
-.nav-member-link .language li a:before { display: inline-block; width: 2px; height: 8px; margin: 0 7px 0 -19px; border-left: 1px solid #e9e9e9; background-color: #000; content: ''; }
-.nav-member-link .language li:first-child a:before { width: 0; border-left: 0; margin-left: -7px; }
+.nav-member-link .language { float: left; margin-top: 8px; }
+.nav-member-link .language li { display: inline-block; }
+.nav-member-link .language li a:before { display: inline-block; width: 2px; height: 8px; margin: 0 8px 0 2px; border-left: 1px solid #e9e9e9; background-color: #000; content: ''; }
+.nav-member-link .language li:first-child a:before { width: 0; border-left: 0; }
 
-.footer { border-top: 1px solid #646464; font-family: 'nanumgothic', sans-serif; }
-.footer .footer-inner { min-width: 1512px; max-width: 1900px; margin: 0 auto; }
+.footer { min-width: 1900px; border-top: 1px solid #646464; font-family: 'nanumgothic', sans-serif; }
+.footer .footer-inner { width: 1900px; margin: 0 auto; }
 .footer .footer-inner .footer-box { width: 720px; margin: 0 auto 40px; }
 .footer .sharing-link { margin-top: -35px; text-align: center; }
 .footer .sharing-link a { margin: 0 5px; }
@@ -368,7 +370,7 @@ input[type=radio], input[type=checkbox] { margin-top: 3px; vertical-align: top; 
 .footer .business-info li { float: left; }
 .footer .business-info li:after { display: inline-block; width: 2px; height: 10px; margin: 0 4px; border-right: 1px solid #a5a5a5; background-color: #787878; content: ''; }
 .footer .business-info li:nth-child(4):after, .footer .business-info li:last-child:after { display: inherit; width: 0; height: 0; margin: 0; border-right: 0; }
-.footer .copyright { padding: 4px 0; border-top: 1px solid #000; background-color: #efe4d5; font-family: arial, sans-serif; font-size: 11px; letter-spacing: 2px; text-align: center; }
+.footer .copyright { padding: 4px 0; border-top: 1px solid #000; background-color: #e5e5e5; font-family: arial, sans-serif; font-size: 11px; letter-spacing: 2px; text-align: center; }
 
 .mobile-version { min-width: 1512px; max-width: 1900px; margin: 0 auto 125px; text-align: center; }
 .mobile-version a { display: inline-block; padding: 17px 30px; border: 1px solid #000; }
@@ -385,13 +387,13 @@ input[type=radio], input[type=checkbox] { margin-top: 3px; vertical-align: top; 
 .page-explain { margin-top: 20px; }
 .page-explain span { color: #0a0087; }
 
-.main-arrivals { width: 100%; }
+.main-arrivals { width: 1512px; margin: 0 auto; }
 .main-arrivals:before, .main-arrivals:after { content: " "; display: table; }
 .main-arrivals:after { clear: both; }
 .main-arrivals span { float: left; width: 50%; padding: 78px 0; text-align: center; }
-.main-arrivals span a { display: inline-block; width: 292px; border: 1px solid #000; font-weight: 700; font-size: 11px; line-height: 6.45455; letter-spacing: 2px; text-transform: uppercase; }
+.main-arrivals span a { display: inline-block; width: 292px; border: 1px solid #000; font-weight: 700; font-size: 12px; line-height: 5.91667; letter-spacing: 2px; text-transform: uppercase; }
 
-.main-category { padding: 0 82px; }
+.main-category { width: 1512px; margin: 0 auto; padding: 0 82px; }
 .main-category:before, .main-category:after { content: " "; display: table; }
 .main-category:after { clear: both; }
 
@@ -465,7 +467,7 @@ input[type=radio], input[type=checkbox] { margin-top: 3px; vertical-align: top; 
 
 .detail-shop-info { position: absolute; top: 88px; right: -325px; width: 305px; }
 .detail-shop-info .detail-shop-inner { right: 0; }
-.detail-shop-info .product-name { margin-bottom: 12px; font-family: 'nanumgothic', sans-serif; font-size: 15px; }
+.detail-shop-info .product-name { margin-bottom: 12px; font-family: 'nanumgothic', sans-serif; font-weight: 600; font-size: 15px; }
 .detail-shop-info .price { display: block; margin-top: -3px; font-family: arial, sans-serif; font-weight: 700; font-size: 24px; color: #000; letter-spacing: 1.5px; }
 .detail-shop-info .price.discount { display: inline-block; position: relative; }
 .detail-shop-info .price.discount:after { position: absolute; top: 50%; left: -5px; width: 105%; height: 1px; background-color: #000; content: ''; }
@@ -569,11 +571,9 @@ input[type=radio], input[type=checkbox] { margin-top: 3px; vertical-align: top; 
 .order-sheet .order-price { width: 89px; }
 .order-sheet .order-saved-money { width: 80px; }
 
-.member-level { margin: 55px 0 91px; border: 1px solid #000; }
-.member-level:before, .member-level:after { content: " "; display: table; }
-.member-level:after { clear: both; }
-.member-level .level-mark { float: left; width: 90px; font-weight: 700; font-size: 40px; line-height: 2.25; text-align: center; }
-.member-level .level-explain { float: left; padding: 15px; }
+.member-level { display: table; width: 100%; margin: 55px 0 91px; border: 1px solid #000; }
+.member-level .level-mark { display: table-cell; width: 100px; height: 90px; font-weight: 700; font-size: 40px; text-align: center; vertical-align: middle; }
+.member-level .level-explain { display: table-cell; padding: 15px 15px 15px 0; vertical-align: middle; }
 .member-level .level-explain strong { color: #a30000; }
 
 .orderer-guest { margin-top: 100px; }
@@ -982,3 +982,12 @@ input[type=radio], input[type=checkbox] { margin-top: 3px; vertical-align: top; 
 .search .search-input .button-align .button { text-transform: uppercase; }
 .search .search-content { padding: 100px 0; text-align: center; }
 .search .search-content .qna-search { margin-top: 35px; }
+
+.modal { display: none; position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; }
+.modal .modal-content { position: relative; z-index: 1010; }
+.modal .modal-content .closeModal { position: absolute; top: -7px; right: 10px; font-size: 30px; color: #fff; }
+.modal .overlay { position: fixed; top: 0; left: 0; z-index: 1001; width: 100%; height: 100%; background: #000; opacity: 0.3; }
+
+#reviewBoard .review-wrap .star-icon .icon { background-image: none; }
+#reviewBoard .review-wrap > li { padding-bottom: 35px; }
+#reviewBoard .review-wrap .reply { padding-top: 20px; }

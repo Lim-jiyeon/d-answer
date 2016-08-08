@@ -252,7 +252,7 @@
                         <a href="#"><i class="icon icon-facebook"></i></a>
                         <a href="#"><i class="icon icon-instagram"></i></a>
                     </div>
-                    <a href="#" class="size-guide">size guide</a>
+                    <a href="#none" onclick="modalOpen('.modal-size-guide');" class="size-guide">size guide</a>
                     <div class="detail-discription">
                         fabrics - cotton 100%<br>
                         model size - 182cm 68kg 48 fit<br>
@@ -285,6 +285,15 @@
                 </div>
             </div>
             <!-- 상품 Option 정보 //end -->
+            <!--  실측가이드 레이어 -->
+            <div class="modal modal-size-guide">
+                <div class="modal-content">
+                    <img src="../include/images/size-guide.jpg" alt="실측 가이드">
+                    <a href="#none" onclick="modalClose(this);" class="closeModal">×</a>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <!--  실측가이드 레이어 //end -->
         </div>
     </div>
 

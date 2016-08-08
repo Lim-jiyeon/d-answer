@@ -10,7 +10,7 @@ $(document).ready(function() {
             $(this).siblings('.nav-child').show().addClass('selected').stop().stop().fadeTo(100, 1);
         },
         'focusout mouseleave': function() {
-            $(this).siblings('.nav-child').delay(1000).fadeTo(500, 0, function() {
+            $(this).siblings('.nav-child').fadeTo(50, 0, function() {
                 $(this).hide().removeClass('selected');
             });
         }
@@ -20,7 +20,7 @@ $(document).ready(function() {
             $(this).stop().stop().fadeTo(200, 1);
         })
         .on('mouseleave', '.nav-child.selected', function(){
-            $(this).delay(1200).fadeTo(500, 0, function(){ $(this).hide().removeClass('selected');});
+            $(this).fadeTo(50, 0, function(){ $(this).hide().removeClass('selected');});
         });
 
     // Select Box
@@ -101,3 +101,16 @@ $(document).ready(function() {
     });
 
 });
+
+// Modal
+// --------------------------------------------------
+function modalOpen(modal) {
+    var $this = $(modal);
+    $this.show();
+    return false;
+}
+function modalClose(modal) {
+    var $this = $(modal);
+    $this.parents('.modal').hide();
+    return false;
+}
