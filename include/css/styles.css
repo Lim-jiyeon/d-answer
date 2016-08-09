@@ -988,6 +988,11 @@ input[type=radio], input[type=checkbox] { margin-top: 3px; vertical-align: top; 
 .modal .modal-content .closeModal { position: absolute; top: -7px; right: 10px; font-size: 30px; color: #fff; }
 .modal .overlay { position: fixed; top: 0; left: 0; z-index: 1001; width: 100%; height: 100%; background: #000; opacity: 0.3; }
 
+.order.order-sheet .Personal-policy .agree-title { margin-bottom: 10px; }
+.order.order-sheet .Personal-policy .tab-box { margin-bottom: -10px; }
+.order.order-sheet .Personal-policy .tab-box .agree-box { margin-bottom: 10px; }
+.order.order-sheet .Personal-policy .tab-box .agree-box .agree-box textarea { width: 1200px; height: 193px; margin: 5px 0 10px; }
+
 #reviewBoard .review-wrap .star-icon .icon { background-image: none; }
 #reviewBoard .review-wrap > li { padding-bottom: 35px; }
 #reviewBoard .review-wrap .reply { padding-top: 20px; }
