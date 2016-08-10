@@ -548,6 +548,59 @@
         }
     }
 }
+.detail-content {
+    width: 410px;
+    margin: 0 auto 200px;
+    text-align: center;
+    text-transform: uppercase;
+    h3,
+    h4 {
+        margin: 60px 0 20px;
+        font: 700 11px/16px 'arial', sans-serif;
+        letter-spacing: 1px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+    .size-table {
+        h4 {
+            margin: 40px 0 35px;
+            text-decoration: underline;
+        }
+        .size-type {
+            width: 20px;
+        }
+        .table {
+            thead th {
+                padding: 6px 0;
+                font-weight: 400;
+            }
+            tbody {
+                border: 2px solid #000;
+                border-width: 2px 0;
+                th,
+                td {
+                    padding: 6px 0;
+                }
+            }
+        }
+        .unit {
+            font-size: 10px;
+            text-align: right;
+        }
+    }
+    .fabric {
+        p {
+            display: inline-block;
+            padding: 0 6px;
+            background-color: #000;
+            font: 500 11px/16px 'arial', sans-serif;
+            color: #fff;
+            letter-spacing: 1.5px;
+        }
+    }
+    .features {}
+}
 .detail-shop-info {
     position: absolute;
     top: 88px;
@@ -555,6 +608,7 @@
     width: 305px;
     .detail-shop-inner {
         right: 0;
+        background-color: #fff;
     }
     .product-name {
         margin-bottom: 12px;

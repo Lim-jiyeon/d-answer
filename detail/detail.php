@@ -5,8 +5,70 @@
     <div class="container detail-container">
         <div class="product-detail">
             <div class="detail-shop">
-                <div class="detail-img">
-                    <img src="../include/images/temp/temp-detail-img.jpg" alt="상세이미지">
+                <div class="detail-contents">
+                    <div class="detail-img">
+                        <img src="../include/images/temp/temp-detail-img.jpg" alt="상세이미지">
+                    </div>
+                    <div class="detail-content">
+                        <h3>SLP 테일러드 블레이저</h3>
+                        <div class="size-table">
+                            <h4>SIZE S , M , L</h4>
+                            <table class="table">
+                                <caption>SIZE S , M , L</caption>
+                                <colgroup>
+                                    <col class="size-type">
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>어깨</th>
+                                        <th>가슴</th>
+                                        <th>소매</th>
+                                        <th>총길이</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>S</th>
+                                        <td>43</td>
+                                        <td>27</td>
+                                        <td>85</td>
+                                        <td>105</td>
+                                    </tr>
+                                    <tr>
+                                        <th>M</th>
+                                        <td>43</td>
+                                        <td>27</td>
+                                        <td>85</td>
+                                        <td>105</td>
+                                    </tr>
+                                    <tr>
+                                        <th>L</th>
+                                        <td>43</td>
+                                        <td>27</td>
+                                        <td>85</td>
+                                        <td>105</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="unit">CM</p>
+                        </div>
+                        <div class="fabric">
+                            <h4>FABRIC</h4>
+                            <p>COTTON 98% ELASTIN 2%</p>
+                        </div>
+                        <div class="features">
+                            <h4>FEATURES</h4>
+                            <p>적당한 핏감의 테일러드 자켓 입니다. 봄,가을,겨울 착용하기 적당한 두께감이며<br>
+                                원단 재봉 신경 많이 쓴 제품입니다. 원단은 시중에선 볼 수 없는 탄탄한 조직감<br>
+                                으로 짜여진 원단을 사용했습니다.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="review">
                     <h3 class="review-title">Review</h3>
