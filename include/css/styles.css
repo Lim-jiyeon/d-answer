@@ -450,6 +450,7 @@ input[type=radio], input[type=checkbox] { margin-top: 3px; vertical-align: top; 
 .product-list .item a { display: block; position: relative; }
 .product-list .item a img { width: 319px; height: 390px; }
 .product-list .item a:hover .img-hover, .product-list .item a:hover .product-info { display: block; }
+.product-list .item a .sale-badge { position: absolute; top: 0; left: 0; z-index: 20; width: 100%; height: 100%; background-repeat: no-repeat; }
 .product-list .best-seller-list .item-container { margin-bottom: 100px; padding-bottom: 76px; border-bottom: 1px solid #000; }
 .product-list .best-seller-list .item-container:last-child { padding-bottom: 0; border-bottom: 0; }
 

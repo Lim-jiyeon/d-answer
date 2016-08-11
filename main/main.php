@@ -46,6 +46,7 @@
                                 <span class="price">84,000</span>
                             </div>
                         </div>
+                        <div class="sale-badge" style="background-image:url('http://d-answer.com/shopimages/wooing102/pro_discount_413.gif');"></div>
                     </a>
                 </li>
                 <li class="item">

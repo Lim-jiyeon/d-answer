@@ -507,6 +507,15 @@
                     display: block;
                 }
             }
+            .sale-badge {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 20;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+            }
         }
     }
     .best-seller-list {
@@ -2514,25 +2523,6 @@
 //
 // MakeShop Custom
 // --------------------------------------------------
-// Guest Agree
-// .order.order-sheet {
-//     .Personal-policy {
-//         .agree-title {
-//             margin-bottom: 10px;
-//         }
-//         .tab-box {
-//             margin-bottom: -10px;
-//             .agree-box {
-//                 margin-bottom: 10px;
-//                 .agree-box textarea {
-//                     width: 1200px;
-//                     height: 193px;
-//                     margin: 5px 0 10px;
-//                 }
-//             }
-//         }
-//     }
-// }
 #reviewBoard .review-wrap {
     .star-icon .icon {
         background-image: none;
