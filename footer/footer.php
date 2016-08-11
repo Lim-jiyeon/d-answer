@@ -31,6 +31,12 @@
                             <li>우리은행<br>1005-102-632366</li>
                             <li>예금주 : (주)디에이앤코</li>
                         </ul>
+                        <ul class="prm-logo">
+                            <li><a href="#"><img src="//d-answer.com/images/common/bottombanner0.gif" alt="Black Shield 보안서버 작동중"></a></li>
+                            <li><a href="#" target="_blank"><img src="//d-answer.com/images/common/bottombanner1_IN.gif" alt="INIPAY 신용카드 결제"></a></li>
+                            <li><a href="#" target="_blank"><img src="//d-answer.com/images/common/bottombanner2_KOOKMIN.gif" alt="국민은행 에스크로 이체"></a></li>
+                            <li><a href="#" target="_blank"><img src="//d-answer.com/images/common/bottombanner14.gif" alt="공정위 표준약관"></a></li>
+                        </ul>
                     </div>
                 </div>
                 <ul class="business-info">
