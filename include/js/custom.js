@@ -23,14 +23,6 @@ $(document).ready(function() {
             $(this).fadeTo(50, 0, function(){ $(this).hide().removeClass('selected');});
         });
 
-    // Select Box
-    // --------------------------------------------------
-    //$(function() {
-    //    $( "#detail-color, #detail-size, #qna-search-filter, .selectbox" )
-    //        .selectmenu()
-    //        .addClass( "overflow" );
-    //});
-
     // Main Banner
     // --------------------------------------------------
     $(".main-slide").slick({
@@ -68,16 +60,8 @@ $(document).ready(function() {
     // --------------------------------------------------
     $(".detail-shop-inner").sticky({
         topSpacing: 150,
-        bottomSpacing: 800
+        bottomSpacing: 500
     });
-
-    // Tab
-    // --------------------------------------------------
-    // $(".tab-box .tab-button").click(function() {
-    //     $(".tab-button").removeClass("selected").siblings("div").hide();
-    //     $(this).addClass("selected").siblings("div").show();
-    //     return false;
-    // });
 
     // Review
     // --------------------------------------------------
@@ -100,6 +84,17 @@ $(document).ready(function() {
         $('.'+$(this).val()).show();
     });
 
+});
+
+// 상품상세 스크롤 따라다니는 상품 옵션 - 스크롤시 position 변경이 안되는 이슈 해결
+// --------------------------------------------------
+$(window).scroll(function(){
+    var offset = $(window).scrollTop();
+    if(offset > 90) {
+        $(".detail-shop-inner").addClass("fixed");
+    } else {
+        $(".detail-shop-inner").removeClass("fixed");
+    }
 });
 
 // Modal
