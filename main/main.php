@@ -47,6 +47,10 @@
                             </div>
                         </div>
                         <div class="sale-badge" style="background-image:url('http://d-answer.com/shopimages/wooing102/pro_discount_413.gif');"></div>
+                        <ul class="color-c">
+                            <li style="background-color: red;"></li>
+                            <li style="background-color: yellow;"></li>
+                        </ul>
                     </a>
                 </li>
                 <li class="item">
