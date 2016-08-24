@@ -561,19 +561,19 @@ input[type=radio], input[type=checkbox] { margin-top: 3px; vertical-align: top; 
 
 .product-info .product-name { float: left; }
 
-.product-info .product-name .name { padding: 12px 0 4px; font-size: 12px; }
+.product-info .product-name .name { padding: 12px 0 4px; font-size: 12px; font-weight: bold; }
 
 .product-info .product-price { position: inherit; bottom: 15px; right: 11px; float: right; }
 
-.product-info .product-price .discount { display: block; margin-bottom: 5px; text-decoration: line-through; }
+.product-info .product-price .discount { display: block; margin-bottom: 5px; text-decoration: line-through; font-size: 12px; font-weight: bold; }
 
-.product-info .product-price .price { display: block; color: #e30000; }
+.product-info .product-price .price { display: block; color: #e30000; font-size: 12px; font-weight: bold; }
 
 .product-info.info-center { padding: 28px 0 20px; text-align: center; font-family: arial, sans-serif; letter-spacing: 2px; }
 
-.product-info.info-center .name { padding-bottom: 6px; font-size: 11px; }
+.product-info.info-center .name { padding-bottom: 6px; font-size: 12px; font-weight: bold; }
 
-.product-info.info-center .price { font-size: 11px; }
+.product-info.info-center .price { font-size: 12px; font-weight: bold; }
 
 .product-list { max-width: 1688px; margin: 0 auto; }
 
