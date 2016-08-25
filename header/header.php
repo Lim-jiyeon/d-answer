@@ -10,7 +10,8 @@
     <script type="text/javascript" src="../include/js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="../include/js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="../include/js/slick.min.js"></script>
-    <script type="text/javascript" src="../include/js/jquery.sticky.min.js"></script>
+    <!-- <script type="text/javascript" src="../include/js/jquery.sticky.min.js"></script> -->
+    <!-- <script type="text/javascript" src="../include/js/jquery.sticky-kit.min.js"></script> -->
     <script type="text/javascript" src="../include/js/custom.js"></script>
 </head>
 <body>

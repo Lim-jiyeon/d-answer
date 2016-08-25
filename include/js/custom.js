@@ -58,10 +58,60 @@ $(document).ready(function() {
 
     // 상품상세 스크롤 따라다니는 상품 옵션
     // --------------------------------------------------
-    $(".detail-shop-inner").sticky({
-        topSpacing: 150,
-        bottomSpacing: 500
+    // $(".detail-shop-inner").sticky({
+    //     topSpacing: 150,
+    //     bottomSpacing: 500
+    // });
+    // $(".detail-shop-info").animate( { "top": $(document).scrollTop() + 88 +"px" }, 500 ); // 빼도 된다.
+
+
+    // var aaa = $(".detail-container").height();
+    // console.log(aaa);
+    // $(window).scroll(function(){
+    //     $(".detail-shop-inner").stop();
+    //     $(".detail-shop-inner").animate( { "top": $(document).scrollTop() + 88 + "px" }, 1000 );
+    //     var offset = $(".detail-shop-inner").offset().top;
+    //     console.log(offset);
+        // if(aaa <= offset) {
+        //     $(".detail-shop-info").addClass("fixed");
+        // } else {
+        //     $(".detail-shop-info").removeClass("fixed");
+        // }
+    // });
+
+// $(".detail-shop-info").stick_in_parent();
+
+$(function() {
+
+    var $sidebar   = $(".detail-shop-info"),
+        $window    = $(window),
+        offset     = $sidebar.offset(),
+        topPadding = 15;
+
+    $window.scroll(function() {
+        if ($window.scrollTop() > offset.top) {
+            $sidebar.stop().animate({
+                marginTop: $window.scrollTop() - offset.top + topPadding
+            });
+        } else {
+            $sidebar.stop().animate({
+                marginTop: 0
+            });
+        }
     });
+
+});
+
+    // var shopInfo = $('.detail-shop-info');
+    // var shopInfoTop = 88;
+    // shopInfo.css('top', $(window).height() );
+    //     $(document).ready(function(){
+    //     shopInfo.animate( { "top": $(document).scrollTop() + shopInfoTop +"px" }, 500 );
+    //     $(window).scroll(function(){
+    //     shopInfo.stop();
+    //     shopInfo.animate( { "top": $(document).scrollTop() + shopInfoTop + "px" }, 1000 );
+    //     });
+    // });
 
     // Review
     // --------------------------------------------------
@@ -88,14 +138,14 @@ $(document).ready(function() {
 
 // 상품상세 스크롤 따라다니는 상품 옵션 - 스크롤시 position 변경이 안되는 이슈 해결
 // --------------------------------------------------
-$(window).scroll(function(){
-    var offset = $(window).scrollTop();
-    if(offset > 90) {
-        $(".detail-shop-inner").addClass("fixed");
-    } else {
-        $(".detail-shop-inner").removeClass("fixed");
-    }
-});
+// $(window).scroll(function(){
+//     var offset = $(window).scrollTop();
+//     if(offset > 90) {
+//         $(".detail-shop-inner").addClass("fixed");
+//     } else {
+//         $(".detail-shop-inner").removeClass("fixed");
+//     }
+// });
 
 // Modal
 // --------------------------------------------------
