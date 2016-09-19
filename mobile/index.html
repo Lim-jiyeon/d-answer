@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>D-answer</title>
-    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
-    <script type="text/javascript" src="include/js/jquery-1.10.2.min.js"></script>
-    <link rel="stylesheet" href="include/css/styles.css">
+    <script type="text/javascript" src="../include/js/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="../include/css/styles.css">
     <style type="text/css">
         * {font-family: 'Nanum Gothic', sans-serif;}
         .markup-list {padding: 30px 20px;font-size: 14px;}
@@ -23,191 +22,17 @@
         .markup-list .complete {margin-left:5px;padding: 2px 4px;border-radius:10px;background-color:#262b67;font-size:10px;color:#fff;}
         .markup-list .modify {text-decoration:line-through;}
         .markup-list .inquiry {color:#8f0000;}
-        .markup-list-tab {margin:50px 0 -40px 20px;}
-        .markup-list-tab a {display: inline-block;width: 100px;margin-right: -1px;padding: 5px 10px;border: 1px solid #9f9f9f;color:#9f9f9f;text-align: center;}
-        .markup-list-tab a.on {border: 1px solid #262b67;color:#262b67;}
     </style>
-    <script>
-        $(document).ready(function() {
-            $(".markup-list-tab a").on("click", function() {
-                var index = $(this).index() + 1;
-                $(".container").hide();
-                $(".list"+ index).fadeIn();
-                $(".markup-list-tab a").removeClass("on");
-                $(this).addClass("on");
-                return false;
-            });
-        });
-    </script>
 </head>
 <body>
 <div id="wrap">
-
-    <div class="markup-list-tab">
-        <a href="#" class="mobile-link on" >MOBILE</a>
-        <a href="#" class="pc-link">PC</a>
-    </div>
-
-    <div class="container list1" style="display:block;">
+    <div class="container">
         <div class="markup-list">
-            <h1>모바일 마크업 리스트</h1>
+            <h1>마크업 리스트</h1>
             <p>개발확인 URL : <a href="#"><span class="check">미리보기</span></a></p>
             <span class="check">확인사항</span>
             <p>
                 -
-                <br>
-            </p>
-
-            <hr>
-
-            <div>
-                <h2>Include</h2>
-                <ul>
-                    <li>
-                        <a href="./mobile/header/header.php">Header</a>
-                    </li>
-                    <li>
-                        <a href="./mobile/footer/footer.php">Footer</a>
-                    </li>
-                </ul>
-
-            </div>
-
-            <hr>
-
-            <div>
-                <h2>Main</h2>
-                <ul>
-                    <li>
-                        <a href="./mobile/main/main.php">Main</a>
-                    </li>
-                </ul>
-            </div>
-
-            <hr>
-
-            <div>
-                <h2>Category</h2>
-                <ul>
-                    <li><a href="./mobile/category/original.php">Original</a></li>
-                    <li><a href="./mobile/category/women.php">Women</a></li>
-                    <li><a href="./mobile/category/best-seller.php">Best Seller</a></li>
-                </ul>
-            </div>
-
-            <hr>
-
-            <div>
-                <h2>Detail</h2>
-                <ul>
-                    <li>
-                        <a href="./mobile/detail/detail.php">Detail</a>
-                    </li>
-                    <li>
-                        <a href="./mobile/detail/order-sheet.php">주문서 작성</a>
-                    </li>
-                    <li>
-                        <a href="./mobile/detail/order-sheet-guest.php">비회원 주문서 작성</a>
-                    </li>
-                    <li>
-                        <a href="./mobile/detail/order-complete.php">주문 완료</a>
-                    </li>
-                </ul>
-            </div>
-
-            <hr>
-
-            <div>
-                <h2>Cart</h2>
-                <ul>
-                    <li><a href="./mobile/cart/cart.php">Cart</a></li>
-                </ul>
-            </div>
-
-            <hr>
-
-            <div>
-                <h2>Join</h2>
-                <ul>
-                    <li><a href="./mobile/join/login.php">로그인</a></li>
-                    <li><a href="./mobile/join/login-guest.php">비회원 로그인</a></li>
-                    <li><a href="./mobile/join/find.php">아이디/비밀번호 찾기</a></li>
-                    <li><a href="./mobile/join/find-id-confirm.php">아이디 찾기 완료</a></li>
-                    <li><a href="./mobile/join/find-password-confirm.php">비밀번호 찾기 완료</a></li>
-                    <li><a href="./mobile/join/order-search.php">주문조회</a></li>
-                    <li><a href="./mobile/join/join-type.php">회원가입 - 유형선택</a></li>
-                    <li>
-                        <a href="./mobile/join/join-agree.php">회원가입 - 동의</a>
-                    </li>
-                    <li><a href="./mobile/join/join.php">회원가입</a></li>
-                    <li><a href="./mobile/join/simple-join.php">간편회원가입</a></li>
-                    <li><a href="./mobile/join/simple-join-complete.php">간편회원가입 완료</a></li>
-                </ul>
-            </div>
-
-            <hr>
-
-            <div>
-                <h2>My Page</h2>
-                <ul>
-                    <li><a href="./mobile/mypage/mypage.php">My Page</a></li>
-                    <li><a href="./mobile/mypage/order.php">주문 내역</a></li>
-                    <li><a href="./mobile/mypage/order-information.php">주문 상세</a></li>
-                    <li><a href="./mobile/mypage/wishlist.php">Wishlist</a></li>
-                    <li><a href="./mobile/mypage/mileage.php">적립금 상세 페이지</a></li>
-                    <li><a href="./mobile/mypage/deposit.php">예치금 상세 페이지</a></li>
-                    <li><a href="./mobile/mypage/coupon.php">쿠폰</a></li>
-                    <li><a href="./mobile/mypage/board-list.php">게시물 관리</a></li>
-                    <li><a href="./mobile/mypage/onlyyou.php">개인결제창</a></li>
-                    <li>
-                        <a href="./mobile/mypage/password-check.php">비밀번호 재확인</a>
-                    </li>
-                </ul>
-            </div>
-
-            <hr>
-
-            <div>
-                <h2>CS Center</h2>
-                <ul>
-                    <li><a href="./mobile/cscenter/notice-list.php">Notice - List</a></li>
-                    <li><a href="./mobile/cscenter/notice-write.php">Notice - Write</a></li>
-                    <li><a href="./mobile/cscenter/notice-view.php">Notice - View</a></li>
-                    <li><a href="./mobile/cscenter/qna-list.php">Q&amp;A - List</a></li>
-                    <li><a href="./mobile/cscenter/qna-write.php">Q&amp;A - Write</a></li>
-                    <li><a href="./mobile/cscenter/qna-view.php">Q&amp;A - View</a></li>
-                    <li><a href="./mobile/cscenter/review.php">Review</a></li>
-                    <li><a href="./mobile/cscenter/information.php">Information</a></li>
-                    <li><a href="./mobile/cscenter/delivery.php">Delivery</a></li>
-                    <li><a href="./mobile/cscenter/membership.php">Membership</a></li>
-                    <li><a href="./mobile/cscenter/check-password.php">비밀번호 확인</a></li>
-                </ul>
-            </div>
-
-            <hr>
-
-            <div>
-                <h2>ETC</h2>
-                <ul>
-                    <li><a href="./mobile/etc/offline.php">Offline</a></li>
-                    <li><a href="./mobile/etc/search.php">검색 결과</a></li>
-                    <li><a href="./mobile/etc/search-empty.php">검색 결과 없을 때</a></li>
-                </ul>
-            </div>
-
-        </div>
-    </div>
-    <div class="container list2" style="display:none;">
-        <div class="markup-list">
-            <h1>마크업 리스트<strong class="inquiry"> - 수정완료</strong></h1>
-            <p>개발확인 URL : <a href="http://www.d-answer.com/preview/?dgnset_id=13273"><span class="check">미리보기</span></a></p>
-            <span class="check">확인사항</span>
-            <p>
-                - (개발) 표시는 (기영)해야됨 까먹을까봐 적음.<br>
-                - <a href="./join/join-agree.php">[회원가입 동의] 탭영역 스타일 깨지는 원인을 몰라 수정함</a>
-                <a href="https://github.com/Lim-jiyeon/d-answer/commit/27ad1c9e60430580861f2b532f512486399e9f5b#diff-173cf71d325c315228c4a17d234d9921" class="diff">20160716 diff</a><br>
-
-                <br>
             </p>
 
             <hr>
@@ -217,11 +42,10 @@
                 <ul>
                     <li>
                         <a href="header/header.php">Header</a>
-                        <p>- 20160710 - 제이쿼리 플러그인 추가됨</p>
+                        <p>- </p>
                     </li>
                     <li>
                         <a href="footer/footer.php">Footer</a>
-                        <a href="https://github.com/Lim-jiyeon/d-answer/commit/06843c892df94ae12f9a8baf5fb2913da5a8837c#diff-626b4ee7a66e15596d1030d334e7a6ea" class="diff">20160710 diff</a>
                     </li>
                 </ul>
 
