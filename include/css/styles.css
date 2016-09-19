@@ -374,7 +374,7 @@ input[type=radio], input[type=checkbox] { margin-top: 3px; vertical-align: top; 
 .footer .business-info li:nth-child(4):after, .footer .business-info li:last-child:after { display: inherit; width: 0; height: 0; margin: 0; border-right: 0; }
 .footer .copyright { padding: 4px 0; border-top: 1px solid #000; background-color: #e5e5e5; font-family: arial, sans-serif; font-size: 11px; letter-spacing: 2px; text-align: center; }
 
-.mobile-version { min-width: 1512px; max-width: 1900px; margin: 0 auto 125px; text-align: center; }
+.mobile-version { max-width: 1900px; margin: 0 auto 125px; text-align: center; }
 .mobile-version a { display: inline-block; padding: 17px 30px; border: 1px solid #000; }
 .mobile-version a i { margin: 0 8px; }
 
@@ -388,6 +388,8 @@ input[type=radio], input[type=checkbox] { margin-top: 3px; vertical-align: top; 
 
 .page-explain { margin-top: 20px; padding-left: 15px; }
 .page-explain span { color: #0a0087; }
+
+.masthead { height: 750px; background-repeat: no-repeat; background-position: center; }
 
 .main-arrivals { width: 1348px; margin: 0 auto; }
 .main-arrivals:before, .main-arrivals:after { content: " "; display: table; }
@@ -446,20 +448,23 @@ input[type=radio], input[type=checkbox] { margin-top: 3px; vertical-align: top; 
 .product-list .list-title { padding: 96px 0 62px; font-size: 11px; text-align: center; letter-spacing: 2px; text-transform: uppercase; }
 .product-list .list-title.category-list-title { padding: 26px 0 117px; font-weight: 700; font-size: 14px; }
 .product-list .item-container { width: 1705px; /*margin: 0 -10px;*/ }
-.main-container .product-list .item-container { width: 1366px; margin: 0 -10px; }
 .product-list .item-container:before, .product-list .item-container:after { content: " "; display: table; }
 .product-list .item-container:after { clear: both; }
 .product-list .item { float: left; width: 319px; height: 390px; margin: 0 11px 24px; }
 .product-list .item a { display: block; position: relative; }
 .product-list .item a img { width: 319px; height: 390px; }
-.product-list .item a:hover .img-hover, .product-list .item a:hover .product-info { display: block; }
+.product-list .item a:hover .img-hover, .product-list .item a:hover .product-info, .product-list .item a:hover .color-c { display: block; }
 .product-list .item a .sale-badge { position: absolute; top: 0; left: 0; z-index: 20; width: 100%; height: 100%; background-repeat: no-repeat; }
-.product-list .item a .color-c { position: absolute; top: 0; right: 0; z-index: 20; }
+.product-list .item a .color-c { display: none; position: absolute; top: 0; right: 0; z-index: 20; }
 .product-list .item a .color-c li { width: 22px; height: 22px; }
 .product-list .best-seller-list .item-container { margin-bottom: 100px; padding-bottom: 76px; border-bottom: 1px solid #000; }
 .product-list .best-seller-list .item-container:last-child { padding-bottom: 0; border-bottom: 0; }
 
 .main-container .product-list { max-width: 1346px; min-width: 1346px; }
+.main-container .product-list .item-container { width: 1366px; margin: 0 -10px; }
+
+@media (max-width: 1600px) { .product-list { max-width: 1346px; min-width: 1346px; }
+.product-list .item-container { width: 1366px; margin: 0 -10px; } }
 
 .detail-container { width: 100%; }
 
@@ -481,6 +486,12 @@ input[type=radio], input[type=checkbox] { margin-top: 3px; vertical-align: top; 
 .detail-content .size-table .table tbody th, .detail-content .size-table .table tbody td { padding: 6px 0; }
 .detail-content .size-table .unit { font-size: 10px; text-align: right; }
 .detail-content .fabric p { display: inline-block; padding: 0 6px; background-color: #000; font: 500 11px/16px 'arial', sans-serif; color: #fff; letter-spacing: 1.5px; }
+
+.detail-shop .product-list { margin-bottom: 200px; }
+.detail-shop .product-list h3 { width: 840px; margin: 0 75px 10px; padding-bottom: 10px; border-bottom: 1px solid #000; text-align: center; }
+.detail-shop .product-list .item-container { width: 1010px; padding: 0 80px; }
+.detail-shop .product-list .item { width: 25%; height: auto; margin: 0; padding: 5px; }
+.detail-shop .product-list .item a img { width: 100%; height: 100%; }
 
 .detail-shop-info { position: absolute; top: 88px; right: -325px; width: 305px; background-color: #fff; }
 .detail-shop-info .detail-shop-inner { position: absolute; top: 0; right: 0; background-color: #fff; }

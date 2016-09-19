@@ -4,7 +4,7 @@
 
     <div class="container main-container">
         <div class="main-banner">
-            <div class="masthead"><a href="#"><img src="../include/images/main-masthead.jpg" alt="ONLY D-ANSWER"></a></div>
+            <div class="masthead" style="background-image:url(../include/images/main-masthead.jpg);"></div>
         </div>
         <div class="main-arrivals">
             <span><a href="#">men's new arrivals</a></span>
