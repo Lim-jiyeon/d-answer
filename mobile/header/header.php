@@ -5,8 +5,8 @@
     <title>stevenalan</title>
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
     <link rel="stylesheet" href="../include/css/fontello.css">
-    <script type="text/javascript" src="../include/js/min/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="../include/js/min/slick.min.js"></script>
+    <script type="text/javascript" src="../include/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../include/js/slick.min.js"></script>
     <script type="text/javascript" src="../include/js/custom.js"></script>
     <link rel="stylesheet" href="../include/css/styles.css">
 </head>
