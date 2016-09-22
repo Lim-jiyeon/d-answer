@@ -846,7 +846,7 @@ header .top .mobile-menu { position: absolute; top: 17px; left: 14px; }
 
 .mobile-menu-wrap > * { -webkit-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
 
-.mobile-menu-wrap .sidebar-menu { position: absolute; top: 0; left: -100%; z-index: 1010; overflow-y: scroll; -webkit-overflow-scrolling: touch; width: 243px; height: 100%; background-color: #fff; letter-spacing: 1.3px; text-transform: uppercase; }
+.mobile-menu-wrap .sidebar-menu { position: absolute; top: 0; left: -100%; z-index: 1010; overflow-y: scroll; -webkit-overflow-scrolling: touch; width: 263px; height: 100%; background-color: #fff; letter-spacing: 1.3px; text-transform: uppercase; }
 
 .mobile-menu-wrap .quick-access { width: 100%; }
 
@@ -924,7 +924,7 @@ header .top .mobile-menu { position: absolute; top: 17px; left: 14px; }
 
 .mobile-menu-wrap .recently-viewed ul li { float: left; width: 50%; padding: 7px; }
 
-.mobile-menu-wrap .menu-close { position: absolute; top: 25px; left: -300px; z-index: 1001; }
+.mobile-menu-wrap .menu-close { position: absolute; top: 42px; left: -300px; z-index: 1001; width: 35px; height: 35px; background-color: #fff; }
 
 .mobile-menu-wrap .menu-close .icon-left { font-size: 18px; color: #fff; }
 
@@ -934,7 +934,7 @@ header .top .mobile-menu { position: absolute; top: 17px; left: 14px; }
 
 .menu-open .sidebar-menu { left: 0; }
 
-.menu-open .menu-close { left: 268px; opacity: 1; }
+.menu-open .menu-close { left: 263px; opacity: 1; }
 
 .menu-open .menu-overlay { visibility: visible; left: 0; z-index: 1000; background-color: #000; opacity: .5; cursor: pointer; }
 

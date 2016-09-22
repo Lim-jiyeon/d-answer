@@ -1661,7 +1661,7 @@ header .top .mobile-menu {
         z-index: 1010;
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
-        width: 243px;
+        width: 263px;
         height: 100%;
         background-color: #fff;
         letter-spacing: 1.3px;
@@ -1804,54 +1804,50 @@ header .top .mobile-menu {
             }
         }
     }
+    .menu-close {
+        position: absolute;
+        top: 42px;
+        left: -300px;
+        z-index: 1001;
+        width: 35px;
+        height: 35px;
+        background-color: #fff;
+    }
+    .menu-close .icon-left {
+        font-size: 18px;
+        color: #fff;
+    }
+    .menu-overlay {
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
 }
-
-
-.mobile-menu-wrap .menu-close {
-    position: absolute;
-    top: 25px;
-    left: -300px;
-    z-index: 1001;
-}
-
-.mobile-menu-wrap .menu-close .icon-left {
-    font-size: 18px;
-    color: #fff;
-}
-
-.mobile-menu-wrap .menu-overlay {
-    visibility: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-}
-
 .menu-open {
     height: 100%;
     overflow: hidden;
+    .sidebar-menu {
+        left: 0;
+    }
+    .menu-close {
+        left: 263px;
+        opacity: 1;
+    }
+    .menu-overlay {
+        visibility: visible;
+        left: 0;
+        z-index: 1000;
+        background-color: #000;
+        opacity: .5;
+        cursor: pointer;
+    }
 }
 
-.menu-open .sidebar-menu {
-    left: 0;
-}
-
-.menu-open .menu-close {
-    left: 268px;
-    opacity: 1;
-}
-
-.menu-open .menu-overlay {
-    visibility: visible;
-    left: 0;
-    z-index: 1000;
-    background-color: #000;
-    opacity: .5;
-    cursor: pointer;
-}
 
 /**********************************************
  Footer
