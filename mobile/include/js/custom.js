@@ -1,11 +1,5 @@
 $(document).ready(function () {
 
-    // Header My Page Dropdown
-    $(".link-mypage").on("click", function() {
-        $(this).toggleClass("open");
-        return false;
-    });
-
     // Mobile Side Bar Menu Open
     $(".mobile-menu > a").click(function(e) {
         e.preventDefault();
