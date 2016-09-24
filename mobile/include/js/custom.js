@@ -73,12 +73,12 @@ $(document).ready(function () {
     });
 
     // Main - Main Banner Slick Slider
-    $(".main-banner").slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        arrows: false
-    });
+    //$(".main-banner").slick({
+    //    dots: true,
+    //    infinite: true,
+    //    slidesToShow: 1,
+    //    arrows: false
+    //});
 
     // Main - Second Banner Slick Slider
     $(".second-banner").slick({

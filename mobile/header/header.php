@@ -2,14 +2,14 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>stevenalan</title>
+    <title>D-answer</title>
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <link rel="stylesheet" href="../include/css/styles.css">
     <script type="text/javascript" src="../include/js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="../include/js/slick.min.js"></script>
     <script type="text/javascript" src="../include/js/custom.js"></script>
-    <link rel="stylesheet" href="../include/css/styles.css">
 </head>
-<body class="menu-open">
+<body>
 <header>
     <div class="top">
         <h1 class="site-brand">
@@ -164,7 +164,7 @@
             </div>
             <!-- 최근 본 상품 //end -->
         </div>
-        <a href="#" class="menu-close"><i class="icon-left"></i></a>
+        <a href="#" class="menu-close"></a>
         <div class="menu-overlay"></div>
     </div>
     <!-- Sidebar Menu //end -->

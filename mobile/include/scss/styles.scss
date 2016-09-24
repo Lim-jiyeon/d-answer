@@ -501,6 +501,8 @@ body {
     line-height: $line-height;
     color: $text-color;
     background-color: $body-bg;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 ul,
 ol,
@@ -839,6 +841,16 @@ hr {
     height: 20px;
     background-position: 0 -45px;
 }
+.icon-instagram {
+    width: 11px;
+    height: 11px;
+    background-position: -270px 0;
+}
+.icon-facebook {
+    width: 6px;
+    height: 11px;
+    background-position: -225px 0;
+}
 .icon-instagram-rect {
     width: 20px;
     height: 20px;
@@ -848,6 +860,26 @@ hr {
     width: 20px;
     height: 20px;
     background-position: -225px -45px;
+}
+.icon-phone {
+    width: 24px;
+    height: 24px;
+    background-position: -135px 0;
+}
+.icon-computer {
+    width: 27px;
+    height: 24px;
+    background-position: -180px 0;
+}
+.icon-grid {
+    width: 23px;
+    height: 23px;
+    background-position: -45px 0;
+}
+.icon-list {
+    width: 23px;
+    height: 23px;
+    background-position: -90px 0;
 }
 
 /**********************************************
@@ -1812,6 +1844,24 @@ header .top .mobile-menu {
         width: 35px;
         height: 35px;
         background-color: #fff;
+        text-align: center;
+        &:before {
+            display: inline-block;
+            background: url(../images/icon-sprite.png) no-repeat -45px -45px;
+            background-size: 320px auto;
+            width: 13px;
+            height: 21px;
+            margin-top: 7px;
+            content: '';
+        }
+        &:after {
+            display: block;
+            background-color: #7f7f7f;
+            font-size: 11px;
+            color: #fff;
+            letter-spacing: 1px;
+            content: 'close';
+        }
     }
     .menu-close .icon-left {
         font-size: 18px;
@@ -1853,95 +1903,92 @@ header .top .mobile-menu {
  Footer
 ***********************************************/
 footer {
-    background: url("../../images/common/washed-line.png") repeat-x 0 0;
-    background-size: 50% 1px;
-    text-transform: uppercase;
+    margin: 0 -5px;
+    .footer-info {
+        h3 {
+            margin-bottom: 15px;
+            font-weight: 400;
+            font-size: 11px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        ul {
+            border: 1px solid #000;
+            border-width: 1px 0;
+            @include clearfix;
+            li {
+                position: relative;
+                float: left;
+                width: 50%;
+                padding: 34px 0 9px;
+                border-left: 1px solid #000;
+                text-align: center;
+                .icon-phone {
+                    position: absolute;
+                    top: 9px;
+                    left: 50%;
+                    margin-left: -12px;
+                }
+                &:before {
+                    display: block;
+                    margin-bottom: -2px;
+                    content: 'cs center';
+                }
+                &:first-child {
+                    border-left: 0;
+                }
+            }
+        }
+    }
+    .pc-version {
+        display: block;
+        padding: 17px 0 12px;
+        border-bottom: 1px solid #000;
+        text-align: center;
+        .icon-computer {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .customer-info,
+    .bank-info {
+        padding: 10px 8px;
+        border-bottom: 1px solid #000;
+        font-family: $font-family-ko;
+        h3 {
+            font-size: 10px;
+            text-transform: uppercase;
+        }
+        ul li {
+            font-size: 10px;
+            color: #1e1e1e;
+        }
+        .business-hours {
+            font-weight: 700;
+            font-size: 9px;
+            letter-spacing: -0.1px;
+        }
+        address {
+            font-style: normal;
+        }
+    }
+    .copyright {
+        padding: 7px 0;
+        font-size: 9px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .sharing-link {
+        padding: 20px 0 40px;
+        text-align: center;
+        li {
+            display: inline-block;
+            padding: 0 12px;
+        }
+    }
 }
 
-footer .footer-menu {
-    margin-top: 10px;
-    font-size: 11px;
-}
-
-footer .footer-menu .footer-link {
-    display: none;
-    padding-bottom: 5px;
-}
-
-footer .footer-menu .footer-link li {
-    padding: 2px 0;
-}
-
-footer .footer-title {
-    position: relative;
-    padding: 5px 0;
-    font-size: 12px;
-    color: #000;
-    cursor: pointer;
-}
-
-footer .footer-title:after {
-    position: absolute;
-    right: 0;
-    font-family: fontello;
-    content: '\e802';
-}
-
-footer .footer-title.on:after {
-    content: '\e803';
-}
-
-footer .footer-sharing-link {
-    margin-bottom: 15px;
-}
-
-footer .footer-sharing-link:before, footer .footer-sharing-link:after {
-    content: " ";
-    display: table;
-}
-
-footer .footer-sharing-link:after {
-    clear: both;
-}
-
-footer .footer-sharing-link .footer-title {
-    padding-bottom: 0;
-    cursor: default;
-}
-
-footer .footer-sharing-link .footer-title:after {
-    content: '';
-}
-
-footer .footer-sharing-link li {
-    float: left;
-    margin-right: 3px;
-}
-
-footer .footer-sharing-link li i {
-    font-size: 16px;
-    color: #000;
-}
-
-footer .copyright {
-    padding: 15px 0 25px;
-    border-top: 1px solid #ebebeb;
-    font-size: 10px;
-    text-align: center;
-}
-
-footer .copyright p {
-    padding-bottom: 12px;
-    text-transform: uppercase;
-}
-
-footer .copyright a {
-    display: inline-block;
-}
-
-footer .copyright a:nth-child(2) {
-    margin-right: 20px;
-}
 
 /**********************************************
  Common
@@ -2171,209 +2218,82 @@ footer .copyright a:nth-child(2) {
  Product Style
 ***********************************************/
 .discount {
-    position: relative;
-    z-index: 2;
-    display: inline-block;
-    margin-left: 10px;
-    font-family: "BentonSans", sans-serif;
-    font-size: 12px;
+    display: block;
+    margin-bottom: -4px;
     font-style: normal;
+    text-decoration: line-through;
 }
-
-.discount:before {
-    position: absolute;
-    top: 40.6%;
-    left: -2px;
-    z-index: 1;
-    width: 110%;
-    border-bottom: 1px solid #c9c9c9;
-    content: '';
-}
-
 .price {
-    font-weight: 500;
-    font-family: "BentonSans", sans-serif;
-    font-size: 12px;
-    color: #000;
-}
-
-.product-list {
-    border: 5px solid #f5f5f5;
-}
-
-.product-list .list-item {
-    padding: 5px;
-}
-
-.product-info {
-    padding-bottom: 10px;
-}
-
-.product-info:before, .product-info:after {
-    content: " ";
-    display: table;
-}
-
-.product-info:after {
-    clear: both;
-}
-
-.product-info .product-image {
-    float: left;
-}
-
-.product-info .product-image img {
-    width: 120px;
-    height: 120px;
-}
-
-.product-info .product-image + .item-info {
-    float: left;
-    width: 100%;
-    margin-top: -120px;
-    padding-left: 130px;
-}
-
-.product-info .item-info .item-badge {
-    display: inline-block;
-    padding: 0 10px;
-    border: 1px solid #000;
-    font-size: 10px;
-    line-height: 1.4;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #000;
-    vertical-align: 3px;
-}
-
-.product-info .item-info .item-badge.item-badge-secondary {
-    background-color: #000;
-    color: #fff;
-}
-
-.product-info .item-info .item-brand {
     display: block;
-    margin-bottom: 6px;
-    font-weight: 500;
-    line-height: 1.1538461538;
-    letter-spacing: 0.5px;
-    color: #000;
+    color: #b82626;
 }
-
-.product-info .item-info .item-brand-group {
-    position: relative;
-}
-
-.product-info .item-info .item-brand-group .item-brand {
-    padding-right: 23px;
-}
-
-.product-info .item-info .item-brand-group .checkbox {
-    position: absolute;
-    top: -3px;
-    right: 0;
-}
-
-.product-info .item-info .item-brand-group .checkbox .checkbox-display {
-    margin: 0;
-}
-
-.product-info .item-info .item-name {
-    display: block;
-    font-weight: 400;
-    font-size: 12px;
-    margin-bottom: 10px;
-    line-height: 1.25;
-    letter-spacing: 0.5px;
-}
-
-.product-info .item-info .item-name a {
-    color: #000;
-}
-
-.product-info .item-info .item-option {
-    margin-top: 5px;
-}
-
-.product-info .item-info .item-option li {
-    margin-top: -3px;
-    font-size: 12px;
-    font-family: "BentonSans", sans-serif;
-    text-transform: uppercase;
-}
-
-.item-option-button .item-amount {
-    padding: 3px 0;
-    border-top: 1px solid #e5e5e5;
-}
-
-.item-amount {
-    display: block;
-    padding: 5px 10px;
-    border-top: 1px solid #e5e5e5;
-    font-weight: 400;
-    color: #004689;
-    text-align: right;
-}
-
-.item-amount em {
-    font-family: "BentonSans", sans-serif;
-    font-style: normal;
-}
-
-.confirm-order-product .order-product-list.empty-list > li {
-    padding: 40px 0 !important;
+.list-view-type {
     text-align: center;
+    a {
+        display: inline-block;
+        margin: 0 5px;
+    }
 }
-
-.payment-totals {
-    padding-right: 16px;
-    text-align: right;
+.product-list {
+    @include clearfix;
+    margin: 0 -1px;
+    .list-item {
+        float: left;
+        padding: 0 1px 30px;
+    }
+    &.list-view {
+        .list-item {
+            width: 50%;
+            &:nth-child(2n+1) {
+                clear: left;
+            }
+        }
+    }
+    &.grid-view {
+        .list-item {
+            width: 33.33%;
+            &:nth-child(3n+1) {
+                clear: left;
+            }
+        }
+    }
 }
-
-.payment-totals li {
-    padding: 5px 0;
-    font-family: "Noto Sans KR", sans-serif;
+.product-info {
+    padding: 6px 20px 0;
+    text-align: center;
+    .color-picker {
+        text-align: center;
+        li {
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            margin: 0 1px;
+        }
+    }
+    .product-name {
+        margin: 5px 0 8px;
+        font: 400 11px $font-family-ko;
+    }
+    .product-price {
+        font-family: $font-family-ko;
+    }
+    &.soldout {
+        padding-top: 26px;
+    }
 }
-
-.payment-totals li:before, .payment-totals li:after {
-    content: " ";
-    display: table;
-}
-
-.payment-totals li:after {
-    clear: both;
-}
-
-.payment-totals li .total-label {
-    text-align: left;
-}
-
-.payment-totals li .total-price {
-    font-weight: 400;
-    color: #000;
-}
-
-.payment-totals li .total-price em {
-    font-family: "BentonSans", sans-serif;
-    font-style: normal;
-}
-
-.payment-totals .total .total-label {
-    padding-top: 2px;
-}
-
-.payment-totals .total .total-price {
-    font-size: 18px;
-    line-height: 1.2222222222;
-    color: #004689;
-}
-
-.payment-totals .total .total-price em {
-    font-weight: 700;
-}
-
-.ordered-price {
-    color: #004689;
+.list-more {
+    display: block;
+    margin: 70px;
+    text-align: center;
+    &:after {
+        padding: 10px 15px 10px 20px;
+        border: 1px solid #000;
+        font-weight: 700;
+        font-size: 11px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        content: 'more';
+    }
 }
 
 /**********************************************
@@ -2381,121 +2301,67 @@ footer .copyright a:nth-child(2) {
 ***********************************************/
 .main {
     padding: 0 0 40px;
-}
-
-.main .container {
-    padding: 0;
-}
-
-.main img {
-    width: 100%;
-}
-
-.main a {
-    display: block;
-}
-
-.main .main-banner .slick-dots {
-    bottom: 8px;
-}
-
-.main .main-banner .slick-dots li button {
-    opacity: .6;
-}
-
-.main .main-banner .slick-dots li.slick-active button {
-    opacity: 1;
-}
-
-.main .second-banner {
-    margin-top: 14px;
-}
-
-.main .second-banner .slick-slide {
-    position: relative;
-    padding: 0 7px;
-}
-
-.main .second-banner .slick-slide .banner-text {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 12px 7px 8px;
-    background-color: rgba(255, 255, 255, 0.5);
-    font: 500 11px "BentonSans", sans-serif;
-    color: #494949;
-    text-align: center;
-    opacity: 0;
-    -webkit-transition: opacity 0.2s ease-in-out;
-    -o-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
-}
-
-.main .second-banner .slick-slide.slick-current .banner-text {
-    opacity: 1;
-}
-
-.main .shop-banner {
-    margin-top: 30px;
-}
-
-.main .shop-collection-title {
-    margin: 32px 0 -5px;
-    font-weight: 400;
-    font-size: 16px;
-    color: #004689;
-    font-family: "BentonSans", sans-serif;
-    letter-spacing: 1px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.main .shop-collection {
-    padding: 5px;
-}
-
-.main .shop-collection:before, .main .shop-collection:after {
-    content: " ";
-    display: table;
-}
-
-.main .shop-collection:after {
-    clear: both;
-}
-
-.main .shop-collection > div {
-    padding: 5px;
-}
-
-.main .shop-collection .collection-title {
-    display: block;
-    width: 100%;
-    height: 35px;
-    background-color: #000;
-    font-family: "BentonSans", sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 3.1818181818;
-    color: #fff;
-    letter-spacing: 1px;
-    text-align: center;
-}
-
-.main .shop-collection .bisection {
-    margin-top: 20px;
-}
-
-.main .shop-collection .bisection .collection-title {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    width: 120px;
-    margin-top: -17px;
-    border: 2px solid #000;
-    background-color: transparent;
-    line-height: 2.8181818182;
-    color: #000;
+    .container {
+        padding: 0;
+    }
+    .main-link {
+        li {
+            border: 1px solid #000;
+            border-width: 0 1px 1px;
+            &:first-child {
+                border-top: 1px solid #000;
+            }
+            a {
+                display: block;
+                padding: 11px 0;
+                font-weight: 700;
+                font-size: 13px;
+                letter-spacing: 1.8px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+        &.sale {
+            a {
+                font-size: 11px;
+                letter-spacing: 5px;
+            }
+        }
+        &.category {
+            border-bottom: 1px solid #000;
+            @include clearfix;
+            li {
+                float: left;
+                width: 50%;
+                border-width: 1px 0 0;
+                &:nth-child(2n+2) {
+                    border-left-width: 1px;
+                }
+            }
+            a {
+                font-size: 11px;
+            }
+        }
+    }
+    .main-banner.category {
+        padding-top: 22px;
+    }
+    .followus {
+        display: block;
+        padding: 22px 0;
+    }
+    .new-arrival {
+        h3 {
+            margin-bottom: 20px;
+            font-size: 11px;
+            text-align: center;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+        }
+        .list-view-type {
+            padding: 37px 0 30px;
+        }
+    }
 }
 
 /**********************************************
