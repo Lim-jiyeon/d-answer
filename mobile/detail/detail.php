@@ -58,7 +58,7 @@
                     <div class="detail-option-selected">
                         <div class="left">
                             Black, M
-                            <input type="number" class="form-control" value="1">
+                            <input type="tel" class="form-control" value="1">
                             <a href="#" class="button"><i class="icon-up"></i></a>
                             <a href="#" class="button"><i class="icon-down"></i></a>
                         </div>
