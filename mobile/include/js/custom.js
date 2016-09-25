@@ -81,30 +81,30 @@ $(document).ready(function () {
     //});
 
     // Main - Second Banner Slick Slider
-    $(".second-banner").slick({
-        dots: false,
-        infinite: true,
-        slidesToShow: 1,
-        arrows: false,
-        centerMode: true,
-        centerPadding: '37px'
-    });
+    //$(".second-banner").slick({
+    //    dots: false,
+    //    infinite: true,
+    //    slidesToShow: 1,
+    //    arrows: false,
+    //    centerMode: true,
+    //    centerPadding: '37px'
+    //});
 
     // Category Menu
-    $(".category-menu .category-menu-title").on("click", function () {
-        $(this).toggleClass("open").next(".category-menu-box").slideToggle(400);
-    });
+    //$(".category-menu .category-menu-title").on("click", function () {
+    //    $(this).toggleClass("open").next(".category-menu-box").slideToggle(400);
+    //});
 
 
     // Detail slider
-    $('.product-images').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        speed: 500,
-        arrows: false,
-        dots: true
-    });
+    //$('.product-images').slick({
+    //    slidesToShow: 1,
+    //    slidesToScroll: 1,
+    //    infinite: true,
+    //    speed: 500,
+    //    arrows: false,
+    //    dots: true
+    //});
 
     // Detail Contents
     $(".detail-info-title").on("click", function() {
