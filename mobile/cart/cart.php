@@ -1,171 +1,120 @@
 <?php include '../header/header.php'; ?>
 
 <div class="content">
-    <div class="container">
+    <div class="container cart">
         <h2 class="page-title">cart</h2>
-        <div class="shoppingbag">
+        <div class="order-product">
             <!-- 쇼핑백 상품 확인 -->
             <ul class="product-list order-product-list">
                 <li>
                     <div class="product-info">
-                        <div class="product-image"><a href="#"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="order-product1" checked>
+                            <label for="order-product1" class="checkbox-display"></label>
+                        </div>
+                        <div class="product-image"><a href="#"><img src="../include/images/temp/temp-product.jpg" alt=""></a></div>
                         <div class="item-info">
-                            <div class="item-brand-group">
-                                <span class="item-brand">COMME DES GARÇONS PLAY BY STEVEN</span>
-                                <div class="checkbox">
-                                    <input type="checkbox" id="local_select_brand1" checked>
-                                    <label for="local_select_brand1" class="checkbox-display"></label>
-                                </div>
-                            </div>
-                            <strong class="item-name"><a href="#">Aldama Embroidered Bib Top</a></strong>
+                            <strong class="item-name"><a href="#">CO 블랙 롱 튜닉셔츠</a></strong>
                             <ul class="item-option">
-                                <li>컬러 : INDIGO</li>
-                                <li>사이즈 : P</li>
-                                <li>수량 : 1</li>
+                                <li>Color : 블랙</li>
+                                <li>Size : M</li>
+                                <li><span>상품가격</span>59,000원</li>
+                                <li><span>적립금</span>590원</li>
                             </ul>
                         </div>
                     </div>
                     <div class="item-option-button">
-                        <strong class="item-amount"><em>1,234,000</em>원</strong>
-                        <div class="button-inline-group button-auto-group">
-                            <div><a href="#" class="button button-small button-primary">바로구매</a></div>
-                            <div><a href="#none" onclick="itemOptionChange(this);" class="button button-small button-secondary">옵션/수량 변경</a></div>
-                            <div><a href="#" class="button button-small button-danger">삭제</a></div>
-                        </div>
-                        <div class="box item-option-change">
-                            <span class="item-option-text">옵션 / 수량 변경</span>
-                            <ul>
-                                <li>
-                                    <div class="selectbox">
-                                        <strong class="selectbox-value">BLUE AQUA STRIPE</strong>
-                                        <select onchange="selectboxEvent(this);">
-                                            <option value="쿠폰 선택">쿠폰 선택</option>
-                                            <option value="선택1">선택1</option>
-                                            <option value="선택2">선택2</option>
-                                            <option value="선택3">선택3</option>
-                                            <option value="선택4">선택4</option>
-                                            <option value="선택5">선택5</option>
-                                        </select>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="selectbox">
-                                        <strong class="selectbox-value">BLUE AQUA STRIPE</strong>
-                                        <select onchange="selectboxEvent(this);">
-                                            <option value="쿠폰 선택">쿠폰 선택</option>
-                                            <option value="선택1">선택1</option>
-                                            <option value="선택2">선택2</option>
-                                            <option value="선택3">선택3</option>
-                                            <option value="선택4">선택4</option>
-                                            <option value="선택5">선택5</option>
-                                        </select>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="input-button-group">
-                                        <div><a href="#" class="button"><i class="icon-minus"></i></a></div>
-                                        <div><input type="number" value="1" class="form-control"></div>
-                                        <div><a href="#" class="button"><i class="icon-plus"></i></a></div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="button-align-center">
-                                <a href="#" class="button button-small button-third">업데이트</a>
-                                <a href="#none" onclick="itemOptionClose(this);" class="button button-small button-danger">취소</a>
-                            </div>
-                        </div>
+                        <input type="tel" class="form-control" value="1">
+                        <a href="#" class="button"><i class="icon-up"></i></a>
+                        <a href="#" class="button"><i class="icon-down"></i></a>
+                        <a href="#" class="button button-primary">수량변경</a>
                     </div>
                 </li>
-                <li class="list-item">
+                <li>
                     <div class="product-info">
-                        <div class="product-image"><a href="#"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="order-product2" checked>
+                            <label for="order-product2" class="checkbox-display"></label>
+                        </div>
+                        <div class="product-image"><a href="#"><img src="../include/images/temp/temp-product.jpg" alt=""></a></div>
                         <div class="item-info">
-                            <div class="item-brand-group">
-                                <span class="item-brand">STEVEN ALAN</span>
-                                <div class="checkbox">
-                                    <input type="checkbox" id="local_select_brand2" checked>
-                                    <label for="local_select_brand2" class="checkbox-display"></label>
-                                </div>
-                            </div>
-                            <strong class="item-name"><a href="#">Belted Long Shirtdress Belted Long Shirtdress</a></strong>
+                            <strong class="item-name"><a href="#">CO 블랙 롱 튜닉셔츠</a></strong>
                             <ul class="item-option">
-                                <li>컬러 : INDIGO</li>
-                                <li>사이즈 : P</li>
-                                <li>수량 : 1</li>
+                                <li>Color : 블랙</li>
+                                <li>Size : M</li>
+                                <li><span>상품가격</span>59,000원</li>
+                                <li><span>적립금</span>590원</li>
                             </ul>
                         </div>
                     </div>
                     <div class="item-option-button">
-                        <strong class="item-amount"><em>1,234,000</em>원</strong>
-                        <div class="button-inline-group button-auto-group">
-                            <div><a href="#" class="button button-small button-primary">바로구매</a></div>
-                            <div><a href="#none" onclick="itemOptionChange(this);" class="button button-small button-secondary">옵션/수량 변경</a></div>
-                            <div><a href="#" class="button button-small button-danger">삭제</a></div>
-                        </div>
-                        <div class="box item-option-change">
-                            <span class="item-option-text">옵션 / 수량 변경</span>
-                            <ul>
-                                <li>
-                                    <div class="selectbox">
-                                        <strong class="selectbox-value">BLUE AQUA STRIPE</strong>
-                                        <select onchange="selectboxEvent(this);">
-                                            <option value="쿠폰 선택">쿠폰 선택</option>
-                                            <option value="선택1">선택1</option>
-                                            <option value="선택2">선택2</option>
-                                            <option value="선택3">선택3</option>
-                                            <option value="선택4">선택4</option>
-                                            <option value="선택5">선택5</option>
-                                        </select>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="selectbox">
-                                        <strong class="selectbox-value">BLUE AQUA STRIPE</strong>
-                                        <select onchange="selectboxEvent(this);">
-                                            <option value="쿠폰 선택">쿠폰 선택</option>
-                                            <option value="선택1">선택1</option>
-                                            <option value="선택2">선택2</option>
-                                            <option value="선택3">선택3</option>
-                                            <option value="선택4">선택4</option>
-                                            <option value="선택5">선택5</option>
-                                        </select>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="input-button-group">
-                                        <div><a href="#" class="button"><i class="icon-minus"></i></a></div>
-                                        <div><input type="number" value="1" class="form-control"></div>
-                                        <div><a href="#" class="button"><i class="icon-plus"></i></a></div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="button-align-center">
-                                <a href="#" class="button button-small button-third">업데이트</a>
-                                <a href="#none" onclick="itemOptionClose(this);" class="button button-small button-danger">취소</a>
-                            </div>
-                        </div>
+                        <input type="tel" class="form-control" value="1">
+                        <a href="#" class="button"><i class="icon-up"></i></a>
+                        <a href="#" class="button"><i class="icon-down"></i></a>
+                        <a href="#" class="button button-primary">수량변경</a>
                     </div>
                 </li>
             </ul>
+            <div class="checkbox">
+                <input type="checkbox" id="order-product-all" checked>
+                <label for="order-product-all" class="checkbox-display"></label>
+                <label for="order-product-all" class="checkbox-label">전체 선택/해제</label>
+            </div>
+            <div class="button-block-group button-align">
+                <a href="#" class="button">선택삭제</a>
+                <a href="#" class="button button-primary">전체삭제</a>
+            </div>
             <!-- 쇼핑백 상품 확인 //end -->
+        </div>
+        <div class="cart-totals">
+            <h3 class="page-title">amount</h3>
             <!-- 쇼핑백 결제 정보 -->
-            <div class="box shoppingbag-totals">
-                <dl class="shoppingbag-amount">
-                    <dt>총 상품금액</dt>
-                    <dd><em>1,000,000</em>원</dd>
-                    <dt>배송비</dt>
-                    <dd><em>22,000</em>원</dd>
-                    <dt>할인쿠폰</dt>
-                    <dd><em>-5,000</em>원</dd>
-                    <dt class="shoppingbag-total">결제금액</dt>
-                    <dd class="shoppingbag-total"><em>9,999,000</em>원</dd>
-                </dl>
-                <div class="button-inline-group button-auto-group">
-                    <div><a href="#" class="button button-large button-secondary">전체선택</a></div>
-                    <div><a href="#" class="button button-large button-primary">선택상품 주문하기</a></div>
-                </div>
+            <dl class="cart-amount">
+                <dt>상품 합계금액</dt>
+                <dd>78,000원</dd>
+                <dt>적립금</dt>
+                <dd>1,560원</dd>
+                <dt class="total">총합계금액</dt>
+                <dd class="total"><b>79,560</b>원</dd>
+            </dl>
+            <p class="cart-info">
+                배송정보 - 50,000원 미만시 3,000원<br>
+                지역별/상품개별배송정책에 따라 변동될 수 있습니다.<br>
+                <b>김기훈</b>님은 <b>[Silver]</b>회원입니다.<br>
+                (적림금 적립 + 사용 가능 / 출석체크 적립금 사용 불가능)<br>
+                김기훈 님이 1,000원 이상 구매시, 구매금액의 <strong>1</strong>%를 <br>
+                <strong>추가적</strong>립 해 드립니다.
+            </p>
+            <div class="button-align">
+                <a href="#" class="button button-primary">주문하기</a>
             </div>
             <!-- 쇼핑백 결제 정보 //end -->
+        </div>
+        <div class="order-product cart-wishlist">
+            <h3 class="page-title">wish list</h3>
+            <!-- wish list -->
+            <ul class="product-list order-product-list">
+                <li>
+                    <div class="product-info">
+                        <div class="checkbox">
+                            <input type="checkbox" id="order-product1" checked>
+                            <label for="order-product1" class="checkbox-display"></label>
+                        </div>
+                        <div class="product-image"><a href="#"><img src="../include/images/temp/temp-product.jpg" alt=""></a></div>
+                        <div class="item-info">
+                            <strong class="item-name"><a href="#">CO 블랙 롱 튜닉셔츠</a></strong>
+                            <ul class="item-option">
+                                <li><span>상품가격</span>59,000원</li>
+                                <li><span>적립금</span>590원</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-option-button">
+                        <a href="#" class="button button-primary">CART</a>
+                    </div>
+                </li>
+            </ul>
+            <!-- wish list //end -->
         </div>
     </div>
 </div>
