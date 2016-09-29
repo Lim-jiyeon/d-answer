@@ -628,7 +628,7 @@ output { display: block; padding-top: 7px; font-size: 13px; line-height: 1.53846
 
 .form-label { color: #000; }
 
-.form-control { display: block; width: 100%; height: 35px; padding: 0 10px; border: 1px solid black; border-radius: 0; background: #fff none; font-size: 13px; color: #858585; -webkit-appearance: none; }
+.form-control { display: block; width: 100%; height: 35px; padding: 0 10px; border: 1px solid black; border-radius: 0; background: #fff none; font-size: 13px; color: black; -webkit-appearance: none; }
 .form-control[disabled], .form-control[readonly] { background-color: whitesmoke; color: #858585; opacity: 1; cursor: not-allowed; }
 
 textarea.form-control { padding: 10px; height: auto; }
@@ -731,9 +731,7 @@ input[type="search"] { -webkit-appearance: none; }
 
 .table-list .table-row-list th, .table-list .table-row-list td { padding: 7px 15px; border-width: 0; background-color: #fff; text-align: left; }
 
-.table-row-list th { padding: 7px 0; text-align: left; vertical-align: top; }
-
-.table-row-list td { padding: 7px 0; text-align: left; vertical-align: middle; }
+.table-row-list th, .table-row-list td { padding: 10px; border: 1px solid #000; text-align: left; vertical-align: top; }
 
 .table-condensed th, .table-condensed td { padding: 17px 0 17px 20px; border: 1px solid #e5e5e5; border-width: 1px 0; background-color: #fff; text-align: left; }
 
@@ -1080,14 +1078,18 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 .cart-totals .cart-amount dt.total { margin-top: 9px; border: 1px solid #000; border-width: 1px 0 1px 1px; }
 .cart-totals .cart-amount dd { float: right; width: 60%; padding: 6px 8px 8px; font-family: "Nanum Gothic", sans-serif; text-align: right; }
 .cart-totals .cart-amount dd.total { margin-top: 9px; border: 1px solid #000; border-width: 1px 1px 1px 0; }
-.cart-totals .cart-info { padding: 8px; font-size: 11px; font-family: "Nanum Gothic", sans-serif; }
-.cart-totals .cart-info strong { font-weight: 400; color: #b82626; }
+
+.member-order-info { padding: 8px; font-size: 11px; font-family: "Nanum Gothic", sans-serif; }
+.member-order-info strong { font-weight: 400; color: #b82626; }
 
 .cart-wishlist { margin: 40px 0 50px; }
 .cart-wishlist .order-product-list { margin-top: 0; }
 
 /********************************************** Order - Checkout
 ***********************************************/
+.order-sheet .member-order-info { padding: 35px 8px; }
+.order-sheet .table th, .order-sheet .table td, .order-sheet .table .form-control { font-size: 11px; }
+
 .checkout { margin: 10px 0; }
 
 .checkout .title-group { cursor: pointer; }

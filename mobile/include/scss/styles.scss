@@ -756,7 +756,7 @@ output {
     border-radius: 0;
     background: #fff none;
     font-size: 13px;
-    color: #858585;
+    color: $text-color;
     -webkit-appearance: none;
     &[disabled],
     &[readonly] {
@@ -1094,16 +1094,14 @@ input[type="search"] {
     text-align: left;
 }
 
-.table-row-list th {
-    padding: 7px 0;
-    text-align: left;
-    vertical-align: top;
-}
-
-.table-row-list td {
-    padding: 7px 0;
-    text-align: left;
-    vertical-align: middle;
+.table-row-list {
+    th,
+    td {
+        padding: 10px;
+        border: 1px solid #000;
+        text-align: left;
+        vertical-align: top;
+    }
 }
 
 .table-condensed th, .table-condensed td {
@@ -2257,14 +2255,14 @@ footer {
             }
         }
     }
-    .cart-info {
-        padding: 8px;
-        font-size: 11px;
-        font-family: $font-family-ko;
-        strong {
-            font-weight: 400;
-            color: $primary;
-        }
+}
+.member-order-info {
+    padding: 8px;
+    font-size: 11px;
+    font-family: $font-family-ko;
+    strong {
+        font-weight: 400;
+        color: $primary;
     }
 }
 .cart-wishlist {
@@ -2277,6 +2275,18 @@ footer {
 /**********************************************
  Order - Checkout
 ***********************************************/
+.order-sheet {
+    .member-order-info {
+        padding: 35px 8px;
+    }
+    .table {
+        th,
+        td,
+        .form-control {
+            font-size: 11px;
+        }
+    }
+}
 .checkout {
     margin: 10px 0;
 }
