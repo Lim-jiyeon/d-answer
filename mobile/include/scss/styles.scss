@@ -2181,10 +2181,15 @@ footer {
                     font-size: 10px;
                     li {
                         @include clearfix;
-                        span {
+                        dt {
+                            clear: both;
                             float: left;
                             margin-right: 30px;
                             text-align: left;
+                        }
+                        dd {
+                            float: right;
+                            text-align: right;
                         }
                     }
                 }

@@ -18,8 +18,14 @@
                             <ul class="item-option">
                                 <li>Color : 블랙</li>
                                 <li>Size : M</li>
-                                <li><span>상품가격</span>59,000원</li>
-                                <li><span>적립금</span>590원</li>
+                                <li>
+                                    <dl>
+                                        <dt>상품가격</dt>
+                                        <dd>59,000원</dd>
+                                        <dt>적립금</dt>
+                                        <dd>590원</dd>
+                                    </dl>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -42,8 +48,14 @@
                             <ul class="item-option">
                                 <li>Color : 블랙</li>
                                 <li>Size : M</li>
-                                <li><span>상품가격</span>59,000원</li>
-                                <li><span>적립금</span>590원</li>
+                                <li>
+                                    <dl>
+                                        <dt>상품가격</dt>
+                                        <dd>59,000원</dd>
+                                        <dt>적립금</dt>
+                                        <dd>590원</dd>
+                                    </dl>
+                                </li>
                             </ul>
                         </div>
                     </div>
