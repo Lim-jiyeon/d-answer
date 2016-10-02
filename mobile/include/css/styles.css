@@ -550,11 +550,19 @@ hr { width: 100%; margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 
 
 .icon-left { width: 7px; height: 9px; background-position: -135px -45px; }
 
+.icon-left-strokes { width: 5px; height: 8px; background-position: 0 -90px; }
+
 .icon-up { width: 9px; height: 6px; background-position: -90px -90px; }
 
 .icon-down { width: 9px; height: 6px; background-position: -135px -90px; }
 
 .icon-delete { width: 18px; height: 18px; background-position: -180px -45px; }
+
+.icon-bank { width: 38px; height: 24px; background-position: -180px -90px; }
+
+.icon-card { width: 36px; height: 24px; background-position: -225px -90px; }
+
+.icon-cellphone { width: 22px; height: 37px; background-position: -270px -90px; }
 
 /********************************************** Button */
 .button { position: relative; display: block; margin: 0 3px; border: 1px solid #000; background-color: #fff; font-size: 11px; line-height: 2.5454545455; color: #000; text-align: center; vertical-align: middle; cursor: pointer; -webkit-appearance: none; }
@@ -589,6 +597,8 @@ hr { width: 100%; margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 
 .button-danger { border: 1px solid #858585; background-color: #fff; color: #858585; }
 
 .button-danger:hover, .button-danger:focus { color: #858585; }
+
+.button-block { margin: 0; }
 
 .button-block-group a { margin: 0 0 5px; }
 
@@ -663,13 +673,7 @@ textarea.form-control { padding: 10px; height: auto; }
 
 input[type="search"] { -webkit-appearance: none; }
 
-.form-large { height: 40px; line-height: 3; }
-
 .form-group { margin-bottom: 10px; }
-
-.form-inline { display: inline-block; }
-
-.form-inline .form-control { width: auto; display: inline-block; vertical-align: middle; }
 
 .input-group { border-collapse: collapse; display: table; width: 100%; }
 
@@ -679,15 +683,9 @@ input[type="search"] { -webkit-appearance: none; }
 
 .input-group .input-group-addon.blank { width: 5px; padding: 0; }
 
-.phone-group .input-group > div:first-child { width: 83px; }
+.input-group .input-group-addon.hyphen { width: 17px; }
 
-.phone-group .input-group .input-group-addon { width: 17px; }
-
-.email-group .input-group > div:first-child { width: 95px; }
-
-.email-group .input-group .input-group-addon { width: 25px; }
-
-.email-group .input-button-group > div:last-child { width: 30px; }
+.input-group + .button-align-center { margin-top: 10px; }
 
 .file-input { position: absolute; overflow: hidden; display: inline-block; vertical-align: middle; }
 
@@ -729,21 +727,25 @@ input[type="search"] { -webkit-appearance: none; }
 
 .selectbox-group .selectbox { float: left; margin-right: -1px; }
 
-.checkbox, .radio { display: inline-block; }
+.checkbox, .checkbox-big, .radio { display: inline-block; }
 
-.checkbox input[type="checkbox"], .checkbox input[type="radio"], .radio input[type="checkbox"], .radio input[type="radio"] { position: fixed; top: -9999px; left: -9999px; visibility: hidden; }
+.checkbox input[type="checkbox"], .checkbox input[type="radio"], .checkbox-big input[type="checkbox"], .checkbox-big input[type="radio"], .radio input[type="checkbox"], .radio input[type="radio"] { position: fixed; top: -9999px; left: -9999px; visibility: hidden; }
 
-.checkbox .checkbox-display, .checkbox .radio-display, .radio .checkbox-display, .radio .radio-display { position: relative; display: inline-block; width: 13px; height: 13px; margin: 3px 6px 5px 0; background-size: 13px; vertical-align: middle; }
+.checkbox .checkbox-display, .checkbox .radio-display, .checkbox-big .checkbox-display, .checkbox-big .radio-display, .radio .checkbox-display, .radio .radio-display { position: relative; display: inline-block; width: 11px; height: 11px; margin: 3px 6px 5px 0; background-size: 11px; vertical-align: middle; }
 
-.checkbox input[type="checkbox"]:checked + .checkbox-display, .checkbox input[type="radio"]:checked + .radio-display, .radio input[type="checkbox"]:checked + .checkbox-display, .radio input[type="radio"]:checked + .radio-display { transition: all 0.3s ease; }
+.checkbox input[type="checkbox"]:checked ~ .checkbox-display, .checkbox input[type="radio"]:checked ~ .radio-display, .checkbox-big input[type="checkbox"]:checked ~ .checkbox-display, .checkbox-big input[type="radio"]:checked ~ .radio-display, .radio input[type="checkbox"]:checked ~ .checkbox-display, .radio input[type="radio"]:checked ~ .radio-display { transition: all 0.3s ease; }
 
 .checkbox .checkbox-display { background-image: url(../images/form-checkbox.png); }
 
-.checkbox input[type="checkbox"]:checked + .checkbox-display { background-image: url(../images/form-checkbox-checked.png); }
+.checkbox input[type="checkbox"]:checked ~ .checkbox-display { background-image: url(../images/form-checkbox-checked.png); }
+
+.checkbox-big .checkbox-display { width: 20px; height: 20px; background-image: url(../images/form-checkbox-big.png); background-size: 20px; }
+
+.checkbox-big input[type="checkbox"]:checked ~ .checkbox-display { background-image: url(../images/form-checkbox-big-checked.png); }
 
 .radio .radio-display { background-image: url(../images/form-radio.png); }
 
-.radio input[type="radio"]:checked + .radio-display { background-image: url(../images/form-radio-checked.png); }
+.radio input[type="radio"]:checked ~ .radio-display { background-image: url(../images/form-radio-checked.png); }
 
 .checkbox-block { display: block; margin-top: 10px; font-size: 10px; }
 
@@ -819,15 +821,18 @@ input[type="search"] { -webkit-appearance: none; }
 
 .table-caution li { text-indent: -7px; }
 
+/********************************************** Tab */
 .tabs { clear: both; position: relative; }
 
-.tab .tab-label { width: 100%; margin-bottom: 0; border: 1px solid #000; border-width: 1px 1px 1px 0; background-color: #fff; color: #000; line-height: 16px; text-align: center; vertical-align: middle; cursor: pointer; }
+.tab .tab-label { width: 100%; margin-bottom: 0; border: 1px solid #000; border-width: 1px 1px 1px 0; background-color: #000; font-size: 11px; color: #fff; line-height: 2.5454545455; text-align: center; vertical-align: middle; cursor: pointer; }
+
+.tab:first-child .tab-label { border-left-width: 1px; }
 
 .tab [type=radio] { display: none; }
 
-.tab-content { display: none; }
+.tab-content { display: none; border: 1px solid #000; }
 
-.tabs [type=radio]:checked ~ .tab-label { background-color: #000; color: #e5e5e5; }
+.tabs [type=radio]:checked ~ .tab-label { background-color: #fff; color: #000; }
 
 .tabs [type=radio]:checked ~ .tab-label ~ .tab-content { display: block; }
 
@@ -836,14 +841,6 @@ input[type="search"] { -webkit-appearance: none; }
 .tabs-content-unlimited .tab .tab-label { display: table; position: absolute; top: 0; left: 0; }
 
 .tabs-content-unlimited .tab .tab-label span { display: table-cell; text-align: center; vertical-align: middle; }
-
-.tabs-secondary .tab .tab-label { width: 50%; padding: 0 5px; border: 0; background-color: transparent; line-height: 28px; }
-
-.tabs-secondary .tab .tab-label span { border: 5px solid #f5f5f5; background-color: #f5f5f5; color: #858585; }
-
-.tabs-secondary.tabs [type=radio]:checked ~ .tab-label { background-color: transparent; }
-
-.tabs-secondary.tabs [type=radio]:checked ~ .tab-label span { border: 5px solid #f5f5f5; background-color: #fff; color: #000; }
 
 /********************************************** Layout */
 .content { padding: 15px 0 50px; }
@@ -1019,7 +1016,9 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 
 .page-title { margin-bottom: 13px; font-size: 11px; letter-spacing: 1.3px; text-align: center; text-transform: uppercase; }
 
-.secondary-title { margin-bottom: 7px; font-weight: 400; font-size: 14px; font-family: "Nanum Gothic", sans-serif; color: #000; }
+.secondary-title { margin-bottom: 7px; font-size: 11px; font-family: "Nanum Gothic", sans-serif; color: #000; }
+
+.third-title { padding: 0 10px; background-color: #000; font-weight: 400; font-size: 11px; line-height: 2.7272727273; color: #fff; }
 
 .arrow-title { font-weight: 400; letter-spacing: 0; }
 
@@ -1047,17 +1046,13 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 
 .paging .pagingNum span.current { border-bottom: 1px solid #000; }
 
-.delimiter li { display: inline-block; }
-
-.delimiter li:before { display: inline-block; width: 2px; height: 11px; margin: 0 6px 0 4px; border-left: 1px solid #dbdbdb; background-color: #858585; vertical-align: -1px; content: ''; }
-
-.delimiter li:first-child:before { width: 0; margin: 0; border-left: 0; content: ''; }
-
-.link-line { border-bottom: 1px solid #bdbdbd; }
-
 .scroll { overflow-y: scroll; }
 
-.icon-search:before { width: 17px; height: 16px; background: url(../../images/common/icon-search.png) no-repeat 0 0; background-size: 17px 16px; font-size: 11px; color: transparent; }
+.primary { color: #b82626; }
+
+.informaion { color: #1d009a; }
+
+.notify { margin-top: 8px; }
 
 /********************************************** Product Style */
 .discount { display: block; margin-bottom: -4px; font-style: normal; text-decoration: line-through; }
@@ -1319,154 +1314,88 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 .cart-wishlist .order-product-list { margin-top: 0; }
 
 /********************************************** Order - Checkout */
+.order-sheet { padding: 10px 12px 30px; }
+
+.order-sheet .order-product-list li .product-info { padding-left: 15px; }
+
 .order-sheet .member-order-info { padding: 35px 8px; }
+
+.order-sheet .get-shipping { margin-top: 30px; }
+
+.order-sheet .get-shipping .checkbox-big { display: block; }
+
+.order-sheet .get-shipping .checkbox-big:before, .order-sheet .get-shipping .checkbox-big:after { content: " "; display: table; }
+
+.order-sheet .get-shipping .checkbox-big:after { clear: both; }
+
+.order-sheet .get-shipping .checkbox-big .checkbox-label { float: left; margin: 0; }
+
+.order-sheet .get-shipping .checkbox-big .checkbox-display { float: right; margin: 0; }
 
 .order-sheet .table th, .order-sheet .table td, .order-sheet .table .form-control { font-size: 11px; }
 
-.checkout { margin: 10px 0; }
+.order-sheet .saved .form-control { display: inline-block; width: 70px; height: 23px; }
 
-.checkout .title-group { cursor: pointer; }
+.order-sheet .total-payment .table { border: 1px solid #000; }
 
-.checkout .secondary-title { width: 80%; }
+.order-sheet .total-payment .table th, .order-sheet .total-payment .table td { border: 0; }
 
-.checkout .secondary-title .step { margin-right: 9px; font-weight: 400; letter-spacing: 0; color: #004689; }
+.order-sheet .total-payment .table th { border-right: 1px solid #000; text-align: center; }
 
-.checkout .button-circle { display: block; border: 1px solid #000; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; border-radius: 50%; color: #000; }
+.order-sheet .total-payment .table tr:first-child td .form-control, .order-sheet .total-payment .table tr:first-child td .selectbox { margin-bottom: 5px; }
 
-.checkout .button-circle .icon-plus:before { display: block; width: 15px; height: 15px; margin: 0; padding-top: 2px; }
+.order-sheet .total-payment .table tr:first-child td .notify { margin-top: 20px; }
 
-.checkout-input { color: #000; }
+.order-sheet .total-payment .checkbox-big .checkbox-label { display: block; }
 
-.checkout-input .box { padding: 15px 10px; }
+.order-sheet .total-payment .checkbox-big .checkbox-display { margin-right: 0; }
 
-.checkout-input .box .input-list li { padding: 10px 0; }
+.order-sheet .total-payment .payment-agree { padding: 25px 13px 0; }
 
-.checkout-input .box .input-list li .form-group { margin-bottom: -10px; }
+.order-sheet .total-payment .payment-agree .checkbox-big { position: relative; }
 
-.checkout-input .box .input-list li.text-data { padding-left: 10px; }
+.order-sheet .total-payment .payment-agree .checkbox-big .checkbox-display { position: absolute; top: 0; left: 0; margin: 0; }
 
-.checkout-input .box .input-list li.address { margin-bottom: -20px; }
+.order-sheet .total-payment .payment-agree .checkbox-big .checkbox-label { padding-left: 30px; }
 
-.checkout-input .box .input-list li.address .form-group { margin-bottom: 10px; }
+.order-sheet .terms-of-use .tabs { margin-bottom: 18px; }
 
-.checkout-input .international-shipping { margin: 20px -10px 0; padding: 15px 10px 5px; border-top: 1px solid #e5e5e5; color: #858585; }
+.order-sheet .terms-of-use .tabs .tab .tab-label { display: none; }
 
-.checkout-input .international-shipping > label { color: #000; }
+.order-sheet .terms-of-use .tabs .tab-content { padding: 10px; }
 
-.checkout-input .international-shipping .pcc-button { width: 68px; }
+.order-sheet .terms-of-use .tabs .tab-content .button { margin: 10px -10px -10px; }
 
-.checkout-input .postcode-button { width: 135px; }
+.order-sheet .terms-of-use .checkbox { display: block; margin-bottom: -5px; }
 
-.checkout-input .shipping-memo .form-control::-moz-placeholder { color: #858585; opacity: 1; }
+.order-sheet .privacy-policy .tabs { margin-bottom: 18px; }
 
-.checkout-input .shipping-memo .form-control:-ms-input-placeholder { color: #858585; }
+.order-sheet .privacy-policy .tabs .tab .tab-label { width: 33.34%; cursor: pointer; }
 
-.checkout-input .shipping-memo .form-control::-webkit-input-placeholder { color: #858585; }
+.order-sheet .privacy-policy .tabs .tab .tab-label.agree-policy-purpose { left: 33.34%; }
 
-.coupon-info .apply-coupon { padding: 15px 10px; color: #000; }
+.order-sheet .privacy-policy .tabs .tab .tab-label.agree-policy-useDate { left: 66.68%; }
 
-.coupon-info .apply-coupon:before, .coupon-info .apply-coupon:after { content: " "; display: table; }
+.order-sheet .privacy-policy .tabs .tab-content { padding: 40px 10px 10px; }
 
-.coupon-info .apply-coupon:after { clear: both; }
+.order-sheet .privacy-policy .tabs .tab-content .button { margin: 10px -10px -10px; }
 
-.coupon-info .apply-coupon span { float: left; }
+.order-sheet .privacy-policy .checkbox { display: block; margin-bottom: -5px; }
 
-.coupon-info .apply-coupon strong { float: right; font-weight: 400; text-align: right; }
+.checkout { margin-bottom: 35px; }
 
-.coupon-info .coupon-list { padding: 15px 10px 0; border-top: 1px solid #e5e5e5; }
+.checkout.total-payment { margin-bottom: 0; }
 
-.coupon-info .coupon-list li { padding-bottom: 20px; }
+/********************************************** Order - Complete */
+.order-complete { padding: 20px 12px 40px; }
 
-.payment-type.tabs .tab .tab-label { width: 50%; }
+.order-complete .orderer-info { margin: 30px 0 40px; text-align: center; }
 
-.payment-type.tabs .tab .tab-label span { height: 40px; }
+.order-complete .ordered-info a { float: left; }
 
-.payment-type.tabs .tab .payment-card { border-left-width: 1px; border-top-left-radius: 3px; -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; }
+.order-complete .ordered-info span { float: right; }
 
-.payment-type.tabs .tab .payment-card2 { left: 50%; border-top-right-radius: 3px; -moz-border-radius-topright: 3px; -webkit-border-top-right-radius: 3px; }
-
-.payment-type.tabs .tab .payment-virtual { top: 40px; border-left-width: 1px; border-bottom-left-radius: 3px; -moz-border-radius-bottomleft: 3px; -webkit-border-bottom-left-radius: 3px; }
-
-.payment-type.tabs .tab .payment-transfer { top: 40px; left: 50%; border-bottom-right-radius: 3px; -moz-border-radius-bottomright: 3px; -webkit-border-bottom-right-radius: 3px; }
-
-.payment-type.tabs .tab-content { padding-top: 82px; }
-
-.payment-type .payment-choice .selectbox { margin-top: 10px; }
-
-.checkout-payment-totals { margin-top: -10px; padding: 10px 10px 20px; }
-
-.checkout-payment-totals .checkout-amount { padding-top: 7px; background-color: #e5e5e5; }
-
-.checkout-payment-totals .checkout-amount:before, .checkout-payment-totals .checkout-amount:after { content: " "; display: table; }
-
-.checkout-payment-totals .checkout-amount:after { clear: both; }
-
-.checkout-payment-totals .checkout-amount dt { clear: both; float: left; width: 40%; padding-left: 10px; }
-
-.checkout-payment-totals .checkout-amount dt.checkout-total { padding-top: 7px; }
-
-.checkout-payment-totals .checkout-amount dd { float: right; width: 60%; padding-right: 10px; text-align: right; }
-
-.checkout-payment-totals .checkout-amount dd em { font-family: "BentonSans", sans-serif; font-style: normal; }
-
-.checkout-payment-totals .checkout-amount dd.checkout-total { font-size: 18px; }
-
-.checkout-payment-totals .checkout-amount .checkout-total { border-top: 1px solid #d5d5d5; margin-top: 5px; padding: 3px 10px 0; color: #333; }
-
-.checkout-payment-totals .checkout-payment { margin-top: 10px; }
-
-.checkout-payment-totals .checkout-payment .checkbox label { vertical-align: top; }
-
-.checkout-payment-totals .checkout-payment .checkbox label.checkbox-label { width: 91.2%; font-size: 12px; }
-
-.checkout-payment-totals .checkout-payment .button { margin-top: 15px; }
-
-.guest-checkbox-agree.box { padding-bottom: 10px; }
-
-.guest-checkbox-agree .agree-box { border: 0; margin: -5px 0 10px; }
-
-.guest-checkbox-agree .checkbox-label { margin-bottom: 0; font-size: 11px; }
-
-/********************************************** Order - Summary */
-.ordered-check { text-align: center; }
-
-.ordered-check .confirm-message { padding: 24px 0 21px; border: 2px solid #e5e5e5; font-size: 10px; }
-
-.ordered-check .confirm-message strong { display: block; margin-bottom: 13px; font-size: 12px; color: #000; }
-
-.ordered-check .ordered-info { margin-top: 10px; padding: 5px 0; background-color: #e5e5e5; }
-
-.ordered-check .ordered-info li { color: #4b4b4b; }
-
-.ordered-check .ordered-info .ordered-num { font-weight: 400; color: #004689; }
-
-.summary { margin-top: 15px; }
-
-.ordered-payment-info { border: 5px solid #f5f5f5; color: #000; }
-
-.ordered-payment-info > li { padding: 5px 5px 3px; border-top: 1px solid #e5e5e5; }
-
-.ordered-payment-info > li:before, .ordered-payment-info > li:after { content: " "; display: table; }
-
-.ordered-payment-info > li:after { clear: both; }
-
-.ordered-payment-info > li:first-child { border-top: 0; }
-
-.ordered-payment-info > li.ordered-coupon, .ordered-payment-info > li.virtual-account-info { border-top: 1px dashed #e5e5e5; color: #858585; }
-
-.ordered-payment-info > li.payment-price-total .ordered-payment-title { padding-top: 5px; }
-
-.ordered-payment-info > li.payment-price-total .ordered-payment-price { font-weight: 700; font-size: 18px; }
-
-.ordered-payment-info .ordered-payment-title { float: left; }
-
-.ordered-payment-info .ordered-payment-price { float: right; font-weight: 400; text-align: right; }
-
-.ordered-shipping-info { padding: 10px 5px; border: 5px solid #f5f5f5; font-size: 10px; }
-
-.ordered-shipping-info li { padding: 5px 0; }
-
-.ordered-shipping-info li.pcc-code { padding-top: 30px; }
+.summary { margin-bottom: 35px; }
 
 /********************************************** My Page - Dashboard */
 .member-name:before, .member-name:after { content: " "; display: table; }

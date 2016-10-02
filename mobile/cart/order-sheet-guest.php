@@ -62,11 +62,7 @@
             <!-- 주문 상품 확인 //end -->
             <p class="member-order-info">
                 배송정보 - 50,000원 미만시 3,000원<br>
-                지역별/상품개별배송정책에 따라 변동될 수 있습니다.<br>
-                <b>김기훈</b>님은 <b>[Silver]</b>회원입니다.<br>
-                (적림금 적립 + 사용 가능 / 출석체크 적립금 사용 불가능)<br>
-                김기훈 님이 1,000원 이상 구매시, 구매금액의 <strong>1</strong>%를 <br>
-                <strong>추가적</strong>립 해 드립니다.
+                지역별/상품개별배송정책에 따라 변동될 수 있습니다.
             </p>
         </div>
         <div class="checkout">
@@ -93,6 +89,9 @@
                 </tbody>
             </table>
             <!-- 주문자정보 //end -->
+        </div>
+        <div class="checkout">
+            <h3 class="secondary-title">배송 정보</h3>
             <!-- 배송 정보 -->
             <table class="table table-row-list get-shipping">
                 <colgroup>
@@ -106,48 +105,6 @@
                             <input type="checkbox" id="same-order-name" checked>
                             <label for="same-order-name" class="checkbox-label"><b>주문고객정보와 동일</b></label>
                             <label for="same-order-name" class="checkbox-display"></label>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <div class="row">
-                            <div class="col-xs-5">
-                                <div class="checkbox-big">
-                                    <input type="checkbox" id="home">
-                                    <label for="home" class="checkbox-label">자택</label>
-                                    <label for="home" class="checkbox-display"></label>
-                                </div>
-                            </div>
-                            <div class="col-xs-2"></div>
-                            <div class="col-xs-5 col-lg-pull-2">
-                                <div class="checkbox-big">
-                                    <input type="checkbox" id="company">
-                                    <label for="company" class="checkbox-label">회사</label>
-                                    <label for="company" class="checkbox-display"></label>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <div class="row">
-                            <div class="col-xs-5">
-                                <div class="checkbox-big">
-                                    <input type="checkbox" id="recently-shipping">
-                                    <label for="recently-shipping" class="checkbox-label">최근 배송지</label>
-                                    <label for="recently-shipping" class="checkbox-display"></label>
-                                </div>
-                            </div>
-                            <div class="col-xs-2"></div>
-                            <div class="col-xs-5 col-lg-pull-2">
-                                <div class="checkbox-big">
-                                    <input type="checkbox" id="new-shipping">
-                                    <label for="new-shipping" class="checkbox-label">신규 배송지</label>
-                                    <label for="new-shipping" class="checkbox-display"></label>
-                                </div>
-                            </div>
                         </div>
                     </td>
                 </tr>
@@ -192,6 +149,81 @@
                 </tbody>
             </table>
             <!-- 배송 정보 //end -->
+        </div>
+        <div class="checkout terms-of-use">
+            <h3 class="secondary-title">이용약관</h3>
+            <!-- 이용약관 -->
+            <ul class="tabs">
+                <li class="tab">
+                    <input type="radio" id="agree-terms-of-use" name="join-terms-of-use" checked>
+                    <label for="agree-terms-of-use" class="tab-label agree-policy-list">수집하는 항목</label>
+                    <div class="tab-content">
+                        인터넷 쇼핑몰 (주)디에이앤코 사이버 몰 회원 약관<br><br>
+                        제1조(목적)
+                        이 약관은 (주)디에이앤코 회사(전자상거래 사업자)가 운영하는 (주)디에이앤코 사이버 몰(이하&quot;몰&quot;이라 한다)
+                        <a href="#" class="button button-block button-primary">내용전체보기</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="checkbox">
+                <input type="checkbox" id="terms-of-use-agree" checked>
+                <label for="terms-of-use-agree" class="checkbox-display"></label>
+                <label for="terms-of-use-agree" class="checkbox-label primary">동의함</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="terms-of-use-disagree">
+                <label for="terms-of-use-disagree" class="checkbox-display"></label>
+                <label for="terms-of-use-disagree" class="checkbox-label primary">동의안함</label>
+            </div>
+            <!-- 이용약관 //end -->
+        </div>
+        <div class="checkout privacy-policy">
+            <h3 class="secondary-title">개인정보 수집 이용안내</h3>
+            <!-- 개인정보 수집 이용안내 -->
+            <ul class="tabs tabs-content-unlimited">
+                <li class="tab">
+                    <input type="radio" id="agree-policy-list" name="join-agree" checked>
+                    <label for="agree-policy-list" class="tab-label agree-policy-list">수집하는 항목</label>
+                    <div class="tab-content">
+                        수집하는 개인정보의 항목 및 수집방법<br>
+                        디앤써는 회원가입, 비회원 구매, 상담 불량이용의 방지 등을 위해<br>
+                        수집하는 개인정보의 항목 및 수집방법<br>
+                        디앤써는 회원가입, 비회원 구매, 상담 불량이용의 방지 등을 위해<br>
+                        수집하는 개인정보의 항목 및 수집방법<br>
+                        디앤써는 회원가입, 비회원 구매, 상담 불량이용의 방지 등을 위해
+                        <a href="#" class="button button-block button-primary">내용전체보기</a>
+                    </div>
+                </li>
+                <li class="tab">
+                    <input type="radio" id="agree-policy-purpose" name="join-agree">
+                    <label for="agree-policy-purpose" class="tab-label agree-policy-purpose">수집・이용 목적</label>
+                    <div class="tab-content">
+                        수집하는 개인정보의 항목 및 수집방법<br>
+                        디앤써는 회원가입, 비회원 구매, 상담 불량이용의 방지 등을 위해
+                        <a href="#" class="button button-block button-primary">내용전체보기</a>
+                    </div>
+                </li>
+                <li class="tab">
+                    <input type="radio" id="agree-policy-useDate" name="join-agree">
+                    <label for="agree-policy-useDate" class="tab-label agree-policy-useDate">보유 및 이용기간</label>
+                    <div class="tab-content">
+                        수집하는 개인정보의 항목 및 수집방법<br>
+                        디앤써는 회원가입, 비회원 구매, 상담 불량이용의 방지 등을 위해
+                        <a href="#" class="button button-block button-primary">내용전체보기</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="checkbox">
+                <input type="checkbox" id="privacy-policy-agree" checked>
+                <label for="privacy-policy-agree" class="checkbox-display"></label>
+                <label for="privacy-policy-agree" class="checkbox-label primary">동의함</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="privacy-policy-disagree">
+                <label for="privacy-policy-disagree" class="checkbox-display"></label>
+                <label for="privacy-policy-disagree" class="checkbox-label primary">동의안함</label>
+            </div>
+            <!-- 개인정보 수집 이용안내 //end -->
         </div>
         <div class="checkout">
             <h3 class="secondary-title">결제정보</h3>
