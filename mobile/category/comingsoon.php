@@ -1,6 +1,6 @@
 <?php include '../header/header.php'; ?>
 <div class="content">
-    <div class="container">
+    <div class="container page-category">
         <h3 class="page-title">coming soon</h3>
         <!-- Category List -->
         <ul class="product-list list-view">

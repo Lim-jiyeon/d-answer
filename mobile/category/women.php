@@ -1,6 +1,6 @@
 <?php include '../header/header.php'; ?>
 <div class="content">
-    <div class="container">
+    <div class="container page-category">
         <!-- breadcrumb -->
         <div class="breadcrumb">
             <a href="#">man</a>
