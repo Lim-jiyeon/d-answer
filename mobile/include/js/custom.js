@@ -3,7 +3,7 @@ $(document).ready(function () {
     // Mobile Side Bar Menu Open
     $(".mobile-menu > a").click(function(e) {
         e.preventDefault();
-        $("body").addClass("menu-open");
+        $("html").addClass("menu-open");
     });
     // Mobile Side Bar Menu Accordion
     (function($) {
@@ -56,7 +56,7 @@ $(document).ready(function () {
     $(".sidebar-menu").sideMenu();
     // Mobile Side Bar Menu Close
     $(".menu-close, .menu-overlay").on("click", function() {
-        $("body").removeClass("menu-open");
+        $("html").removeClass("menu-open");
     });
 
     // Footer Accordion Menu
@@ -151,22 +151,6 @@ $(document).ready(function () {
     });
 
 
-    // My Page Coupon Input[Radio] Select Tab
-    $(".coupon-box input[name=couponList]").change(function () {
-        $(".coupon-content").hide();
-        $("."+$(this).val()).show();
-    });
-
-
-    // Brand Banner
-    $(".brand-banner").slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        arrows: false
-    });
-
-
     // News List
     $(".news-title").on("click", function() {
         $(this).siblings().removeClass("open").next().slideUp();
@@ -205,17 +189,6 @@ $(document).ready(function () {
         return false;
     });
 
-
-    // Placeholder
-    $(".placeholder input").focusin(function() {
-        $(this).siblings("label").hide();
-    });
-    $(".placeholder input").blur(function() {
-        if($(this).val() == ''){
-            $(this).siblings("label").show();
-        }
-    });
-
 });
 
 
@@ -238,27 +211,12 @@ function selectboxEvent(target){
 }
 
 
-// Sign Up Agree Box View
-function agreeOpen(view) {
-    var $this = $(view);
-    $this.parents(".signup-agree-title").next(".agree-box").addClass("open").toggle();
-    return false;
-}
-
-
 // Shopping Bag Option Change
-function itemOptionChange(item) {
-    var $this = $(item);
-    $this.parents("div").next(".item-option-change").addClass("open").toggle();
-    return false;
+function orderTrackDetail(list) {
+    var $this = $(list);
+    $this.siblings(".order-track-detail").addClass("open");
 }
-function itemOptionClose(item) {
-    var $this = $(item);
-    $this.parents(".item-option-change").removeClass("open").hide();
-    return false;
-}
-
-function guestOrderedCheck() {
-    $(".guest-ordered-check").addClass("open").toggle();
-    return false;
+function orderTrackDetailClose(list) {
+    var $this = $(list);
+    $this.parent(".order-track-detail").removeClass("open");
 }

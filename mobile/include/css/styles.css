@@ -134,7 +134,7 @@ textarea { overflow: auto; }
 
 html { -webkit-tap-highlight-color: transparent; }
 
-body { font-family: Arial, "Nanum Gothic", sans-serif; font-size: 12px; line-height: 1.6666666667; color: #000; background-color: #fff; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { font-family: Arial, "Nanum Gothic", sans-serif; font-size: 11px; line-height: 1.6666666667; color: #000; background-color: #fff; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 ul, ol, li { list-style: none; }
 
@@ -552,6 +552,14 @@ hr { width: 100%; margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 
 
 .icon-left-strokes { width: 5px; height: 8px; background-position: 0 -90px; }
 
+.icon-left-arrow { width: 6px; height: 10px; background-position: -45px -110px; }
+
+.icon-left-double { width: 12px; height: 10px; background-position: 0 -110px; }
+
+.icon-right-arrow { width: 6px; height: 10px; background-position: -90px -110px; }
+
+.icon-right-double { width: 12px; height: 10px; background-position: -135px -110px; }
+
 .icon-up { width: 9px; height: 6px; background-position: -90px -90px; }
 
 .icon-down { width: 9px; height: 6px; background-position: -135px -90px; }
@@ -564,53 +572,30 @@ hr { width: 100%; margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 
 
 .icon-cellphone { width: 22px; height: 37px; background-position: -270px -90px; }
 
+.icon-coin { width: 13px; height: 13px; background-position: -225px -180px; }
+
 /********************************************** Button */
-.button { position: relative; display: block; margin: 0 3px; border: 1px solid #000; background-color: #fff; font-size: 11px; line-height: 2.5454545455; color: #000; text-align: center; vertical-align: middle; cursor: pointer; -webkit-appearance: none; }
+.button { position: relative; display: block; border: 1px solid #000; background-color: #fff; font-size: 11px; line-height: 2.5454545455; color: #000; text-align: center; vertical-align: middle; cursor: pointer; -webkit-appearance: none; }
 
 .button:hover, .button:focus { color: #000; text-decoration: none; }
 
-.button:first-child { margin-left: 0; }
-
-.button:last-child { margin-right: 0; }
-
-/* Purpose Definition */
-.button-large { padding: 0 50px; font-size: 14px; line-height: 2.7142857143; }
-
-.button-small { padding: 0 11px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; border-radius: 2px; font-size: 12px; line-height: 2.0833333333; }
-
-.button-xsmall { padding: 0 11px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; border-radius: 2px; font-size: 11px; line-height: 1.4545454545; }
-
 .button-primary { background-color: #000; color: #fff; }
 
-.button-primary:hover { color: #fff; }
+.button-primary:hover, .button-primary:focus { color: #fff; }
 
-.button-secondary { border-color: #004689; background-color: #fff; color: #004689; }
+.button-secondary { border-color: transparent; background-color: #efe4d5; color: #000; }
 
 .button-secondary:hover, .button-secondary:focus { color: #004689; }
 
-.button-third { background-color: #000; }
+.button-inline { display: inline-block; margin: 0 5px; padding: 0 5px; vertical-align: middle; }
 
-.button-fourth { border-color: #000; background-color: #fff; color: #000; }
-
-.button-fourth:hover, .button-fourth:focus { color: #000; }
-
-.button-danger { border: 1px solid #858585; background-color: #fff; color: #858585; }
-
-.button-danger:hover, .button-danger:focus { color: #858585; }
-
-.button-block { margin: 0; }
-
-.button-block-group a { margin: 0 0 5px; }
+.button-block-group a { margin: 0 0 8px; }
 
 .button-group { display: table; width: 100%; font-size: 0; }
 
 .button-group div { display: table-cell; margin: 0 0 0 -1px; }
 
 .button-group div .button { width: 100%; border-width: 1px 0 1px 1px; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; border-radius: 0; }
-
-.button-group div:first-child .button { border-left-width: 1px; border-top-left-radius: 3px; -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; border-bottom-left-radius: 3px; -moz-border-radius-bottomleft: 3px; -webkit-border-bottom-left-radius: 3px; }
-
-.button-group div:last-child .button { border-right-width: 1px; border-top-right-radius: 3px; -moz-border-radius-topright: 3px; -webkit-border-top-right-radius: 3px; border-bottom-right-radius: 3px; -moz-border-radius-bottomright: 3px; -webkit-border-bottom-right-radius: 3px; }
 
 .button-inline-group { margin: 10px -4px 0; }
 
@@ -647,7 +632,7 @@ fieldset { min-width: 0; padding: 0; margin: 0; border: 0; }
 
 legend { display: block; width: 100%; margin-bottom: 20px; padding: 0; border: 0; border-bottom: 1px solid #e5e5e5; font-size: 19.5px; line-height: inherit; color: #333; }
 
-label { display: inline-block; max-width: 100%; margin-bottom: 5px; }
+label { display: inline-block; max-width: 100%; }
 
 input[type="search"] { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
@@ -665,7 +650,7 @@ output { display: block; padding-top: 7px; font-size: 13px; line-height: 1.53846
 
 .form-label { color: #000; }
 
-.form-control { display: block; width: 100%; height: 35px; padding: 0 10px; border: 1px solid #000; border-radius: 0; background: #fff none; font-size: 13px; color: #000; -webkit-appearance: none; }
+.form-control { display: block; width: 100%; height: 30px; padding: 0 10px; border: 1px solid #000; border-radius: 0; background: #fff none; font-size: 11px; color: #000; -webkit-appearance: none; }
 
 .form-control[disabled], .form-control[readonly] { background-color: #f5f5f5; color: #858585; opacity: 1; cursor: not-allowed; }
 
@@ -674,6 +659,10 @@ textarea.form-control { padding: 10px; height: auto; }
 input[type="search"] { -webkit-appearance: none; }
 
 .form-group { margin-bottom: 10px; }
+
+.form-group + .button-align-center { margin-top: 10px; }
+
+.form-group + .form-group { margin-top: 10px; }
 
 .input-group { border-collapse: collapse; display: table; width: 100%; }
 
@@ -685,7 +674,9 @@ input[type="search"] { -webkit-appearance: none; }
 
 .input-group .input-group-addon.hyphen { width: 17px; }
 
-.input-group + .button-align-center { margin-top: 10px; }
+.input-group .input-group-addon.at { width: 19px; padding: 0 3px; }
+
+.input-group.email-group > div:last-child { width: 80px; }
 
 .file-input { position: absolute; overflow: hidden; display: inline-block; vertical-align: middle; }
 
@@ -727,11 +718,11 @@ input[type="search"] { -webkit-appearance: none; }
 
 .selectbox-group .selectbox { float: left; margin-right: -1px; }
 
-.checkbox, .checkbox-big, .radio { display: inline-block; }
+.checkbox, .checkbox-big, .radio { display: inline-block; margin-right: 6px; }
 
 .checkbox input[type="checkbox"], .checkbox input[type="radio"], .checkbox-big input[type="checkbox"], .checkbox-big input[type="radio"], .radio input[type="checkbox"], .radio input[type="radio"] { position: fixed; top: -9999px; left: -9999px; visibility: hidden; }
 
-.checkbox .checkbox-display, .checkbox .radio-display, .checkbox-big .checkbox-display, .checkbox-big .radio-display, .radio .checkbox-display, .radio .radio-display { position: relative; display: inline-block; width: 11px; height: 11px; margin: 3px 6px 5px 0; background-size: 11px; vertical-align: middle; }
+.checkbox .checkbox-display, .checkbox .radio-display, .checkbox-big .checkbox-display, .checkbox-big .radio-display, .radio .checkbox-display, .radio .radio-display { position: relative; display: inline-block; width: 11px; height: 11px; margin: 3px 3px 5px 0; background-size: 11px; vertical-align: middle; }
 
 .checkbox input[type="checkbox"]:checked ~ .checkbox-display, .checkbox input[type="radio"]:checked ~ .radio-display, .checkbox-big input[type="checkbox"]:checked ~ .checkbox-display, .checkbox-big input[type="radio"]:checked ~ .radio-display, .radio input[type="checkbox"]:checked ~ .checkbox-display, .radio input[type="radio"]:checked ~ .radio-display { transition: all 0.3s ease; }
 
@@ -743,9 +734,9 @@ input[type="search"] { -webkit-appearance: none; }
 
 .checkbox-big input[type="checkbox"]:checked ~ .checkbox-display { background-image: url(../images/form-checkbox-big-checked.png); }
 
-.radio .radio-display { background-image: url(../images/form-radio.png); }
+.radio .radio-display { background-image: url(../images/form-checkbox.png); }
 
-.radio input[type="radio"]:checked ~ .radio-display { background-image: url(../images/form-radio-checked.png); }
+.radio input[type="radio"]:checked ~ .radio-display { background-image: url(../images/form-checkbox-checked.png); }
 
 .checkbox-block { display: block; margin-top: 10px; font-size: 10px; }
 
@@ -755,7 +746,7 @@ input[type="search"] { -webkit-appearance: none; }
 
 .help-block { display: block; margin-top: 5px; margin-bottom: 10px; color: #858585; }
 
-.help-text { font-size: 10px; }
+.help-text { margin-top: 5px; font-size: 10px; line-height: 13px; }
 
 .help-success { color: #004689; }
 
@@ -763,6 +754,7 @@ input[type="search"] { -webkit-appearance: none; }
 
 .help-danger { color: #c20007; }
 
+/********************************************** Table */
 .table { border-collapse: collapse; width: 100%; }
 
 .table col { float: none; }
@@ -843,7 +835,7 @@ input[type="search"] { -webkit-appearance: none; }
 .tabs-content-unlimited .tab .tab-label span { display: table-cell; text-align: center; vertical-align: middle; }
 
 /********************************************** Layout */
-.content { padding: 30px 12px 50px; }
+.content { padding: 30px 12px 100px; }
 
 /********************************************** Header */
 header .top { position: relative; padding: 14px 0; border-bottom: 1px solid #000; }
@@ -948,7 +940,7 @@ header .top .mobile-menu { position: absolute; top: 17px; left: 14px; }
 
 .mobile-menu-wrap .menu-overlay { visibility: hidden; position: fixed; top: 0; left: 0; z-index: -1; width: 100%; height: 100%; opacity: 0; }
 
-.menu-open { height: 100%; overflow: hidden; }
+.menu-open, .menu-open body { height: 100%; overflow: hidden; }
 
 .menu-open .sidebar-menu { left: 0; }
 
@@ -1030,21 +1022,21 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 
 .title-group .title + * { float: right; }
 
-.paging { margin-right: 5px; padding: 15px 0; font-family: Arial, sans-serif; text-align: center; }
+.paging { margin-right: 5px; padding: 25px 0; font-family: Arial, sans-serif; text-align: center; }
 
-.paging .prev { margin-right: 30px; }
+.paging .first, .paging .prev { margin-right: 15px; }
 
-.paging .next { margin-left: 20px; }
+.paging .last, .paging .next { margin-left: 15px; }
 
 .paging .prev.disabled i, .paging .next.disabled i { color: #d7d7d7; }
 
-.paging .pagingNum span { margin-right: 15px; }
+.paging .pagingNum span { margin-right: 15px; padding: 1px 4px; vertical-align: 1px; }
 
 .paging .pagingNum span a { color: #000; }
 
 .paging .pagingNum span:last-child { margin-right: 0; }
 
-.paging .pagingNum span.current { border-bottom: 1px solid #000; }
+.paging .pagingNum span.current { border: 1px solid #000; }
 
 .scroll { overflow-y: scroll; }
 
@@ -1314,7 +1306,7 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 .cart-wishlist .order-product-list { margin-top: 0; }
 
 /********************************************** Order - Checkout */
-.order-sheet { padding: 0 0 30px; }
+.order-sheet { margin: 0 -5px; padding: 0 5px 30px; }
 
 .order-sheet .order-product-list li .product-info { padding-left: 15px; }
 
@@ -1358,29 +1350,29 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 
 .order-sheet .total-payment .payment-agree .checkbox-big .checkbox-label { padding-left: 30px; }
 
-.order-sheet .terms-of-use .tabs { margin-bottom: 18px; }
+.terms-of-use .tabs { margin-bottom: 18px; }
 
-.order-sheet .terms-of-use .tabs .tab .tab-label { display: none; }
+.terms-of-use .tabs .tab .tab-label { display: none; }
 
-.order-sheet .terms-of-use .tabs .tab-content { padding: 10px; }
+.terms-of-use .tabs .tab-content { padding: 10px; }
 
-.order-sheet .terms-of-use .tabs .tab-content .button { margin: 10px -10px -10px; }
+.terms-of-use .tabs .tab-content .button { margin: 10px -10px -10px; }
 
-.order-sheet .terms-of-use .checkbox { display: block; margin-bottom: -5px; }
+.terms-of-use .checkbox { display: block; margin-bottom: -5px; }
 
-.order-sheet .privacy-policy .tabs { margin-bottom: 18px; }
+.privacy-policy .tabs { margin-bottom: 18px; }
 
-.order-sheet .privacy-policy .tabs .tab .tab-label { width: 33.34%; cursor: pointer; }
+.privacy-policy .tabs .tab .tab-label { width: 33.4%; cursor: pointer; }
 
-.order-sheet .privacy-policy .tabs .tab .tab-label.agree-policy-purpose { left: 33.34%; }
+.privacy-policy .tabs .tab .tab-label.agree-policy-purpose { left: 33.4%; }
 
-.order-sheet .privacy-policy .tabs .tab .tab-label.agree-policy-useDate { left: 66.68%; }
+.privacy-policy .tabs .tab .tab-label.agree-policy-useDate { left: 66.8%; }
 
-.order-sheet .privacy-policy .tabs .tab-content { padding: 40px 10px 10px; }
+.privacy-policy .tabs .tab-content { padding: 40px 10px 10px; }
 
-.order-sheet .privacy-policy .tabs .tab-content .button { margin: 10px -10px -10px; }
+.privacy-policy .tabs .tab-content .button { margin: 10px -10px -10px; }
 
-.order-sheet .privacy-policy .checkbox { display: block; margin-bottom: -5px; }
+.privacy-policy .checkbox { display: block; margin-bottom: -5px; }
 
 .checkout { margin-bottom: 35px; }
 
@@ -1398,174 +1390,177 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 .summary { margin-bottom: 35px; }
 
 /********************************************** My Page - Dashboard */
-.member-name:before, .member-name:after { content: " "; display: table; }
+.membership-info { padding: 15px 30px 0; }
 
-.member-name:after { clear: both; }
+.membership-info .level { display: block; width: 49px; margin: 0 auto; border: 1px solid #000; font-weight: bold; font-size: 27px; line-height: 1.8148148148; text-align: center; }
 
-.member-name .member { float: left; font-size: 13px; color: #000; }
+.membership-info p { margin-top: 15px; border-bottom: 1px solid #000; text-align: center; }
 
-.member-name .button { float: right; }
+.membership-info p .primary { font-size: 12px; }
 
-.mypage-info .member-info-title { margin: 20px 0 12px; font-weight: 400; font-size: 13px; color: #000; }
+.membership-info ul { padding: 0 2px; }
 
-.mypage-info .member-info-title i { vertical-align: 1px; }
+.membership-info ul li span { margin: 0 10px 0 5px; }
 
-.mypage-info .member-info { border-top: 1px solid #d5d5d5; }
+.membership-info ul li:nth-child(2) { text-align: right; }
 
-.mypage-info .member-info li { float: left; width: 33.3%; padding: 10px 0 9px; border: 1px solid #d5d5d5; border-width: 0 0 1px 1px; text-align: center; }
+.mypage-list { margin: 20px -17px 0; }
 
-.mypage-info .member-info li:nth-child(3n+1) { padding-left: 15px; border-left-width: 0; text-align: left; }
+.mypage-list li { position: relative; padding: 12px 17px 11px 60px; border-bottom: 1px solid #000; }
 
-.mypage-info .member-info li:nth-child(3n+3) { padding-right: 15px; text-align: right; }
+.mypage-list li:first-child { border-top: 1px solid #000; }
 
-.mypage-info .member-info li a { display: block; color: #000; }
+.mypage-list li:before, .mypage-list li:after { position: absolute; top: 50%; display: inline-block; background: url(../images/icon-sprite.png) no-repeat; background-size: 320px auto; content: ''; }
 
-.mypage-info .member-info .coupon-count { display: inline-block; width: 16px; height: 16px; margin-left: 5px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; border-radius: 50%; background-color: #004689; font-size: 10px; line-height: 1.6; color: #fff; text-align: center; vertical-align: 1px; }
+.mypage-list li:before { left: 20px; width: 25px; height: 25px; margin-top: -12px; }
 
-.recent-order-list { margin-top: 24px; }
+.mypage-list li:nth-child(1):before { background-position: 0 -180px; }
 
-.ordered-number { margin: 5px 0 10px; padding: 8px 11px 10px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; border-radius: 3px; background-color: #e5e5e5; font-size: 11px; color: #000; }
+.mypage-list li:nth-child(2):before { background-position: -45px -180px; }
 
-.ordered-number strong { font-weight: 400; }
+.mypage-list li:nth-child(3):before { background-position: -90px -180px; }
 
-.ordered-number .benton { font-weight: 500; }
+.mypage-list li:nth-child(4):before { background-position: -135px -180px; }
 
-.ordered-number .date { display: block; margin-top: -17px; font-size: 10px; text-align: right; }
+.mypage-list li:nth-child(5):before { background-position: -180px -180px; }
 
-.shipping-state { padding: 6px 0 3px 0; border-top: 1px solid #e5e5e5; }
+.mypage-list li:nth-child(6):before { background-position: 0 -225px; }
 
-.shipping-state:before, .shipping-state:after { content: " "; display: table; }
+.mypage-list li:nth-child(7):before { background-position: -45px -225px; }
 
-.shipping-state:after { clear: both; }
+.mypage-list li:nth-child(8):before { background-position: -90px -225px; }
 
-.shipping-state .item-state { float: left; padding-top: 3px; font-size: 11px; color: #000; }
+.mypage-list li:nth-child(9):before { background-position: -135px -225px; }
 
-.shipping-state .item-state .icon-flight { width: 14px; height: 14px; margin-right: 6px; border: 1px solid #000; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; border-radius: 50%; font-size: 10px; }
+.mypage-list li:after { right: 24px; width: 6px; height: 10px; margin-top: -5px; background-position: -90px -110px; }
 
-.shipping-state .item-amount { float: right; padding: 0; border-top: 0; }
+.mypage-list li a { display: block; }
 
-/********************************************** My Page - Order Track */
-.order-track-list { margin-top: -10px; }
+/********************************************** My Page - 주문 내역 */
+.order-track { margin: -32px -17px 0; }
 
-.order-track-list > li { margin-top: 25px; }
+.order-track > li { padding: 32px 17px 17px; border-bottom: 1px solid #000; }
 
-.order-number { padding: 40px 0; border-width: 0; text-align: center; }
+.order-track > li > .order-number { text-align: center; }
 
-.order-number li { display: inline-block; font-size: 18px; }
+.order-track > li > .button { margin-top: 10px; }
 
-.order-number li:before { height: 15px; }
+.order-track .order-track-option { margin-top: 19px; }
 
-.order-track-view { margin-top: 15px; }
+.order-track .order-track-option li { display: table; width: 100%; padding: 10px; border: 1px solid #000; border-top-width: 0; }
 
-.order-track-view .ordered-payment-info > li { margin: 3px 10px; padding: 0; border-top: 0; font-size: 12px; }
+.order-track .order-track-option li:first-child { border-top-width: 1px; }
 
-.order-track-view .ordered-payment-info > li:first-child { padding-top: 5px; }
+.order-track .order-track-option li p, .order-track .order-track-option li span { display: table-cell; vertical-align: top; }
 
-.order-track-view .ordered-payment-info > li.ordered-coupon { padding: 7px 0 0; border-top: 1px solid #e1e1e1; font-size: 10px; color: #004689; }
+.order-track .order-track-option li p em { display: block; font-style: normal; }
 
-.order-track-view .ordered-payment-info > li.ordered-coupon .ordered-payment-title.payment-coupon { padding: 0 9px; border: 1px solid #004689; line-height: 1.6; }
+.order-track .order-track-option li span { width: 80px; text-align: right; }
 
-.order-track-view .ordered-payment-info > li.payment-price-total { padding: 15px 0 5px; font-size: 15px; }
+.order-track .order-track-state { margin: 10px -18px 0; }
 
-.order-track-view .ordered-payment-info > li.payment-price-total .ordered-payment-title { padding-top: 0; }
+.order-track .order-track-state .col-xs-6 { padding: 0 18px; }
 
-.order-track-view .ordered-payment-info > li.payment-price-total .ordered-payment-price { font-weight: 400; font-size: 15px; }
+.order-track .order-track-state .col-xs-6 p { margin-top: 3px; padding: 5px 0; border: 1px solid #000; text-align: center; }
 
-.order-track-view .ordered-payment-info > li.virtual-account-info { padding: 8px 0 17px; border-top: 1px solid #004689; font-size: 10px; color: #004689; }
+.order-track .order-track-detail { display: none; margin: 15px -17px 0; padding: 0 17px; border-top: 1px solid #000; }
 
-.order-track-view .ordered-payment-info > li.virtual-account-info .ordered-payment-title { float: none; }
+.order-track .order-track-detail.open { display: block; }
 
-.order-track-view .ordered-payment-info > li.virtual-account-info .ordered-payment-state { float: right; padding: 0 9px; background-color: #004689; font-weight: 400; line-height: 1.6; color: #fff; vertical-align: bottom; }
+.order-track .order-track-detail .button { margin-top: 17px; }
 
-.order-track-view .ordered-shipping-info { padding: 10px; border: 5px solid #f5f5f5; font-size: 11px; }
+.order-track .order-track-detail .order-track-info { padding-top: 35px; }
 
-.order-track-view .ordered-shipping-info .shipping-name { font-size: 12px; color: #000; }
+.order-track .order-track-detail .order-track-info .order-track-info-title { padding-bottom: 5px; border-bottom: 1px solid #000; font-size: 11px; text-align: center; }
 
-.order-track-view .ordered-shipping-info li { padding: 0; }
+.order-track .order-track-detail .order-track-info ul { margin-top: 11px; }
 
-.order-track-view .ordered-shipping-info li.shipping-memo { margin-top: 5px; padding: 5px 0; border-top: 1px solid #e5e5e5; }
+.order-track .order-track-detail .order-track-info ul li { padding-top: 9px; }
 
-.order-track-view .ordered-shipping-info li.pcc-code { padding: 10px 0 15px; border-top: 1px solid #e5e5e5; color: #004689; }
+.order-track .order-track-detail .order-track-info ul li p { margin-top: 3px; padding: 5px; border: 1px solid #000; text-align: left; }
 
-.order-track-view .ordered-shipping-info li.pcc-code span { margin-right: 10px; padding: 0 9px; border: 1px solid #004689; line-height: 1.6; }
+.order-track .order-track-detail .order-track-info ul li .row { margin: 0 -18px 0; }
 
-.cash-receipt-issue-box { display: table; width: 100%; }
+.order-track .order-track-detail .order-track-info ul li .row .col-xs-6 { padding: 0 18px; }
 
-.cash-receipt-issue-box > div { display: table-cell; }
+.order-track .order-track-detail .order-track-info ul li .row .col-xs-6 p { text-align: center; }
+
+.order-track .order-track-detail .order-track-info .table { margin-top: 35px; }
+
+.order-track .order-track-detail .order-track-info .table .button { margin-top: 0; line-height: 1.5454545455; }
+
+.order-track + .button-align-center { margin-top: 37px; }
+
+/********************************************** My Page - Customer Service */
+.customer-service:before { display: block; margin: 28px auto; background: url(../images/icon-sprite.png) no-repeat -135px -135px; background-size: 320px auto; width: 42px; height: 42px; content: ''; }
+
+.customer-service dl { text-align: center; }
+
+.customer-service dl dt { font: 700 12px "Nanum Gothic", sans-serif; }
+
+.customer-service dl dd { margin: 3px 0 20px; font: 400 12px/19px "Nanum Gothic", sans-serif; }
 
 /********************************************** My Page - Wish list */
-.wishlist .page-title { margin-bottom: 10px; font-size: 13px; }
+.wishlist .order-product-list > li:last-child { padding-bottom: 20px; }
 
-.wishlist .checkbox-label { font-size: 11px; }
+/********************************************** My Page - My Board */
+.my-board:before { display: block; margin: 28px auto; background: url(../images/icon-sprite.png) no-repeat -180px -135px; background-size: 320px auto; width: 33px; height: 42px; content: ''; }
 
-.wishlist .box { padding: 5px; }
+.my-board .board-info { margin-bottom: 30px; text-align: center; }
 
-.wishlist .box .wishlist-list { padding: 5px; background-color: #fff; }
+.my-board .board-list li { padding: 10px 10px 8px; border: 1px solid #000; border-top-width: 0; font-family: "Nanum Gothic", sans-serif; }
 
-.wishlist .page-amount { margin-top: -4px; padding-bottom: 1px; border-bottom: 1px solid #f5f5f5; font-size: 9px; text-align: right; }
+.my-board .board-list li:first-child { border-top-width: 1px; }
 
-.wishlist .order-product-list > li { padding-top: 14px; }
+.my-board .board-list li a { display: block; }
 
-.wishlist .order-product-list > li:after { display: block; width: 39px; height: 1px; margin: 14px auto 0; background-color: #004689; content: ''; }
+.my-board .board-list li a strong { display: block; }
 
-.wishlist .paging { padding: 20px 0 10px; }
-
-/********************************************** My Page - 1:1문의 리스트 */
-.support-list { border: 5px solid #f5f5f5; }
-
-.support-list li { padding: 5px; }
-
-.support-list li:last-child .question-title { border-bottom: 0; }
-
-.support-list .question-title { margin: 0; padding-bottom: 10px; border-bottom: 1px solid #e1e1e1; }
-
-.support-list .question-title > div { padding: 0; }
-
-.support-list .question-title > div.col-xs-1 { text-align: right; }
-
-.support-list .question-title .checkbox { vertical-align: top; }
-
-.support-list .question-title .checkbox .checkbox-display { margin: 0; }
-
-.support-list .question-title .date { display: block; margin-bottom: 5px; font-size: 10px; }
-
-.support-list .question-title .item-badge { float: left; padding: 0 10px; border: 1px solid #004689; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; border-radius: 2px; font-size: 9px; line-height: 1.4444444444; color: #004689; }
-
-.support-list .question-title .item-title { display: block; padding-left: 65px; font-size: 12px; color: #000; vertical-align: top; }
-
-.support-list .support-box { display: none; margin: -1px -5px 0; padding: 7px 5px 15px; background-color: #f5f5f5; font-size: 12px; }
-
-.support-list .support-box .question { color: #000; }
-
-.support-list .support-box .question .question-content { padding-left: 56px; text-indent: -56px; }
-
-.support-list .support-box .question .question-product-info { display: block; margin-top: 15px; font-size: 11px; color: #858585; }
-
-.support-list .support-box .answer { margin-top: 7px; padding-top: 7px; border-top: 1px solid #fff; color: #004689; }
-
-.support-list .support-box .answer .answer-title { display: block; margin-bottom: 6px; color: #000; }
-
-.support-list .support-box .answer .answer-title i { display: inline-block; width: 11px; height: 11px; margin-right: 4px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; border-radius: 50%; background-color: #000; font-size: 0; color: #fff; vertical-align: 1px; }
-
-.support-list .support-box .answer .answer-title i:before { margin: 1px 0 0 1px; font-size: 10px; }
-
-/********************************************** My Page - 1:1문의 쓰기 폼 */
-.personal-support-write .file-input .button { padding: 0 16px; }
+.my-board .board-list li a span { font-size: 10px; }
 
 /********************************************** My Page - 회원정보수정 */
-.privacy-modify { margin-bottom: 15px; }
+.privacy-modify { margin-top: 25px; }
 
-.privacy-modify .box .input-list .fixed-data { margin-bottom: 15px; border-bottom: 1px solid #000; font-size: 11px; color: #000; }
+.privacy-modify .table { margin-top: 20px; }
 
-.privacy-modify .box .input-list .fixed-data:before, .privacy-modify .box .input-list .fixed-data:after { content: " "; display: table; }
+.privacy-modify .table th, .privacy-modify .table td { border: 0; }
 
-.privacy-modify .box .input-list .fixed-data:after { clear: both; }
+.privacy-modify .table th { border: 1px solid #000; border-width: 1px 0 1px 1px; }
 
-.privacy-modify .box .input-list .fixed-data .fixed-label { float: left; margin-right: 15px; }
+.privacy-modify .table td { border: 1px solid #000; border-width: 1px 1px 1px 0; }
 
-.privacy-modify .box .input-list .help-text, .privacy-modify .box .input-list .checkbox-block { margin: -7px 0 10px; }
+.privacy-modify .gender-input .selectbox { margin-bottom: 7px; }
 
-.member-privacy .id-closed { display: block; padding-top: 20px; text-align: right; }
+/********************************************** My Page - 적립금 내역 */
+.mileage:before { display: block; margin: 25px auto 28px; background: url(../images/icon-sprite.png) no-repeat -225px -135px; background-size: 320px auto; width: 42px; height: 42px; content: ''; }
+
+.mileage .mileage-info-list { border: 1px solid #000; margin-bottom: 27px; padding: 11px 10px; font-weight: 700; }
+
+.mileage .mileage-info-list:before, .mileage .mileage-info-list:after { content: " "; display: table; }
+
+.mileage .mileage-info-list:after { clear: both; }
+
+.mileage .mileage-info-list dt { clear: both; float: left; width: 135px; border-right: 1px solid #000; }
+
+.mileage .mileage-info-list dt i { margin-right: 5px; }
+
+.mileage .mileage-info-list dd { float: right; }
+
+.mileage .mileage-info { margin-top: 27px; padding: 11px 14px; border: 1px solid #000; font-size: 10px; }
+
+.mileage .mileage-list li { padding: 12px 10px 10px; border: 1px solid #000; border-top-width: 0; font-family: "Nanum Gothic", sans-serif; }
+
+.mileage .mileage-list li:first-child { border-top-width: 1px; }
+
+.mileage .mileage-list li a { display: table; width: 100%; }
+
+.mileage .mileage-list li a p { display: table-cell; vertical-align: middle; }
+
+.mileage .mileage-list li a p i { margin-right: 5px; vertical-align: -2px; }
+
+.mileage .mileage-list li a span { display: table-cell; font-size: 10px; text-align: right; }
+
+.mileage .mileage-list li a span b { display: block; }
 
 /********************************************** My Page - 회원탈퇴 */
 .member-quit-notice { padding-top: 13px; }
@@ -1575,124 +1570,84 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 .member-quit-notice .notice { margin-top: 10px; padding-top: 10px; border-top: 1px solid #000; }
 
 /********************************************** My Page - Coupon */
-.coupon .coupon-register .input-button-group > div:last-child { width: 70px; }
+.coupon:before { display: block; margin: 25px auto 28px; background: url(../images/icon-sprite.png) no-repeat -270px -135px; background-size: 320px auto; width: 45px; height: 31px; content: ''; }
 
-.coupon .button-group { padding: 40px 0 20px; border-top: 1px solid #e5e5e5; text-align: center; }
+.coupon .coupon-list { margin-top: 27px; }
 
-.coupon-box { position: relative; margin-top: 10px; }
+.coupon .coupon-list li { padding: 11px; border: 1px solid #000; border-top-width: 0; }
 
-.coupon-box .radio { display: block; position: absolute; top: 9px; left: 3%; }
+.coupon .coupon-list li:first-child { border-top-width: 1px; }
 
-.coupon-box .pass-coupon { left: 53%; }
+.coupon .coupon-list li strong { font-weight: 400; }
 
-.coupon-box .coupon-content { display: none; padding-top: 37px; }
+.coupon .coupon-list li dl:before, .coupon .coupon-list li dl:after { content: " "; display: table; }
 
-.coupon-box .have-coupon { display: block; }
+.coupon .coupon-list li dl:after { clear: both; }
 
-.coupon-list { border: 5px solid #f5f5f5; }
+.coupon .coupon-list li dl dt, .coupon .coupon-list li dl dd { float: left; }
 
-.coupon-list > li { padding: 10px; }
+.coupon .coupon-list li dl dt { clear: both; margin-right: 5px; font-weight: 700; }
 
-.coupon-list > li:last-child .coupon-info-content { border-bottom: 0; }
+.coupon .coupon-list li dl p { padding-left: 7px; }
 
-.coupon-price { font-weight: 400; font-size: 15px; color: #004689; }
+.coupon .coupon-info { margin-top: 27px; padding: 11px; border: 1px solid #000; }
 
-.button-coupon { margin-top: 4px; padding: 0 10px; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; border-radius: 0; background-color: #004689; font-size: 9px; line-height: 1.4444444444; color: #fff; }
+.coupon .coupon-info p { margin-bottom: 20px; }
 
-.coupon-info-content { margin-bottom: -10px; padding: 7px 0 15px; border-bottom: 1px solid #e1e1e1; font-size: 11px; }
+/********************************************** My page - 비밀번호 재확인 */
+.password-check-info { padding-top: 10px; font-size: 11px; text-align: center; }
 
-.coupon-info-content .coupon-num { color: #004689; }
+.password-check { padding: 20px 0; }
 
-.coupon-info-content .coupon-num .item-badge { float: left; margin-right: 7px; padding: 0 10px; border: 1px solid #004689; font-size: 9px; line-height: 1.4444444444; }
+.password-check li { padding: 5px 50px; }
 
-.coupon-info-content .coupon-type { margin: 14px 0 6px; color: #000; }
+.password-check li .id-text { font-weight: 700; letter-spacing: 1.3px; }
 
-.coupon-info-content .coupon-purpose:before, .coupon-info-content .coupon-purpose:after { content: " "; display: table; }
+.password-check li .form-control { display: inline-block; height: 24px; font-size: 11px; }
 
-.coupon-info-content .coupon-purpose:after { clear: both; }
+/********************************************** Join - Sign Up */
+.page-join { margin: 0 -5px; }
 
-.coupon-info-content .coupon-purpose span, .coupon-info-content .coupon-purpose p { float: left; }
+.join { margin-bottom: 35px; }
 
-.coupon-info-content .coupon-purpose span { clear: both; width: 41px; margin-right: 15px; color: #000; }
+.join-age-agree { padding: 10px 5px; font-size: 11px; line-height: 16px; }
 
-/********************************************** My Page - AddressBook */
-.address-manage .address-item { margin-bottom: 20px; padding: 10px 5px 15px 5px; border: 5px solid #f5f5f5; background-color: #fff; font-size: 11px; }
+.join-age-agree p { margin-top: -5px; }
 
-.address-manage .address-item .address-group { padding: 0 5px; }
+/********************************************** Join - Sign Up - Complete */
+.join-complete { padding-top: 5px; text-align: center; }
 
-.address-manage .address-item .address-title { margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid #f5f5f5; font-weight: 400; font-size: 12px; color: #000; }
+.join-complete strong { display: block; font-weight: 400; font-size: 17px; letter-spacing: 1px; }
 
-.address-manage .address-item .button-inline-group { margin-top: 20px; }
-
-.address-manage .address-item.empty { padding: 40px 0; font-size: 13px; text-align: center; }
+.join-complete span { display: block; padding: 25px 0 15px; font-weight: 700; }
 
 /********************************************** Join - Login */
-.login .login-find { font-size: 11px; color: #000; }
+.login { padding: 15px 0 5px; }
 
-.login .login-find .find-id { float: right; color: #000; }
+.login .button-align { margin-top: 5px; }
 
-.login .login-find .find-id:after { display: block; margin-top: -2px; padding-bottom: 2px; border-bottom: 1.5px solid #000; content: ''; }
+.login .button-align .button { letter-spacing: 1.3px; }
 
-.login .ordered-check-button-group { margin-top: 35px; }
+.login .login-member-info { margin: 10px 0; font-size: 11px; }
 
-.login .guest-ordered-check { display: none; margin-top: 20px; }
+/********************************************** Join - Find ID / Password */
+.forgot:before { display: block; margin: 28px auto; background: url(../images/icon-sprite.png) no-repeat -90px -135px; background-size: 320px auto; width: 42px; height: 42px; content: ''; }
 
-.forgot { color: #000; }
+.forgot .secondary-title { margin-bottom: 2px; }
 
-.forgot .tab .find-password { left: 50%; }
-
-.forgot .tabs [type=radio]:checked ~ .tab-label span:before { margin-right: 6px; font-family: 'fontello'; color: #004689; content: '\e826'; }
-
-.forgot .forgot-content { padding-top: 33px; }
-
-.forgot .box { padding-bottom: 15px; }
-
-.forgot .text-explain { font-size: 11px; line-height: 1.4545454545; }
-
-.forgot-box { position: relative; margin-top: 10px; border-top: 1px solid #000; }
+.forgot-box { position: relative; margin: -6px 0 50px; }
 
 .forgot-box .radio { display: block; position: absolute; top: 9px; left: 0; }
 
-.forgot-box .find-phone { left: 50%; }
+.forgot-box .find-phone { left: 22%; }
 
-.forgot-box .findId-input, .forgot-box .findPassword-input { display: none; padding-top: 37px; }
+.forgot-box .findId-input, .forgot-box .findPassword-input { display: none; padding-top: 50px; }
 
 .forgot-box .findId-email, .forgot-box .findPassword-email { display: block; }
 
-/********************************************** Join - Sign Up */
-.signup { margin-bottom: 15px; }
+.forgot-result > p { margin: 20px 0; }
 
-.signup .box .input-list .help-text, .signup .box .input-list .checkbox-block { margin: -7px 0 10px; }
-
-.input-select li { padding: 1px 0; }
-
-.input-select .input-select-label { color: #000; }
-
-.input-select .birth-date { margin: 0 -7px; }
-
-.input-select .birth-date .input-select-label { padding-left: 7px; }
-
-.input-select .birth-date .input-group div { width: 33.3%; padding: 0 7px; }
-
-.signup-agree { margin-bottom: 20px; }
-
-.signup-agree .signup-agree-title { font-weight: 400; color: #000; }
-
-.signup-agree .signup-agree-title:before, .signup-agree .signup-agree-title:after { content: " "; display: table; }
-
-.signup-agree .signup-agree-title:after { clear: both; }
-
-.signup-agree .signup-agree-title .checkbox { float: left; }
-
-.signup-agree .signup-agree-title .button { float: right; }
-
-.signup-agree .signup-agree-title + .agree-box { display: none; margin: 5px 0 10px; }
-
-.signup-complete { font-size: 10px; text-align: center; }
-
-.signup-complete .welcome-message { display: inline-block; width: 202px; height: 202px; margin-bottom: 18px; padding-top: 65px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; border-radius: 50%; background-color: #004689; font-weight: 400; font-size: 12px; line-height: 16px; color: #fff; }
-
-.signup-complete .welcome-message:before { display: block; margin-bottom: 20px; font-family: 'fontello'; font-size: 24px; text-align: center; content: '\e825'; }
+.forgot-result .result-box { padding: 16px 0; border: 1px solid #000; font-family: "Nanum Gothic", sans-serif; text-align: center; }
 
 /********************************************** Agree */
 .agree-box { height: 95px; padding: 10px; border: 5px solid #f5f5f5; background-color: #fff; font-size: 9px; }
