@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
 /********************************************** Variables */
 /********************************************** Mixins */
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
@@ -574,10 +574,18 @@ hr { width: 100%; margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 
 
 .icon-coin { width: 13px; height: 13px; background-position: -225px -180px; }
 
+.icon-mobile { width: 7px; height: 12px; background-position: -225px -225px; }
+
+.icon-lock { width: 9px; height: 12px; background-position: -180px -225px; }
+
 /********************************************** Button */
 .button { position: relative; display: block; border: 1px solid #000; background-color: #fff; font-size: 11px; line-height: 2.5454545455; color: #000; text-align: center; vertical-align: middle; cursor: pointer; -webkit-appearance: none; }
 
 .button:hover, .button:focus { color: #000; text-decoration: none; }
+
+.button-small { line-height: 1.8181818182; }
+
+.button-xsmall { font-size: 9px; line-height: 1.3333333333; }
 
 .button-primary { background-color: #000; color: #fff; }
 
@@ -595,7 +603,7 @@ hr { width: 100%; margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 
 
 .button-group div { display: table-cell; margin: 0 0 0 -1px; }
 
-.button-group div .button { width: 100%; border-width: 1px 0 1px 1px; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; border-radius: 0; }
+.button-group div .button { width: 100%; border-width: 1px 0 1px 1px; }
 
 .button-inline-group { margin: 10px -4px 0; }
 
@@ -613,7 +621,7 @@ hr { width: 100%; margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 
 
 .button-align { margin-top: 20px; text-align: center; }
 
-.button-align:before, .button-align:after { display: table; content: " "; }
+.button-align:before, .button-align:after { content: " "; display: table; }
 
 .button-align:after { clear: both; }
 
@@ -622,10 +630,6 @@ hr { width: 100%; margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 
 .button-align .button-right { float: right; }
 
 .button-align-center { margin-top: 20px; text-align: center; }
-
-.button-align-center:before, .button-align-center:after { display: table; content: " "; }
-
-.button-align-center:after { clear: both; }
 
 /********************************************** Form */
 fieldset { min-width: 0; padding: 0; margin: 0; border: 0; }
@@ -670,7 +674,7 @@ input[type="search"] { -webkit-appearance: none; }
 
 .input-group .input-group-addon { padding: 0 6px; text-align: center; }
 
-.input-group .input-group-addon.blank { width: 5px; padding: 0; }
+.input-group .input-group-addon.blank { width: 10px; padding: 0; }
 
 .input-group .input-group-addon.hyphen { width: 17px; }
 
@@ -688,15 +692,13 @@ input[type="search"] { -webkit-appearance: none; }
 
 .input-button-group div { display: table-cell; padding: 0; vertical-align: top; }
 
-.input-button-group div .form-control { border-width: 1px 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; border-radius: 0; }
+.input-button-group div .form-control { border-width: 1px 0; }
 
-.input-button-group div .button { width: 100%; margin: 0; padding: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; border-radius: 0; }
+.input-button-group div .button { width: 100%; margin: 0; padding: 0; }
 
 .input-button-group div .selectbox .selectbox-value { padding: 0 10px 0 20px; }
 
-.input-button-group div:first-child * { border-left-width: 1px; border-top-left-radius: 3px; -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; border-bottom-left-radius: 3px; -moz-border-radius-bottomleft: 3px; -webkit-border-bottom-left-radius: 3px; }
-
-.input-button-group div:last-child * { border-top-right-radius: 3px; -moz-border-radius-topright: 3px; -webkit-border-top-right-radius: 3px; border-bottom-right-radius: 3px; -moz-border-radius-bottomright: 3px; -webkit-border-bottom-right-radius: 3px; }
+.input-button-group div:first-child * { border-left-width: 1px; }
 
 .selectbox { position: relative; display: block; border: 1px solid #000; text-align: left; background-color: #fff; }
 
@@ -1506,17 +1508,17 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 /********************************************** My Page - My Board */
 .my-board:before { display: block; margin: 28px auto; background: url(../images/icon-sprite.png) no-repeat -180px -135px; background-size: 320px auto; width: 33px; height: 42px; content: ''; }
 
-.my-board .board-info { margin-bottom: 30px; text-align: center; }
+.my-board .myboard-info { margin-bottom: 30px; text-align: center; }
 
-.my-board .board-list li { padding: 10px 10px 8px; border: 1px solid #000; border-top-width: 0; font-family: "Nanum Gothic", sans-serif; }
+.my-board .myboard-list li { padding: 10px 10px 8px; border: 1px solid #000; border-top-width: 0; font-family: "Nanum Gothic", sans-serif; }
 
-.my-board .board-list li:first-child { border-top-width: 1px; }
+.my-board .myboard-list li:first-child { border-top-width: 1px; }
 
-.my-board .board-list li a { display: block; }
+.my-board .myboard-list li a { display: block; }
 
-.my-board .board-list li a strong { display: block; }
+.my-board .myboard-list li a strong { display: block; }
 
-.my-board .board-list li a span { font-size: 10px; }
+.my-board .myboard-list li a span { font-size: 10px; }
 
 /********************************************** My Page - 회원정보수정 */
 .privacy-modify { margin-top: 25px; }
@@ -1561,13 +1563,6 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 .mileage .mileage-list li a span { display: table-cell; font-size: 10px; text-align: right; }
 
 .mileage .mileage-list li a span b { display: block; }
-
-/********************************************** My Page - 회원탈퇴 */
-.member-quit-notice { padding-top: 13px; }
-
-.member-quit-notice p { font-size: 11px; color: #000; }
-
-.member-quit-notice .notice { margin-top: 10px; padding-top: 10px; border-top: 1px solid #000; }
 
 /********************************************** My Page - Coupon */
 .coupon:before { display: block; margin: 25px auto 28px; background: url(../images/icon-sprite.png) no-repeat -270px -135px; background-size: 320px auto; width: 45px; height: 31px; content: ''; }
@@ -1681,21 +1676,69 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 
 .search-empty:before { display: block; margin: 28px auto 20px; background: url(../images/icon-sprite.png) no-repeat -45px -135px; background-size: 320px auto; width: 41px; height: 41px; content: ''; }
 
-/********************************************** News */
-.news .news-list { border: 5px solid #f5f5f5; }
+/********************************************** CS Center - Notice */
+.board-search { margin: 27px -17px 0; padding: 10px 15px; border: 1px solid #000; border-width: 1px 0; }
 
-.news .news-list li { padding: 2px 10px 10px; }
+.board-search .input-group > div:first-child { width: 85px; }
 
-.news .news-list li:first-child { padding-top: 10px; }
+.board-search .input-group > div:last-child { width: 45px; }
 
-.news .news-list li:last-child { padding-bottom: 0; }
+.board-list { margin: 0 -17px; }
 
-.news .news-list .news-title { margin: 0; padding-bottom: 10px; border-bottom: 1px solid #e1e1e1; }
+.board-list li { padding: 11px 10px 8px; border-bottom: 1px solid #000; }
 
-.news .news-list .news-title .item-badge { float: left; padding: 0 10px; border: 2px solid #004689; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; border-radius: 3px; font-size: 9px; line-height: 1.4444444444; color: #004689; }
+.board-list li .board-title { display: block; }
 
-.news .news-list .news-title .date { float: right; margin-top: 3px; font-size: 11px; }
+.board-list li .board-title.notice { padding-left: 18px; font-weight: 400; text-indent: -18px; }
 
-.news .news-list .news-title .item-title { clear: both; display: block; width: 100%; padding-top: 5px; font-size: 12px; color: #000; vertical-align: top; }
+.board-list li .board-title.notice:before { display: inline-block; width: 10px; height: 12px; margin-right: 8px; background: url(../images/icon-sprite.png) no-repeat -270px -180px; background-size: 320px auto; vertical-align: middle; content: ''; }
 
-.news .news-list .news-contents { display: none; margin: -1px -10px 0; padding: 7px 10px 15px; background-color: #f5f5f5; font-size: 12px; }
+.board-list li .board-title + div { padding-left: 18px; }
+
+.board-list li .board-title + div span { margin-right: 8px; }
+
+.board-list li .board-title + div span.badge { padding: 0 5px; background-color: #000; font-size: 8px; line-height: 1.25; color: #fff; }
+
+.board-list li i { margin-right: 5px; vertical-align: middle; }
+
+.board-list li.customer-qna { padding: 5px 10px 6px; }
+
+.board-list li.customer-qna .product-info { margin-bottom: 3px; padding: 0 0 5px; border-bottom: 1px solid #d2d2d2; text-align: left; }
+
+.board-list li.customer-qna div { position: relative; }
+
+.board-list li.customer-qna div span.badge { position: absolute; bottom: 2px; right: 0; margin-right: 0; }
+
+.board-list li.customer-qna.review { position: relative; padding-left: 30px; }
+
+.board-list li.customer-qna.review:before { position: absolute; top: 8px; left: 10px; width: 13px; height: 12px; margin-right: 8px; background: url(../images/icon-sprite.png) no-repeat -270px -225px; background-size: 320px auto; vertical-align: middle; content: ''; }
+
+.board-write .row, .board-view-write .row { margin: 0 -15px; }
+
+.board-write .row .col-xs-6, .board-view-write .row .col-xs-6 { padding: 0 15px; }
+
+.board-view { margin: 0 -15px 20px; border: 1px solid #000; border-width: 1px 0; }
+
+.board-view .information { padding: 8px 15px; }
+
+.board-view .contents { min-height: 130px; padding: 15px; border-top: 1px solid #000; }
+
+.board-review { margin: 12px 0 0; border-top: 1px solid #000; }
+
+.board-review li { padding: 10px 0 12px; border-bottom: 0; }
+
+.board-review li .review-content { padding-left: 15px; }
+
+.board-write-button .box { min-height: 45px; margin-bottom: 10px; padding: 8px 0; border: 1px solid #000; text-align: center; }
+
+.board-notice .board-write-button { margin-top: 30px; }
+
+.board-notice .board-write-button .box { text-align: left; }
+
+.board-qna { margin-top: 15px; }
+
+.board-qna .board-write .password-input .form-label .primary { position: absolute; top: 0; right: 15px; }
+
+.board-qna .board-write + .board-write-button { margin-top: 30px; }
+
+.board-qna .board-write + .board-write-button .box { text-align: left; }

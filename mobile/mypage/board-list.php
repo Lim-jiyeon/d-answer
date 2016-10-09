@@ -4,8 +4,8 @@
     <div class="container">
         <h2 class="page-title">my board</h2>
         <div class="my-board">
-            <p class="board-info"><b>김기훈</b> 님이 쇼핑몰 게시판에 작성한 게시글 내역입니다.</p>
-            <ul class="board-list">
+            <p class="myboard-info"><b>김기훈</b> 님이 쇼핑몰 게시판에 작성한 게시글 내역입니다.</p>
+            <ul class="myboard-list">
                 <li>
                     <a href="#">
                         <strong>[Q&amp;A] 상품문의</strong>
