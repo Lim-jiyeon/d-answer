@@ -5,6 +5,21 @@
         <div class="page-container">
             <h2 class="page-title">Q &amp; A</h2>
             <div class="board-qna">
+                <div class="row product-detail">
+                    <!-- 상품 이미지 -->
+                    <div class="col-xs-12">
+                        <div class="product-images">
+                            <div><img src="../include/images/temp/temp-product.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <!-- 상품 이미지 -->
+                    <!-- 상품 이름 -->
+                    <div class="col-xs-12">
+                        <h2 class="product-name">[WONMEN] SLP BABY 티셔츠</h2>
+                    </div>
+                    <!-- 상품 이름 //end -->
+                    <a href="#" class="button button-inline button-small button-primary">전체목록</a>
+                </div>
                 <div class="board-search">
                     <div class="input-group">
                         <div>

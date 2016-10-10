@@ -3193,4 +3193,21 @@ footer {
             }
         }
     }
+    .product-detail {
+        position: relative;
+        margin: 30px 0 25px;
+        .product-name {
+            font-size: 11px;
+            font-family: $font-family-ko;
+            text-align: center;
+        }
+        .button {
+            position: absolute;
+            left: -22px;
+            bottom: -45px;
+        }
+        & + .board-search {
+            margin-top: 45px;
+        }
+    }
 }

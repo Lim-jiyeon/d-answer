@@ -1742,3 +1742,11 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 .board-qna .board-write + .board-write-button { margin-top: 30px; }
 
 .board-qna .board-write + .board-write-button .box { text-align: left; }
+
+.board-qna .product-detail { position: relative; margin: 30px 0 25px; }
+
+.board-qna .product-detail .product-name { font-size: 11px; font-family: "Nanum Gothic", sans-serif; text-align: center; }
+
+.board-qna .product-detail .button { position: absolute; left: -22px; bottom: -45px; }
+
+.board-qna .product-detail + .board-search { margin-top: 45px; }
