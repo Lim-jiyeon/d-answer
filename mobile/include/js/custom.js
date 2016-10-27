@@ -220,10 +220,12 @@ $(document).ready(function () {
 function layerOpen(target) {
     var $this = $(target);
     $this.show();
+    $("html").addClass("scroll-lock");
 }
 function layerClose(target) {
     var $this = $(target);
-    $this.parent().hide();
+    $this.hide();
+    $("html").removeClass("scroll-lock");
 }
 
 

@@ -24,7 +24,7 @@
                             <strong class="price"><b>380,000</b>원</strong>
                         </div>
                         <span class="saved">적립금 : 1%</span>
-                        <a class="size-guide"><i class="icon-ruler"></i>Size guide</a>
+                        <a href="#" class="size-guide" onclick="layerOpen('.modal-size-guide');return false;"><i class="icon-ruler"></i>Size guide</a>
                     </div>
                     <!-- 상품 옵션 선택 영역 -->
                     <div class="detail-option">
@@ -222,6 +222,15 @@
         </ul>
     </div>
     <!-- 고객센터 //end -->
+    <!-- 사이즈 가이드 (Layer Popup) -->
+    <div class="modal-wrap modal-size-guide">
+        <div class="modal">
+            <img src="../include/images/size-guide.jpg" alt="">
+            <a href="#none" class="modal-close" onclick="layerClose('.modal-size-guide');"><i class="icon-cancel"></i></a>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <!-- 사이즈 가이드 //end -->
 </div>
 
 <?php include '../footer/footer.php'; ?>
