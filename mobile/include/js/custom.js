@@ -59,6 +59,30 @@ $(document).ready(function () {
         $("html").removeClass("menu-open");
     });
 
+    // Top Button
+    // --------------------------------------------------
+    if ($(".top-link").length) {
+        var scrollTrigger = 100, // px
+            theTop = function () {
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop > scrollTrigger) {
+                    $(".top-link").removeClass('top');
+                } else {
+                    $(".top-link").addClass('top');
+                }
+            };
+        theTop();
+        $(window).on('scroll', function () {
+            theTop();
+        });
+        $(".top-link").on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 0
+            }, 700);
+        });
+    }
+
     // Footer Accordion Menu
     $(".footer-menu > li h3").on("click", function () {
         if ($(this).hasClass("on")) {

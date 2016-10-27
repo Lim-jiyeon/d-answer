@@ -1,4 +1,5 @@
 <footer>
+    <a href="#" class="top-link"></a>
     <!-- 문의 관련 Information -->
     <div class="container footer-info">
         <h3>INFORMATION</h3>
