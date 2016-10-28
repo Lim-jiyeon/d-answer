@@ -225,6 +225,7 @@
     <!-- 사이즈 가이드 (Layer Popup) -->
     <div class="modal-wrap modal-size-guide">
         <div class="modal">
+            <h1 class="modal-title">SIZE GUIDE</h1>
             <img src="../include/images/size-guide.jpg" alt="">
             <a href="#none" class="modal-close" onclick="layerClose('.modal-size-guide');"><i class="icon-cancel"></i></a>
         </div>
