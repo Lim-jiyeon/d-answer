@@ -640,7 +640,7 @@ label { display: inline-block; max-width: 100%; }
 
 input[type="search"] { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-input[type="radio"], input[type="checkbox"] { margin: 4px 0 0; margin-top: 1px \9; line-height: normal; }
+input[type="radio"], input[type="checkbox"] { margin-top: 1px \9; line-height: normal; }
 
 input[type="file"] { display: block; }
 
@@ -1260,7 +1260,7 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 
 .order-product .order-product-list .product-info .product-image img { width: 75px; height: 90px; }
 
-.order-product .order-product-list .product-info .item-info { float: right; text-align: right; }
+.order-product .order-product-list .product-info .item-info { float: right;width:70%;text-align: right; }
 
 .order-product .order-product-list .product-info .item-info .item-name { font-size: 11px; }
 
@@ -1283,7 +1283,7 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 .order-product .order-product-list .item-option-button .button.button-primary { width: auto; margin-left: 5px; padding: 0 4px; }
 
 .order-product .checkbox #order-product-all ~ .checkbox-label { font-size: 11px; }
-
+.cart {padding:0;}
 .cart-totals { margin-top: 40px; }
 
 .cart-totals .cart-amount { padding: 7px 0 15px; font-size: 12px; color: #333; }
@@ -1307,9 +1307,10 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 .cart-wishlist { margin: 40px 0 50px; }
 
 .cart-wishlist .order-product-list { margin-top: 0; }
+.npay_type_MA_1 {width:100% !important;}
 
 /********************************************** Order - Checkout */
-.order-sheet { margin: 0 -5px; padding: 0 5px 30px; }
+.order-sheet { padding: 0 0 30px; }
 
 .order-sheet .order-product-list li .product-info { padding-left: 15px; }
 
@@ -1325,7 +1326,7 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 
 .order-sheet .get-shipping .checkbox-big .checkbox-label { float: left; margin: 0; }
 
-.order-sheet .get-shipping .checkbox-big .checkbox-display { float: right; margin: 0; }
+.order-sheet .get-shipping .checkbox-big .checkbox-display, .order-sheet .get-shipping .checkbox-big #same { float: right; margin: 0; }
 
 .order-sheet .table th, .order-sheet .table td, .order-sheet .table .form-control { font-size: 11px; }
 
@@ -1345,13 +1346,13 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 
 .order-sheet .total-payment .checkbox-big .checkbox-display { margin-right: 0; }
 
-.order-sheet .total-payment .payment-agree { padding: 25px 13px 0; }
+.order-sheet .total-payment .payment-agree { padding: 10px 13px 0; }
 
 .order-sheet .total-payment .payment-agree .checkbox-big { position: relative; }
 
 .order-sheet .total-payment .payment-agree .checkbox-big .checkbox-display { position: absolute; top: 0; left: 0; margin: 0; }
 
-.order-sheet .total-payment .payment-agree .checkbox-big .checkbox-label { padding-left: 30px; }
+.order-sheet .total-payment .payment-agree .checkbox-big .checkbox-label {margin-top: -16px;padding-left: 19px; }
 
 .terms-of-use .tabs { margin-bottom: 18px; }
 
@@ -1380,9 +1381,10 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 .checkout { margin-bottom: 35px; }
 
 .checkout.total-payment { margin-bottom: 0; }
-.checkout .form-control#emergency11, .checkout .form-control#emergenc12, .checkout .form-control#emergency13 {display: inline-block;width: 28%;}
+.checkout .form-control#emergency11, .checkout .form-control#emergency12, .checkout .form-control#emergency13, .checkout .form-control#emergency21, .checkout .form-control#emergency22, .checkout .form-control#emergency23, .checkout .form-control#emergency31, .checkout .form-control#emergency32, .checkout .form-control#emergency33 {display: inline-block;width: 29.8%;}
+.get-shipping .input-group .form-control#post1, .get-shipping .input-group .form-control#post2 {display: inline-block;width: 47.4% !important;}
 
-/********************************************** Order - Complete */
+  /********************************************** Order - Complete */
 .order-complete { padding: 5px 0 40px; }
 
 .order-complete .orderer-info { margin: 30px 0 40px; text-align: center; }
