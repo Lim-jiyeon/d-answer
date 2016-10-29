@@ -1046,12 +1046,12 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 .product-list:before, .product-list:after { content: " "; display: table; }
 .product-list:after { clear: both; }
 .product-list .list-item { position:relative;float: left; padding: 0 0 30px 1px; }
+.product-list .list-item .sale-badge { position: absolute;top: 0;left: 1px;z-index: 20;width: 99%; height: 100%;background-repeat: no-repeat;background-size: 41px 40px;}
 .product-list.list-view ul .list-item { width: 50%; }
 .product-list.list-view ul .list-item:nth-child(2n+1) { clear: left;padding: 0 1px 30px 0; }
 .product-list.grid-view ul .list-item { width: 33.33%; }
 .product-list.grid-view ul .list-item:nth-child(3n+1) { clear: left;padding: 0 1px 30px 0; }
 .product-list.grid-view ul .list-item:nth-child(3n+3) { padding: 0 0 30px 1px; }
-.product-list.grid-view ul .list-item .sale-badge { position: absolute;top: 0;left: 0;z-index: 20;width: 100%; height: 100%;background-repeat: no-repeat;background-size: 41px 40px;}
 
 .product-info { padding: 6px 20px 0; text-align: center; }
 
