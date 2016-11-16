@@ -824,6 +824,7 @@ input[type="search"] { -webkit-appearance: none; }
 .content { padding: 30px 12px 100px; }
 
 /********************************************** Header */
+header {position:fixed;top:0;left:0;z-index:100;width: 100%;background-color:#fff;}
 header .top { position: relative; padding: 14px 0; border-bottom: 1px solid #000; }
 
 header .top .site-brand { margin: 0; font-size: 0; }
@@ -926,6 +927,7 @@ header .top .mobile-menu { position: absolute; top: 17px; left: 14px; }
 
 .mobile-menu-wrap .menu-overlay { visibility: hidden; position: fixed; top: 0; left: 0; z-index: -1; width: 100%; height: 100%; opacity: 0; }
 
+.menu-open header {height: 100%;}
 .menu-open, .menu-open body { height: 100%; overflow: hidden; }
 
 .menu-open .sidebar-menu { left: 0; }
@@ -1070,7 +1072,7 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 .list-more:after { padding: 10px 10px 10px 20px; border: 1px solid #000; font-weight: 700; font-size: 10px; letter-spacing: 8px; text-transform: uppercase; content: 'more'; }
 
 /********************************************** Main */
-.main { padding: 0 0 40px; }
+.main { padding: 47px 0 40px; }
 
 .main .container { padding: 0; }
 
