@@ -872,10 +872,10 @@ header .top .mobile-menu { position: absolute; top: 17px; left: 14px; }
 .mobile-menu-wrap .main-category { margin-top: 35px; border-bottom: 1px solid #000; }
 .mobile-menu-wrap .main-category li { position: relative; }
 .mobile-menu-wrap .main-category li a { display: block; }
-.mobile-menu-wrap .main-category li .collapse:after {position:absolute;top:0;right:0;width:36px;line-height:36px;font-style:normal;text-align:center;}
+.mobile-menu-wrap .main-category li .collapse:after {position:absolute;top:0;right:0;z-index:1011;width:100%;padding-right:10px;line-height:36px;font-style:normal;text-align:right;}
 .mobile-menu-wrap .main-category .menu-item { padding: 9px 17px 8px; border-top: 1px solid #000; }
 
-.mobile-menu-wrap .main-category .menu-item a { display: block; font-weight: 700; font-size: 11px; }
+.mobile-menu-wrap .main-category .menu-item a { position:relative;z-index:1012;display:inline-block; font-weight: 700; font-size: 11px; }
 
 .mobile-menu-wrap .main-category .menu-item.child-item > .collapse:after { margin-left: 6px; content: '+'; }
 
