@@ -958,8 +958,10 @@ footer .footer-info ul li:before { display: block; margin-bottom: -2px; content:
 footer .footer-info ul li:first-child { border-left: 0; }
 
 footer .pc-version { display: block; padding: 17px 0 12px; border-bottom: 1px solid #000; text-align: center; }
-
 footer .pc-version .icon-computer { display: block; margin: 0 auto; }
+
+footer .call-center { display: block; padding: 14px 0 12px; border-bottom: 1px solid #000; text-align: center; }
+footer .call-center .icon-phone { display: block; margin: 0 auto 3px; }
 
 footer .customer-info, footer .bank-info { padding: 10px 8px; border-bottom: 1px solid #000; font-family: "Nanum Gothic", sans-serif; }
 
@@ -1767,3 +1769,24 @@ footer .sharing-link li { display: inline-block; padding: 0 12px; }
 .modal-wrap .modal .modal-close { position: absolute;top: 2px; right: 0; width: 30px; text-align: center; }
 .modal-wrap .modal .modal-close .icon-cancel:before { font-style: normal;font-weight: 500;font-size: 17px;line-height:17px;color: #fff;content: 'X'; }
 .modal-wrap .overlay { position: fixed; top: 0; left: 0; z-index: 9; width: 100%; height: 100%; background: #fff; opacity: 0.7; }
+
+.menu-company:before, .menu-company:after { content: " "; display: table; }
+.menu-company:after { clear: both; }
+.menu-company li {float: left;margin-right: 30px;}
+.content-company {padding:30px 0;}
+.content-company .page-title {font-size: 12px;}
+.content-company .page-title ruby {display:block;margin-top:-5px;text-align:center;font-size:9px;letter-spacing: 0;text-transform: none;}
+.content-company p {margin-bottom: 15px;}
+.content-company .company-name {margin:30px 0;font-size: 11px;font-weight: 700;text-align: center;line-height: 14px;}
+.content-company .partnership-text {margin-top: 30px;text-align: center;font-size: 10px;}
+.content-company .partnership-proposal-mail {margin:30px 0;text-align:center;font-weight: 700;}
+.content-company .partnership-language {text-align: center;}
+.content-company .partnership-language img {max-width: 286px;}
+.content-company .recruit-text {text-align: center;margin-top: 20px;font-size: 10px;}
+.content-company .recruit-content strong {display: inline-block;background-color: #000;color:#fff;font-weight: 400;padding: 0 4px;margin:13px 0;}
+.content-company .recruit-content h3 {font-size:11px;text-align: center;margin: 20px 0 10px;}
+.content-company .recruit-table {border-top:1px solid #000;border-bottom:1px solid #000;}
+.content-company .recruit-table th {border-left: 1px solid #000;border-bottom: 1px solid #000;text-align: left;padding: 4px 0 4px 4px;font-weight: 700;}
+.content-company .recruit-table th:first-child {border-left:0;}
+.content-company .recruit-table td {border-left: 1px solid #000;text-align: left;padding: 8px 0 8px 4px;vertical-align: top;}
+.content-company .recruit-table td:first-child {border-left:0;}

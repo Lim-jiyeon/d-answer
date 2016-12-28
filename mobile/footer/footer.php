@@ -9,6 +9,11 @@
         </ul>
     </div>
     <!-- 문의 관련 Information //end -->
+    <!-- 상담원 연결 -->
+    <div class="container">
+        <a href="tel:0200000000" class="call-center"><i class="icon-phone"></i>상담원 연결</a>
+    </div>
+    <!-- 상담원 연결 //end -->
     <!-- PC Version -->
     <div class="container">
         <a href="#" class="pc-version"><i class="icon-computer"></i>pc version</a>
