@@ -949,7 +949,7 @@ footer .footer-info ul:before, footer .footer-info ul:after { content: " "; disp
 
 footer .footer-info ul:after { clear: both; }
 
-footer .footer-info ul li { position: relative; float: left; width: 50%; padding: 20px 0 22px; border-left: 1px solid #000; text-align: center; }
+footer .footer-info ul li { position: relative; float: left; width: 33.3%; padding: 20px 0 22px; border-left: 1px solid #000; text-align: center; }
 
 footer .footer-info ul li .icon-phone { display:none; position: absolute; top: 9px; left: 50%; margin-left: -12px; }
 

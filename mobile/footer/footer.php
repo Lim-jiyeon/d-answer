@@ -6,6 +6,7 @@
         <ul>
             <li><a href="tel:020000000"><i class="icon-phone"></i>상품&amp;기타문의</a></li>
             <li><a href="tel:020000000"><i class="icon-phone"></i>교환/환불&amp;배송문의</a></li>
+            <li><a href="tel:020000000"><i class="icon-phone"></i>교환/환불&amp;배송문의</a></li>
         </ul>
     </div>
     <!-- 문의 관련 Information //end -->
